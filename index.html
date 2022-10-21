@@ -32,19 +32,25 @@
 
     
               
- 
-<link rel="stylesheet" href="css/styles (2).css"><link rel="stylesheet" href="css/index.css"><link rel="stylesheet" href="css/styles.css"><link rel="stylesheet" href="css/App.css"><link rel="stylesheet" href="css/style.css">
+
+
+<link rel="stylesheet" href="css/index.css">
+
+<link rel="stylesheet" href="css/App.css">
+
 <link rel="stylesheet" href="css/demo.css">
-  <link rel="stylesheet" href="css/main.css" />  
+<link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style (2).css">
+    <link rel="stylesheet" href="css/styles.css">  
+  <link rel="stylesheet" href="css/styles (2).css">
 
-<link rel="stylesheet" href="css/style (2).css">
-  <!-- 
-  
-  
-   -->
+  <!--  -->
+
   
 
 
+ 
+    <link rel="stylesheet" href="css/main.css" />
 
 </head>
 
@@ -53,51 +59,6 @@
 
   <header class="intro shadow">  
 
-    <!-- <nav>
-    <div class="hamburger">
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
-    </div>
-    <div class="heading">
-        <h1>Carousel</h1>
-    </div>
-    <ul class="nav-links">
-        <li><a href="#" class="nav-options">Home</a></li>
-        <li><a href="#" class="nav-options">Contact</a></li>
-        <li><a href="#" class="nav-options">About</a></li>
-    </ul>
-</nav> -->
-
-    <!-- <div class="nav-bar">          
-      <span aria-hidden="true" class="text-lg lg:text-xl">
-      <a href="" class="logo" id="main-nav">Logo</a>
-      <img src="images/logo.png" class="hidden md:w-7 md:inline md:mr-4" alt="">
-      <span aria-hidden="true" class="heading text-lg lg:text-xl">
-        Jane<strong> C<span class="text-rose-600">.</span></strong></span>
-
-      <div class="navigation">
-
-        <div class="nav-items">
-<nav class="bg-white max-w-5xl mx-auto font-poppins p-6 flex items-center justify-between" id="main-nav">
-          <button aria-label="toggle button" aria-expanded="false" class="cursor-pointer w-7 md:hidden" id="menu-btn">
-            <img src="images/menu.svg" alt="">
-          </button>
-          
-            <ul class="nav-links" id="toggled-menu" class="w-full absolute top-full left-0 -translate-y-full -z-10 text-gray-800 border-b border-gray-200 flex flex-col items-center md:static md:z-10 md:w-min md:transform-none md:border-none md:flex-row">
-            <i class="uil uil-times nav-close-btn"></i>
-          
-            <li class="py-4 md:py-0 md:mr-6"><a href="#" class="nav-options text-sm uppercase font-semibold w-full hover:text-rose-600"><i class="uil uil-home"></i> Home</a></li>
-              <li class="py-4 md:py-0 md:mr-6"><a href="#" class="nav-options text-sm uppercase font-semibold w-full hover:text-rose-600"><i class="uil uil-compass"></i> Explore</a></li>
-                <li class="py-4 md:py-0 md:mr-6"><a href="#" class="nav-options text-sm uppercase font-semibold w-full hover:text-rose-600"><i class="uil uil-info-circle"></i> About</a></li>
-                  <li class="py-4 md:py-0 md:mr-6"><a href="#" class="nav-options text-sm uppercase font-semibold w-full hover:text-rose-600"><i class="uil uil-document-layout-left"></i> Blog</a></li>
-                    <li class="py-4 md:py-0 md:mr-6"><a href="#" class="nav-options text-sm uppercase font-semibold w-full hover:text-rose-600"><i class="uil uil-envelope"></i> Contact</a></li>
-        </ul>
-      </nav>
-        </div>
-      </div>
-      <i class="uil uil-apps nav-menu-btn"></i>        
-    </div> -->
 
      <nav class="nav-bar" id="main-nav grid items-center justify-left">  
       <!-- <img class="random__img" src="assets/img/-C77_EN-David-Cam2.png" id="random__img" alt="">           -->
@@ -122,7 +83,25 @@
       <button aria-label="toggle button" aria-expanded="false" class="cursor-pointer w-7 md:hidden" id="menu-btn">
         <img src="images/menu.svg" alt="">
       </button>
-      <img src="images/logo.png" class="hidden md:w-7 md:inline md:mr-4" alt="">
+      <img src="images/logo.png" class="hidden md:w-7 md:inline md:mr-4" alt=""><select class="nav__item-title" id="theme-select">
+        <option class="button--ghost" value="light">Light</option>
+        <option class="work__img" value="dark">Dark</option>
+        <option class="button--ghost" value="blue">Blue</option>
+        <option class="work__img" value="pink">Pink</option>
+        <option class="button--ghost" value="space">Space</option>
+        <option class="work__img" value="nyan">Nyan</option>
+        <option class="button--ghost" value="test">Bright</option>
+        <option class="work__img" value="load">Loading</option>
+        <option class="button--ghost" value="load2">Load2</option>
+        <option class="work__img" value="load3">Load3</option>
+        <option class="button--ghost" value="load4">Load4</option>
+        <option class="work__img" value="load5">Load5</option>
+        <option class="button--ghost" value="load6">Load6</option>
+        <option class="work__img" value="load7">Load7</option>
+        <option class="button--ghost" value="load8">Load8</option>
+        <option class="button--ghost" value="load9">Load9</option>
+        <option class="button--ghost" value="load10">Load10</option>
+    </select><i class="bx bx-moon change-theme" id="theme-button" title="#home__img"></i>
       <div class="nav__menu main-nav w-full absolute top-full left-0 -translate-y-full -z-10 text-gray-800 border-b border-gray-200 flex flex-col items-center md:static md:z-5 md:w-min md:transform-none md:border-none md:flex-row">
       <ul class="nav__list" id="toggled-menu">
 
@@ -174,12 +153,12 @@
             </li>
 
       </ul>      
-                        
+           
     </div>  
-    <h3>Flipbook Slider Example</h3>            
-    
-<i class="bx bx-moon change-theme" id="theme-button" title="#home__img"></i>
-   <ul class="nav-links" id="toggled-menu" class="w-full absolute top-full left-0 -translate-y-full -z-10 text-gray-800 border-b border-gray-200 flex flex-col items-center md:static md:z-10 md:w-min md:transform-none md:border-none md:flex-row">
+               
+           
+<h3> Flipbook & Slider </h3>   
+         <ul class="nav-links" id="toggled-menu" class="w-full absolute top-full left-0 -translate-y-full -z-10 text-gray-800 border-b border-gray-200 flex flex-col items-center md:static md:z-10 md:w-min md:transform-none md:border-none md:flex-row">
   
 <li class="py-6 md:py-1 md:mr-4">
       <a href="#cv" class="text-sm uppercase font-semibold w-full hover:text-rose-600">CV</a>
@@ -192,23 +171,7 @@
       <a href="#contact" class="text-sm uppercase font-semibold w-full hover:text-rose-600">Contact</a>
     </li>  
       </ul> 
-      <select class="nav__item-title" id="theme-select" name="select" >
-        <option class="button--ghost" value="light">Light</option>
-        <option class="work__img" value="dark">Dark</option>
-        <option class="button--ghost" value="blue">Blue</option>
-        <option class="work__img" value="pink">Pink</option>
-        <option class="button--ghost" value="space">Space</option>
-        <option class="work__img" value="nyan">Nyan</option>
-        <option class="button--ghost" value="test">Bright</option>
-        <option class="work__img" value="load">Loading</option>
-        <option class="button--ghost" value="load2">Load2</option>
-        <option class="work__img" value="load3">Load3</option>
-        <option class="button--ghost" value="load4">Load4</option>
-        <option class="work__img" value="load4">Load5</option>
-        <option class="button--ghost" value="load4">Load6</option>
-        <option class="work__img" value="load4">Load7</option>
-        <option class="button--ghost" value="load4">Load8</option>
-    </select>
+
       </nav> 
 
 
@@ -216,6 +179,51 @@
 
     
 </nav> -->
+    <!-- <nav>
+    <div class="hamburger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </div>
+    <div class="heading">
+        <h1>Carousel</h1>
+    </div>
+    <ul class="nav-links">
+        <li><a href="#" class="nav-options">Home</a></li>
+        <li><a href="#" class="nav-options">Contact</a></li>
+        <li><a href="#" class="nav-options">About</a></li>
+    </ul>
+</nav> -->
+
+    <!-- <div class="nav-bar">          
+      <span aria-hidden="true" class="text-lg lg:text-xl">
+      <a href="" class="logo" id="main-nav">Logo</a>
+      <img src="images/logo.png" class="hidden md:w-7 md:inline md:mr-4" alt="">
+      <span aria-hidden="true" class="heading text-lg lg:text-xl">
+        Jane<strong> C<span class="text-rose-600">.</span></strong></span>
+
+      <div class="navigation">
+
+        <div class="nav-items">
+<nav class="bg-white max-w-5xl mx-auto font-poppins p-6 flex items-center justify-between" id="main-nav">
+          <button aria-label="toggle button" aria-expanded="false" class="cursor-pointer w-7 md:hidden" id="menu-btn">
+            <img src="images/menu.svg" alt="">
+          </button>
+          
+            <ul class="nav-links" id="toggled-menu" class="w-full absolute top-full left-0 -translate-y-full -z-10 text-gray-800 border-b border-gray-200 flex flex-col items-center md:static md:z-10 md:w-min md:transform-none md:border-none md:flex-row">
+            <i class="uil uil-times nav-close-btn"></i>
+          
+            <li class="py-4 md:py-0 md:mr-6"><a href="#" class="nav-options text-sm uppercase font-semibold w-full hover:text-rose-600"><i class="uil uil-home"></i> Home</a></li>
+              <li class="py-4 md:py-0 md:mr-6"><a href="#" class="nav-options text-sm uppercase font-semibold w-full hover:text-rose-600"><i class="uil uil-compass"></i> Explore</a></li>
+                <li class="py-4 md:py-0 md:mr-6"><a href="#" class="nav-options text-sm uppercase font-semibold w-full hover:text-rose-600"><i class="uil uil-info-circle"></i> About</a></li>
+                  <li class="py-4 md:py-0 md:mr-6"><a href="#" class="nav-options text-sm uppercase font-semibold w-full hover:text-rose-600"><i class="uil uil-document-layout-left"></i> Blog</a></li>
+                    <li class="py-4 md:py-0 md:mr-6"><a href="#" class="nav-options text-sm uppercase font-semibold w-full hover:text-rose-600"><i class="uil uil-envelope"></i> Contact</a></li>
+        </ul>
+      </nav>
+        </div>
+      </div>
+      <i class="uil uil-apps nav-menu-btn"></i>        
+    </div> -->
 
 
   </header>
