@@ -142,7 +142,7 @@
     :root.test {
       --bg-color: #780531d2;
       --text-color: var(--text-color-light);
-      --bg-url: url("../images/brightHope.gif");
+      --bg-url: url("../img/brightHope.gif");
       --font-family: 'poppins', cursive;
     }
     :root.load {
@@ -191,14 +191,14 @@
     }
     :root.load7 {
       --bg-color: rgb(9, 13, 10);
-      --bg-url: url("../img/gif/Points&Vibes.gif");
+      --bg-url: url("../img/gif/giphyAIR.gif");
       --text-color: #e4f37ffa;
       --font-family: 'Roboto Flex', sans-serif;
       --font-size : var(--font-family);
     }
     :root.load8 {
       --bg-color: rgba(2, 20, 16, 0);
-      --bg-url: url("../img/gif/ej5ygz.gif");
+      --bg-url: url("../img/gif/0b3d0c7d4cba82343643a5f4c48e2fba.gif");
       --text-color: #d6f78d;
       --font-family: 'Roboto Flex', sans-serif;
       --font-size : var(--font-family);
