@@ -7,17 +7,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Josefin+Sans:ital,wght@0,100;0,200;1,200;1,400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100;8..144,200;8..144,400;8..144,600&display=swap');
+/*============ Google fonts ============*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+
+
+
 
 /*======= CSS variables =======*/
+:root{
+  --white-color: #fff;
+  --dark-color: #222;
+  --body-bg-color: #fff;
+  --section-bg-color: #202834;
+  --navigation-item-hover-color: #3b5378;
 
+  --text-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+  --box-shadow: 0 5px 25px rgb(0 0 0 / 20%);
 
+  --scroll-bar-color: #fff;
+  --scroll-thumb-color: #282f4e;
+  --scroll-thumb-hover-color: #454f6b;
 
-
-
-
-/*======= Scroll bar =======*/
-/*=============== VARIABLES CSS ===============*/
-:root {
   /* --white-color: var(--body-bg-color);
   --dark-color: var(--body-color);
   --body-bg-color: var(--body-bg-color); */
@@ -77,6 +90,32 @@
   --z-fixed: 100;
   --z-modal: 1000;
 }
+
+/*======= Scroll bar =======*/
+::-webkit-scrollbar{
+  width: 11px;
+  background: var(--scroll-bar-color);
+}
+
+::-webkit-scrollbar-thumb{
+  width: 100%;
+  background: var(--scroll-thumb-color);
+  border-radius: 2em;
+}
+
+::-webkit-scrollbar-thumb:hover{
+  background: var(--scroll-thumb-hover-color);
+}
+
+/*======= Main CSS =======*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+
 
 
 /* Responsive typography */
@@ -342,6 +381,9 @@ body,button,input,textarea {
 
 body {
   background-color: var(--body-color);
+  background: var(--body-bg-color);
+  justify-content: center;
+  align-items: center;
   color: var(--text-color);
   transition: .5s; /* pour l'animation du dark theme */
 }
@@ -485,6 +527,7 @@ body.light-theme{
 }
 
 .main {
+  max-width: 880px;
   overflow: hidden;
 }
 
@@ -512,48 +555,6 @@ body.light-theme{
 
 
 
-/*============ Google fonts ============*/
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
-/*======= CSS variables =======*/
-:root{
-  --white-color: #fff;
-  --dark-color: #222;
-  --body-bg-color: #fff;
-  --section-bg-color: #202834;
-  --navigation-item-hover-color: #3b5378;
-
-  --text-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
-  --box-shadow: 0 5px 25px rgb(0 0 0 / 20%);
-
-  --scroll-bar-color: #fff;
-  --scroll-thumb-color: #282f4e;
-  --scroll-thumb-hover-color: #454f6b;
-}
-
-/*======= Scroll bar =======*/
-::-webkit-scrollbar{
-  width: 11px;
-  background: var(--scroll-bar-color);
-}
-
-::-webkit-scrollbar-thumb{
-  width: 100%;
-  background: var(--scroll-thumb-color);
-  border-radius: 2em;
-}
-
-::-webkit-scrollbar-thumb:hover{
-  background: var(--scroll-thumb-hover-color);
-}
-
-/*======= Main CSS =======*/
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
-}
 
 
 /* Style of arrows */
@@ -697,7 +698,7 @@ nav{
 .sub-imgs {
   display: grid;
   /* 4 images per coloumn */
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 5px;
 }
 
@@ -863,12 +864,6 @@ cursor: pointer;
 
 
 
-body{
-  background: var(--body-bg-color);
-
-  justify-content: center;
-  align-items: center;
-}
 
 section{
   position: relative;
@@ -1657,7 +1652,7 @@ text-shadow: 5px 5px 5px var(--first-color-alt);
   overflow: hidden;  
 
 }
-.home__buttons{
+.home__button{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -2884,6 +2879,231 @@ video {
     line-height: 1.5rem;
   }
 }
+
+
+
+.book-section{
+  height: 100vh;
+  width: 100%;
+  padding: 40px 0;
+  text-align: center;
+}
+.book-section > .container{
+  height: 400px;
+  width: 500px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 2%;
+  margin-bottom: 30px;
+  perspective: 1200px;
+}
+.container > .right{
+  position: absolute;
+  height: 100%;
+  width: 50%;
+  transition: 0.7s ease-in-out;
+  transform-style: preserve-3d;
+}
+.book-section > .container > .right{
+  right:0;
+  transform-origin: left;
+  border-radius: 10px 0 0 10px;
+}
+.right > figure.front, .right > figure.back{
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left:0;
+  top:0;
+  background-size: 200%;
+  background-repeat: no-repeat;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  background-color: white;
+  overflow: hidden;
+}
+.right > figure.front{
+  background-position: right;
+  border-radius: 0 10px 10px 0;
+  box-shadow: 2px 2px 15px -2px rgba(0,0,0,0.2);
+}
+.right > figure.back{
+  background-position: left;
+  border-radius: 10px 0 0 10px;
+  box-shadow: -2px 2px 15px -2px rgba(0,0,0,0.2);
+  transform: rotateY(180deg);
+}
+.flip{
+  transform: rotateY(-180deg);
+}
+.flip::before{
+  content: "";
+  position: absolute;
+  top:0;
+  left:0;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  border-radius: 0 10px 10px 0;
+  background-color: rgba(0,0,0,0.1);
+}
+.book-section > button{
+  border: 2px solid #ef9f00;
+  background-color: transparent;
+  color: #ef9f00;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 10px;
+  transition: 0.3s ease-in-out;
+}
+.book-section > button:focus, .book-section > button:active{
+  outline: none;
+}
+.book-section > p{
+  color: rgba(0,0,0,0.7);
+  font-family: calibri;
+  font-size: 24px;
+      margin: 15px 0;
+}
+.book-section > p > a{
+  text-decoration: none;
+  color: #ef9f00;
+}
+.book-section > button:hover{
+  background-color: #ef9f00;
+  color: #fff;
+}
+.front#cover, .back#back-cover{
+  background-color: #ffcb63;
+  font-family: calibri;
+  text-align: left;
+  padding: 0 30px;
+}
+.front#cover h1{
+  color: #fff;
+}
+.front#cover p{
+  color: rgba(0,0,0,0.8);
+  font-size: 14px;
+
+}
+
+
+
+
+.book2-section{
+  height: 100vh;
+  width: 100%;
+  padding: 40px 0;
+  text-align: center;
+}
+.book2-section > .container2{
+  height: 400px;
+  width: 500px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 2%;
+  margin-bottom: 30px;
+  perspective: 1200px;
+}
+.container2 > .right{
+  position: absolute;
+  height: 100%;
+  width: 50%;
+  transition: 0.7s ease-in-out;
+  transform-style: preserve-3d;
+}
+.book2-section > .container2 > .right{
+  right:0;
+  transform-origin: left;
+  border-radius: 10px 0 0 10px;
+}
+.right2 > figure.front, .right> figure.back{
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left:0;
+  top:0;
+  background-size: 200%;
+  background-repeat: no-repeat;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  background-color: white;
+  overflow: hidden;
+}
+.right > figure.front{
+  background-position: right;
+  border-radius: 0 10px 10px 0;
+  box-shadow: 2px 2px 15px -2px rgba(0,0,0,0.2);
+}
+.right > figure.back{
+  background-position: left;
+  border-radius: 10px 0 0 10px;
+  box-shadow: -2px 2px 15px -2px rgba(0,0,0,0.2);
+  transform: rotateY(180deg);
+}
+.flip{
+  transform: rotateY(-180deg);
+}
+.flip::before{
+  content: "";
+  position: absolute;
+  top:0;
+  left:0;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  border-radius: 0 10px 10px 0;
+  background-color: rgba(0,0,0,0.1);
+}
+.book2-section > .button{
+  border: 2px solid #ef9f00;
+  background-color: transparent;
+  color: #ef9f00;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 10px;
+  transition: 0.3s ease-in-out;
+}
+.book2-section > button:focus, .book2-section > button:active{
+  outline: none;
+}
+.book2-section > p{
+  color: rgba(0,0,0,0.7);
+  font-family: calibri;
+  font-size: 24px;
+      margin: 15px 0;
+}
+.book2-section > p > a{
+  text-decoration: none;
+  color: #3cef00;
+}
+.book2-section > .button:hover{
+  background-color: #73ef00;
+  color: #fff;
+}
+.front#cover, .back#back-cover{
+  background-color: #ffa463;
+  font-family: calibri;
+  text-align: left;
+  padding: 0 30px;
+}
+.front#cover h1{
+  color: #fff;
+}
+.front#cover p{
+  color: rgba(0,0,0,0.8);
+  font-size: 14px;
+
+}
+
+
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
 @media screen and (max-width:320px){
@@ -2900,7 +3120,7 @@ video {
     row-gap: 1.75rem;
     padding-top: 1.5rem;
   }
-  .home__buttons{
+  .home__button{
     flex-direction: column;
   }
   .home__handle{
@@ -3121,8 +3341,8 @@ transform: rotate(90deg) translate(16px, 0);
 .box::before{
   content:'';
   position: absolute;
-  width: 450px;    
-  height: 450px;
+  /* width: 450px;    
+  height: 450px; */
   border-radius: 10rem 10rem 1rem 1rem;
   background-image: conic-gradient(transparent,transparent,transparent,#00ccff);
   animation: animate 5s linear infinite;
@@ -3131,8 +3351,8 @@ transform: rotate(90deg) translate(16px, 0);
 .box::after{
   content:'';
   position: absolute;
-  width: 450px;    
-  height: 450px;
+  /* width: 450px;    
+  height: 450px; */
   border-radius: 10rem 10rem 1rem 1rem;
   background-image: conic-gradient(transparent,transparent,transparent,#ff00ea);
   animation: animate 5s linear infinite;
@@ -3150,7 +3370,7 @@ transform: rotate(90deg) translate(16px, 0);
 
 }
 .box img {
-  position: relative;
+  position: absolute;
   color: rgb(255, 255, 255);
   font-size: 10em;    
   border: 0.4rem double var(--body-color);     
