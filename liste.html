@@ -359,6 +359,185 @@ Inspirations (& Thanks to)
 
 </footer>
 
+      
+              <!--=============== SCROLLREVEAL ===============-->
+              <script src="assets/js/scrollreveal.min.js"></script>
+      
+              <!--=============== SWIPER JS ===============-->
+              <script src="assets/js/swipper-bundle.min.js"></script>
+      
+              <!--=============== MIXITUP FILTER ===============-->
+      
+              <script src="assets/js/mixitup.min.js"></script>
+      
+
+
+<script type="text/javascript">
+              var slides = document.querySelectorAll('.slide');
+              var btns = document.querySelectorAll('.btn');
+              let currentSlide = 1;
+              
+              // Javascript for image slider manual navigation
+              var manualNav = function(manual){
+                slides.forEach((slide) => {
+                  slide.classList.remove('active');
+                  
+                  btns.forEach((btn) => {
+                    btn.classList.remove('active');
+                  });
+                });
+                
+                slides[manual].classList.add('active');
+                btns[manual].classList.add('active');
+              }
+
+  btns.forEach((btn, i) => {
+    btn.addEventListener("click", () => {
+      manualNav(i);
+      currentSlide = i;
+    });
+  });
+  
+  // Javascript for image slider autoplay navigation
+  var repeat = function(activeClass){
+    let active = document.getElementsByClassName('active');
+    let i = 1;
+    
+    var repeater = () => {
+      setTimeout(function(){
+        [...active].forEach((activeSlide) => {
+          activeSlide.classList.remove('active');
+        });
+        
+        slides[i].classList.add('active');
+        btns[i].classList.add('active');
+        i++;
+        
+        if(slides.length == i){
+          i = 0;
+        }
+        if(i >= slides.length){
+          return;
+        }
+        repeater();
+      }, 10000);
+    }
+    repeater();
+  }
+  repeat();
+</script>
+
+<script type="text/javascript">
+  //jquery for toggle dropdown menus
+  $(document).ready(function(){
+    //toggle sub-menus
+    $(".sub-btn").click(function(){
+      $(this).next(".sub-menu").slideToggle();
+    });
+
+    //toggle more-menus
+    $(".more-btn").click(function(){
+      $(this).next(".more-menu").slideToggle();
+    });
+  });
+  
+  //javascript for the responsive navigation menu
+  var menu = document.querySelector(".menu");
+  var menuBtn = document.querySelector(".menu-btn");
+  var closeBtn = document.querySelector(".close-btn");
+  
+  menuBtn.addEventListener("click", () => {
+    menu.classList.add("active");
+  });
+  
+  closeBtn.addEventListener("click", () => {
+    menu.classList.remove("active");
+  });
+  
+  //javascript for the navigation bar effects on scroll
+  window.addEventListener("scroll", function(){
+    var header = document.querySelector("header");
+    header.classList.toggle("sticky", window.scrollY > 0);
+  });
+  </script>
+
+<script type="text/javascript">
+  //javascript for navigation bar effect on scroll
+  window.addEventListener("scroll", function(){
+    var header = document.querySelector("header");
+    header.classList.toggle('sticky', window.scrollY > 0);
+  });
+  
+  //javascript for responsive navigation sidebar menu
+  var menu = document.querySelector('.menu');
+  var menuBtn = document.querySelector('.menu-btn');
+  var closeBtn = document.querySelector('.close-btn');
+  
+  menuBtn.addEventListener("click", () => {
+    menu.classList.add('active');
+  });
+  
+  closeBtn.addEventListener("click", () => {
+    menu.classList.remove('active');
+  });
+  </script>
+
+<script type="text/javascript">
+  //Javacript for the scroll indicator bar
+  window.addEventListener("scroll", () => {
+    const indicatorBar = document.querySelector(".scroll-indicator-bar");
+    
+    const pageScroll = document.body.scrollTop || document.documentElement.scrollTop;
+    const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    const scrollValue = (pageScroll / height) * 100;
+    
+    indicatorBar.style.width = scrollValue + "%";
+  });
+  
+  //Responsive navigation menu toggle
+  const menuBtn = document.querySelector(".nav-menu-btn");
+  const closeBtn = document.querySelector(".nav-close-btn");
+  const navigation = document.querySelector(".navigation");
+  
+  menuBtn.addEventListener("click", () => {
+    navigation.classList.add("active");
+  });
+  
+  closeBtn.addEventListener("click", () => {
+    navigation.classList.remove("active");
+  });
+</script>
+
+<!-- Script JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script src="js/swiper-bundle.min.js"></script>
+<script src="js/swiper-bundle.min.js.map"></script>
+<script src="js/tailwind.config.js"></script>
+<script src="js/scrollreveal.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/uikit.js"></script>
+<script src="js/slideshow.js"></script>
+<script src="js/postcss.config.js"></script>
+<script src="js/package.json"></script>   
+<script src="js/package-lock.json"></script> 
+<script src="js/package.json"></script> 
+<script src="js/uikit-icons.min.js"></script>   
+
+<script src="js/script.js"></script>
+<script src="./js/script.js"></script>
+<script src="./js/script (2).js"></script>
+<script src="js/all.min.js"></script>
+<script src="js/main.js"></script>
+<script src="./js/main.js"></script>
+<script src="js/main (2).js"></script>
+<script src="js/main (3).js"></script>
+
+<script src="js/app.js"></script>
+<script src="js/aos.js"></script>
+<script src="js/form.js"></script>
+<script src="js/jquery-3.6.0.js"></script>
+<script src="js/typed.min.js"></script>
+
 <!--=============== SCROLLREVEAL ===============-->
 <script src="assets/js/scrollreveal.min.js"defer></script>
 
@@ -373,3 +552,4 @@ Inspirations (& Thanks to)
 <script src="assets/js/main.js"defer></script>
 </body>
 </html>
+
