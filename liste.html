@@ -2,527 +2,660 @@
 <html lang="fr">
 
 <head>
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-<link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
 <link rel="shortcut icon" href="assets/img/crossArcane.png" type="image/x-icon"> 
 
-
-<link rel="stylesheet" href="assets/css/styles.css" type="text/css">
 
 
 <!--=============== SWIPER CSS ===============-->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
 <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
 
+
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="assets/css/styles (2).css">
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="assets/css/style (2).css"><link rel="stylesheet" href="assets/css/styles.css">
+<link rel="stylesheet" href="assets/css/main.css"><link rel="stylesheet" href="assets/css/main.css">
+
+
 <title>Liste</title>
 </head>
 <body> 
-<!--=============== HEADER ===============-->
-<header class="header">
+        <!--=============== HEADER ===============-->
+<header class="header"> 
+  
+<nav class="nav container">    
+<div class="nav__menu">
+        
+            <ul class="nav__list">
+                                            <!-- theme change -->
+                        
+                                            <a href="#" class="nav__logo">
+                                                <i class='bx bxs-up-arrow-circle'></i>
+                                            </a>
 
-    <!-- <div class="nav__toggle">
-    futur toggle-en-burger-2 ---- id="add-outline"
-    <li class="nav_item">
-    
-    <h3 class="nav__item-title">Pad</h3>
-    </li>
-    </div> -->
-    
-    <a href="#" class="nav__link--ghost active-link">
-    <i class='bx bxs-up-arrow-circle'></i>
-    </a>
+                <li class="nav__toggle">
+                    <a href="#home" class="nav__link active-link"  id="01" title="home">
+                        <i class='bx bx-home-heart'></i>
+                    </a>
+                    <h3 class="nav__item-title">Menu</h3>
+                </li>
+
+                <li class="nav_item">
+                    <a href="#about" class="nav__link" id="05" title="about">
+                        <i class="bx bx-user"></i>
+                    </a>
+                    <h3 class="nav__item-title">.</h3>
+                </li>
+                
+                <li class="nav__toggle">
+                    <a href="#skills" class="nav__link" title="skills">
+                        <i class="bx bx-book-open"></i>
+                    </a>
+                    <h3 class="nav__item-title">..</h3>
+                </li>
+
+                <li class="nav__item">
+                    <a href="#services" class="nav__link" title="services">
+                        <i class="bx bx-briefcase"></i>
+                    </a>
+                    <h3 class="nav__item-title">...</h3>
+                </li>
+
+                
+                <li class="nav__toggle">
+                    <a href="#testimonial" class="nav__link" alt="Témoignages" title="testimonial">
+                        <i class='bx bx-male-female'></i>
+                    </a>
+                    <h3 class="nav__item-title">vost-fr</h3>
+                </li>
+
+                <li class="nav__item">
+                    <a href="#contact"  id="06" class="nav__link" title="contact">
+                        <i class="bx bx-message-square-detail"></i>
+                    </a>
+                    <h3 class="nav__item-title">....</h3>
+                </li>
+
+                <li class="nav__toggle">
+                    <a href="#work" class="nav__link" title="work">
+                        <i class="bx bx-briefcase-alt"></i>
+                    </a>
+                    <h3 class="nav__item-title">.Fin de pages.</h3>
+                </li>
+                                                           
+            <i class="bx bx-moon change-theme" class="home__img" id="theme-button" title="#"></i>
                             
-    <nav class="nav container">
-    
-    <div class="nav__menu">
-
- 
-    <ul class="nav__list">
-            
-    
-    <div class="nav__toggle active-link">
-        <li class="nav_item nav__link">
-        <!-- <li class="nav_item"> -->
-        <!-- theme change -->
-        <i class="bx bx-moon change-theme" id="theme-button" title="#">
-        </i>
-        </li>
-       <h3 class="nav__item-title">light</h3>
+                                                        <!-- theme change -->
+                                                    
+            <select class="button--ghost" id="theme-select">
+                <option class="button--ghost" value="light">Light</option>
+                <option class="work__img" value="dark">Dark</option>
+                <option class="button--ghost" value="blue">Blue</option>
+                <option class="work__img" value="pink">Pink</option>
+                <option class="button--ghost" value="space">Space</option>
+                <option class="work__img" value="nyan">Nyan</option>
+                <option class="button--ghost" value="test">Bright</option>
+                <option class="work__img" value="load">Loading</option>
+                <option class="button--ghost" value="load2">Load2</option>
+                <option class="button--ghost" value="load3">Load3</option>
+                <option class="button--ghost" value="load4">Load4</option>
+                <option class="work__img" value="load5">Load5</option>
+                <option class="button--ghost" value="load6">Load6</option>
+                <option class="button--ghost" value="load7">Load7</option>
+            </select>
+        </ul>                  
 
         </div>
+</nav><img class="work3__img" src="assets/img/-C77_EN-David-Cam2.png" id="random__img" alt="">
+        <!-- <i class="bx bx-moon change-theme" id="theme-button"></i> -->
+        <!-- theme change -->
 
+                        
+</header>
 
-
-    <li class="nav_item">
-    <a href="#home" class="nav__link active-link" title="home">
-    <i class='bx bx-home-heart'></i>
-    </a><h3 class="nav__item-title">Home</h3>
-    </li>
-    
-    <li class="nav_item">
-    <a href="#about" class="nav__link" title="about">
-    <i class="bx bx-user"></i>
-    </a><h3 class="nav__item-title">VF</h3>
-    </li>
-    
-    <li class="nav__item">
-    <a href="#skills" class="nav__link" title="skills">
-    <i class="bx bx-book-open"></i>
-    </a>
-    <h3 class="nav__item-title">...</h3>
-    </li>
-    
-    <li class="nav__item">
-    <a href="#services" class="nav__link" title="services">
-    <i class="bx bx-briefcase"></i>
-    </a>
-    <h3 class="nav__item-title">VOSTFR</h3>
-    </li>
-    
-    <li class="nav__item">
-    <a href="#work" class="nav__link" title="work">
-    <i class="bx bx-briefcase-alt"></i>
-    </a>
-    <h3 class="nav__item-title">...</h3>
-    </li>
-    
-    <li class="nav__item">
-    <a href="#testimonial" class="nav__link" title="testimonial" alt="Témoignages">
-    <i class='bx bx-male-female'></i>
-    </a>
-    <h3 class="nav__item-title">...</h3>
-    </li>
-    
-    <li class="nav__item">
-    <a href="#contact" class="nav__link" title="contact">
-    <i class="bx bx-message-square-detail"></i>
-    </a>
-    <h3 class="nav__item-title">...</h3>
-    </li>
-     <div class="nav__toggle active-link">
-    <li class="nav_item">
-        
-    <a href="#footer" class="nav__link" title="footer">
-    <i class='bx bx-dialpad-alt'></i>
-    </a>
-    <h3 class="nav__item-title">Bas2Page</h3>
-    </li>
-</div>
-
-    <select class="button--ghost active-link" id="theme-select" title="">
-            <option class="button--ghost" value="light">Thème</option>
-            <option class="work__img" value="dark">Dark</option>
-            <option class="button--ghost" value="blue">Blue</option>
-            <option class="work__img" value="pink">Pink</option>
-            <option class="button--ghost" value="space">Space</option>
-            <option class="work__img" value="nyan">Nyan</option>
-            <option class="button--ghost" value="test">Bright</option>
-            <option class="work__img" value="load">Loading</option>
-            <option class="button--ghost" value="load2">Ouhouh</option>
-            <option class="work__img" value="load3">Home</option>
-            <option class="button--ghost" value="load4">S.Mario</option>
-            <option class="work__img" value="load5">Cartoon</option>
-            <option class="button--ghost" value="load6">Nebular</option>
-            <option class="work__img" value="load7">Points&Vibes</option>
-            <option class="work__img" value="load8">Vibes</option>
-            </select></ul>   
-    <img class="nav__menu-img" src="assets/img/-C77_EN-David-Cam2.png" id="random2__img" alt="">
-    </div>
-    
-    </nav>
-    
-    </header>
-<!--=============== MAIN ===============-->
-
-<main class="main" loading="lazy">
+        <!--=============== MAIN ===============-->
 <section class="Home section" id="home">
-
+    
 <div class="home__container container grid">
-
-<img src="https://picsum.photos/800" class="flip-box-front" alt="">
-
-<div class="home__data">                        
-<h1 class="home__name">Hello</h1>
-<span class="home__greeting"><h2>Série #</h2></span>
-<h3 class="home__education">Cyberpunk EdgeRunners fr & vostfr</h3>
-<a href="index.html" class="button button--ghost">Retour °
-<img src="assets/img/Wave-PNG-HD0000.png" alt="" class="work2__img">
-</a>
-
-<a href="#services" class="button">° Vost.fr
-<img src="assets/img/Wave-PNG-HD000.png" alt="" class="work2__img">
-</a>
-<br>
-<img src="assets/img/18+.png" class="home__img" id="home__handle" title="home" alt="">
+        <img src="https://picsum.photos/800" class="flip-box-front" alt="">
+        
+        <div class="home__data">                        
+            <h1 class="home__name">Hello</h1>
+            <span class="home__greeting"><h2>Série #</h2></span>
+            <h3 class="home__education">Test fr & vostfr</h3>
+    <a href="index.html" class="button button--ghost">Retour °
+        <img src="assets/img/Wave-PNG-HD0000.png" alt="" class="work2__img">
+    </a>
+    <a href="index.html" class="button button--ghost">vers Portfolio °
+        <img src="assets/img/Wave-PNG-HD0000.png" alt="" class="work2__img">
+    </a>
+    <a href="#services" class="button">° Vost.fr
+        <img src="assets/img/Wave-PNG-HD000.png" alt="" class="work2__img">
+    </a>
+    <br><img src="assets/img/18+.png" class="home__img" id="home__handle" title="home" alt="">
 </div>
 
-<div class="home__handle" id="home">
-
-<img src="https://picsum.photos/600" class="header__img" alt="">
+    <div class="home__handle" id="home">
+    
+    <img src="https://picsum.photos/900" class="header__img" alt="">
 </div>
 
 </div> 
 
-</section> 
-
-<!-- <div id="main"></div>     -->
-<section class="about section" id="about">
-
-<h3>
-<span class="first-word" id="about">
-Playlist Fr</span>
-</h3>
-
-<div  id="about" class="about__container container grid" loading="lazy">         
-
-<div class="videobox" id="01"> 
-
-<IFRAME class="random2__img" SRC="https://vido.lol/embed-9c10jjze06cr.html" 
-FRAMEBORDER=0 MARGINWIDTH=0 MARGINHEIGHT=0 SCROLLING=NO WIDTH=640 HEIGHT=360 allowfullscreen></IFRAME>
-<!-- <a href="https://vido.lol/v0kvrr7u7gyv" class="title" class="video200 "></a> -->
-<span class="views"><h5>Cyberpunk Edgerunners ° FR</h5>S01E01</span>
-<!-- <span class="cat"><a href="https://vido.lol/category/"></a></span> -->
-</div>
-
-<div class="videobox" id="02"> 
-<IFRAME class="random2__img" SRC="https://vido.lol/embed-zj1c0k9v6vcx.html" 
-FRAMEBORDER=0 MARGINWIDTH=0 MARGINHEIGHT=0 SCROLLING=NO WIDTH=640 HEIGHT=360 allowfullscreen></IFRAME>
-<span class="views"><h5>Cyberpunk Edgerunners ° FR</h5>S01E02</span>
-<!-- <span class="cat"><a href="https://vido.lol/category/"></a></span> -->
-</div>
-
-<div class="videobox"id="03"> 
-<IFRAME class="random2__img" SRC="https://vido.lol/embed-d70yh9j6630f.html" FRAMEBORDER=0 MARGINWIDTH=0 MARGINHEIGHT=0 SCROLLING=NO WIDTH=640 HEIGHT=360 allowfullscreen></IFRAME>
-<span class="views"><h5>Cyberpunk Edgerunners ° FR</h5>S01E03</span>
-</div>
-
-<div class="videobox"id="04"> 
-    <IFRAME class="random2__img" SRC="https://vido.lol/embed-q9b8xix4v7xy.html" FRAMEBORDER=0 MARGINWIDTH=0 MARGINHEIGHT=0 SCROLLING=NO WIDTH=640 HEIGHT=360 allowfullscreen></IFRAME>
-    <span class="views"><h5>Cyberpunk Edgerunners ° FR</h5>S01E04</span>
-</div>
-
-<div class="videobox"id="05"> 
-    <IFRAME class="random2__img" SRC="https://vido.lol/embed-idahgtfvkib2.html" FRAMEBORDER=0 MARGINWIDTH=0 MARGINHEIGHT=0 SCROLLING=NO WIDTH=640 HEIGHT=360 allowfullscreen></IFRAME>
-    <span class="views"><h5>Cyberpunk Edgerunners ° FR</h5>S01E05</span>
-</div>
-
-<div class="videobox"id="06"> 
-    <IFRAME class="random2__img" SRC="https://vido.lol/embed-xn2vajjoutwe.html" FRAMEBORDER=0 MARGINWIDTH=0 MARGINHEIGHT=0 SCROLLING=NO WIDTH=640 HEIGHT=360 allowfullscreen></IFRAME>
-    <span class="views"><h5>Cyberpunk Edgerunners ° FR</h5>S01E06</span>
-</div>
-
-<div class="videobox"id="07"> 
-    <IFRAME class="random2__img" SRC="https://vido.lol/embed-8ygbxsapdorf.html" FRAMEBORDER=0 MARGINWIDTH=0 MARGINHEIGHT=0 SCROLLING=NO WIDTH=640 HEIGHT=360 allowfullscreen></IFRAME>
-    <span class="views"><h5>Cyberpunk Edgerunners ° FR</h5>S01E07</span>
-</div> 
-
-<div class="videobox"id="08"> 
-    <IFRAME class="random2__img" SRC="https://vido.lol/embed-4c3oxsobs1tp.html" FRAMEBORDER=0 MARGINWIDTH=0 MARGINHEIGHT=0 SCROLLING=NO WIDTH=640 HEIGHT=360 allowfullscreen></IFRAME><span class="views"><h5>Cyberpunk Edgerunners ° FR</h5>S01E08</span>
-</div>
-
-<div class="videobox"id="09"> 
-    <IFRAME class="random2__img" SRC="https://vido.lol/embed-yzzrc9ua0qo8.html" FRAMEBORDER=0 MARGINWIDTH=0 MARGINHEIGHT=0 SCROLLING=NO WIDTH=640 HEIGHT=360 allowfullscreen></IFRAME><span class="views"><h5>Cyberpunk Edgerunners ° FR</h5>S01E09</span>
-</div>
-
-<div class="videobox"id="010"> 
-    <IFRAME class="random2__img" SRC="https://vido.lol/embed-q4tu15r8msu6.html" FRAMEBORDER=0 MARGINWIDTH=0 MARGINHEIGHT=0 SCROLLING=NO WIDTH=640 HEIGHT=360 allowfullscreen></IFRAME>
-<span class="views"><h5>Cyberpunk Edgerunners ° FR</h5>S01E10</span>
-</div>
-
-</div>  
-</section> 
-
-
-<section class="services section" id="services">    
-
-<h3>
-<span class="first-word" id="services">
-Playlist Vost-fr </span>
-</h3>
-
-<div id="work" class="work__container container grid" loading="lazy">
-
-<div class="videobox" id="01">
-
-<IFRAME class="random2__img" SRC="https://vido.lol/e/pgvrt63q6h27?mjbxnkpi6214578.vido.lol/i/01/00051/olwdpw5glv63" style="position:relative;top:0;left:0;width:100%;height:100%;"
-FRAMEBORDER=0 MARGINWIDTH=0 MARGINHEIGHT=0 SCROLLING=NO WIDTH=auto HEIGHT=auto allowfullscreen 
->
-</IFRAME><br> 
-<span><h4>Cyberpunk Edgerunners ° VOSTFR S01E01 Vostfr</h4></span>
-</div>
-
-<div class="videobox" id="02"> 
-    <IFRAME class="random2__img" SRC="https://vido.lol/embed-vfg907bzmdls.html" FRAMEBORDER=0 MARGINWIDTH=0 MARGINHEIGHT=0 SCROLLING=NO WIDTH=640 HEIGHT=360 allowfullscreen></IFRAME>
-    <br> 
-<span><h4>Cyberpunk Edgerunners ° VOSTFR S01E02 Vostfr</h4></span>
+<div class="home__buttons">
+             
 
 
 </div>
-
-<div class="videobox"id="03"> 
-    <IFRAME class="random2__img" SRC="https://vido.lol/embed-5hfja5e38qig.html" FRAMEBORDER=0 MARGINWIDTH=0 MARGINHEIGHT=0 SCROLLING=NO WIDTH=640 HEIGHT=360 allowfullscreen></IFRAME><span><h4>Cyberpunk Edgerunners ° VOSTFR S01E03 Vostfr</h4></span>
-</div>
-
-<div class="videobox"id="04"> 
-    <IFRAME class="random2__img" SRC="https://vido.lol/embed-h5gcu9s3065h.html" FRAMEBORDER=0 MARGINWIDTH=0 MARGINHEIGHT=0 SCROLLING=NO WIDTH=640 HEIGHT=360 allowfullscreen></IFRAME><span><h4>Cyberpunk Edgerunners ° VOSTFR S01E04 Vostfr</h4></span>
-</div>
-
-<div class="videobox" id="05"> 
-    <IFRAME class="random2__img" SRC="https://vido.lol/embed-pgx2xfwyg90f.html" FRAMEBORDER=0 MARGINWIDTH=0 MARGINHEIGHT=0 SCROLLING=NO WIDTH=640 HEIGHT=360 allowfullscreen></IFRAME><span><h4>Cyberpunk Edgerunners ° VOSTFR S01E05 Vostfr</h4></span>
-</div>
-
-<div class="videobox"id="06"> 
-    <IFRAME class="random2__img" SRC="https://vido.lol/embed-fhndxqiqjf5p.html" FRAMEBORDER=0 MARGINWIDTH=0 MARGINHEIGHT=0 SCROLLING=NO WIDTH=640 HEIGHT=360 allowfullscreen></IFRAME><span><h4>Cyberpunk Edgerunners ° VOSTFR S01E06 Vostfr</h4></span>
-</div>
-
-<div class="videobox"id="07"> 
-    <IFRAME class="random2__img" SRC="https://vido.lol/embed-inuirhklgq81.html" FRAMEBORDER=0 MARGINWIDTH=0 MARGINHEIGHT=0 SCROLLING=NO WIDTH=640 HEIGHT=360 allowfullscreen></IFRAME><span><h4>Cyberpunk Edgerunners ° VOSTFR S01E07 Vostfr</h4></span>
-</div>
-
-<div class="videobox"id="08"> 
-    <IFRAME class="random2__img" SRC="https://vido.lol/embed-ckjgsm2sph0s.html" FRAMEBORDER=0 MARGINWIDTH=0 MARGINHEIGHT=0 SCROLLING=NO WIDTH=640 HEIGHT=360 allowfullscreen></IFRAME><span><h4>Cyberpunk Edgerunners ° VOSTFR S01E08 Vostfr</h4></span>
-</div>
-
-<div class="videobox"id="09"> 
-    <IFRAME class="random2__img" SRC="https://vido.lol/embed-jlh52uwud5zl.html" FRAMEBORDER=0 MARGINWIDTH=0 MARGINHEIGHT=0 SCROLLING=NO WIDTH=640 HEIGHT=360 allowfullscreen></IFRAME><span><h4>Cyberpunk Edgerunners ° VOSTFR S01E09 Vostfr</h4></span>
-</div> 
-
-<div class="videobox"id="010"> 
-    <IFRAME class="random2__img" SRC="https://vido.lol/embed-rpsm7r64wuwn.html" FRAMEBORDER=0 MARGINWIDTH=0 MARGINHEIGHT=0 SCROLLING=NO WIDTH=640 HEIGHT=360 allowfullscreen></IFRAME><span><h4>Cyberpunk Edgerunners ° VOSTFR S01E10 Vostfr</h4></span>
-</div>
-
-</div>  
-
 </section>
+<section class="about section" id="about">
+ 
+            <h3>
+                <span class="first-word" id="about">
+                Playlist Fr</span>
+            </h3>
+ 
+    <div  id="about" class="about__container container grid">         
+                
+            <div class="videobox" id="01"> 
+            <a href="https://vido.lol/v0kvrr7u7gyv" class="video200 ">
+            <div class="work section"  style="background: url('https://mjbxnkpi6214578.vido.lol/i/01/00051/v0kvrr7u7gyv_t.jpg') no-repeat;">
+            <span>25:36</span>
+            </div>
+            </a>
+            <a href="https://vido.lol/v0kvrr7u7gyv" class="title" class="video200 ">Cyberpunk Edgerunners S01E01 FRENCH 1080p WEB x264-BULiTT-French…</a>S01E01 
+            <span class="views">924 views</span>
+            <span class="cat"><a href="https://vido.lol/category/"></a></span>
+            </div>
+            <div class="videobox" id="02"> 
+            <a href="https://vido.lol/zj1c0k9v6vcx" class="video200 ">
+            <div class="work section"  style="background: url('https://mjbxnkpi196478.vido.lol/i/02/00051/zj1c0k9v6vcx_t.jpg') no-repeat;">
+            <span>25:34</span>
+            </div>
+            </a>
+            <a href="https://vido.lol/zj1c0k9v6vcx" class="title">Cyberpunk Edgerunners S01E02 FRENCH 1080p WEB x264-BULiTT-French…</a>S01E02
+            <span class="views">499 views</span>
+            <span class="cat"><a href="https://vido.lol/category/"></a></span>
+            </div>
+            <div class="videobox"id="03"> 
+            <a href="https://vido.lol/3qacsg3gf936" class="video200 ">
+            <div class="work section"  style="background: url('https://mjbxnkpi196478.vido.lol/i/02/00051/3qacsg3gf936_t.jpg') no-repeat;">
+            <span>25:42</span>
+            </div>
+            </a>
+            <a href="https://vido.lol/3qacsg3gf936" class="title">Cyberpunk Edgerunners S01E03 FRENCH 1080p WEB x264-BULiTT-French…</a>S01E03
+            <span class="views">404 views</span>
+            
+            <span class="cat"><a href="https://vido.lol/category/"></a></span>
+            </div>
+            <div class="videobox"id="04"> 
+            <a href="https://vido.lol/hrljiv1helfr"  class="video200 ">
+            <div class="work section"  style="background: url('https://mjbxnkpi196478.vido.lol/i/02/00051/hrljiv1helfr_t.jpg') no-repeat;">
+            <span>25:34</span>
+            </div>
+            </a>
+            <a href="https://vido.lol/hrljiv1helfr" class="title">Cyberpunk Edgerunners S01E04 FRENCH 1080p WEB x264-BULiTT-French…</a>S01E04
+            <span class="views">329 views</span>
+            <span class="cat"><a href="https://vido.lol/category/"></a></span>
+            </div>
+            <div class="videobox"id="05"> 
+            <a href="https://vido.lol/x9x9lfctdvyz" class="video200 ">
+            <div class="work section"  style="background: url('https://mjbxnkpi196478.vido.lol/i/02/00051/x9x9lfctdvyz_t.jpg') no-repeat;">
+            <span>24:52</span>
+            </div>
+            </a>
+            <a href="https://vido.lol/x9x9lfctdvyz" class="title">Cyberpunk Edgerunners S01E05 FRENCH 1080p WEB x264-BULiTT-French…</a>S01E05
+            <span class="views">299 views</span>
+            <span class="cat"><a href="https://vido.lol/category/"></a></span>
+            </div>
+            <div class="videobox"id="06"> 
+            <a href="https://vido.lol/bjpqbvijftx6" class="video200 ">
+            <div  class="work section"  style="background: url('https://mjbxnkpi196478.vido.lol/i/02/00051/bjpqbvijftx6_t.jpg') no-repeat;">
+            <span>27:10</span>
+            </div>
+            </a>
+            <a href="https://vido.lol/bjpqbvijftx6" class="title">Cyberpunk Edgerunners S01E06 FRENCH 1080p WEB x264-BULiTT-French…</a>S01E06
+            <span class="views">274 views</span>
+            <span class="cat"><a href="https://vido.lol/category/"></a></span>
+            </div>
+            <div class="videobox"id="07"> 
+            <a href="https://vido.lol/868j73omt4l3" class="video200 ">
+            <div class="work section"  style="background: url('https://mjbxnkpi6214578.vido.lol/i/01/00051/868j73omt4l3_t.jpg') no-repeat;">
+            <span>25:36</span>
+            </div>
+            </a>
+            <a href="https://vido.lol/868j73omt4l3" class="title">Cyberpunk Edgerunners S01E07 FRENCH 1080p WEB x264-BULiTT-French…</a>S01E07
+            <span class="views">237 views</span>
+            <span class="cat"><a href="https://vido.lol/category/"></a></span>
+            </div> 
+            <div class="videobox"id="08"> 
+            <a href="https://vido.lol/m59u61ji98to" class="video200 ">
+            <div class="work section"  style="background: url('https://mjbxnkpi6214578.vido.lol/i/01/00051/m59u61ji98to_t.jpg') no-repeat;">
+            <span>25:38</span>
+            </div>
+            </a>
+            <a href="https://vido.lol/m59u61ji98to" class="title">Cyberpunk Edgerunners S01E08 FRENCH 1080p WEB x264-BULiTT-French…</a>S01E08
+            <span class="views">186 views</span>
+            <span class="cat"><a href="https://vido.lol/category/"></a></span>
+            </div>
+            <div class="videobox"id="09"> 
+            <a href="https://vido.lol/x0wd7gp3beyr" class="video200 ">
+            <div class="work section"  style="background: url('https://mjbxnkpi196478.vido.lol/i/02/00051/x0wd7gp3beyr_t.jpg') no-repeat;">
+            <span>26:40</span>
+            </div>
+            </a>
+            <a href="https://vido.lol/x0wd7gp3beyr" class="title">Cyberpunk Edgerunners S01E09 FRENCH 1080p WEB x264-BULiTT-French…</a>S01E09
+            <span class="views">166 views</span>
+            <span class="cat"><a href="https://vido.lol/category/"></a></span>
+            </div> 
+            <div class="videobox"id="010"> 
+            <a href="https://vido.lol/8uab5zs0qyj6" class="video200 ">
+            <div class="work section" style="background: url('https://mjbxnkpi6214578.vido.lol/i/01/00051/8uab5zs0qyj6_t.jpg') no-repeat;">
+            <span>28:17</span>
+            </div>
+            </a>
+            <a href="https://vido.lol/8uab5zs0qyj6" class="title">Cyberpunk Edgerunners S01E10 FiNAL FRENCH 1080p WEB x264-BULiTT-…</a>S01E010
+            <span class="views">203 views</span>
+            <span class="cat"><a href="https://vido.lol/category/"></a></span>
+            </div>
+              
+    </div>  
+
+    </section> 
+
+    <main class="main" loading="lazy">
+        <section class="Home section" id="home">
+        
+        <div class="home__container container grid">
+        
+        <img src="https://picsum.photos/800" class="flip-box-front" alt="">
+        
+        <div class="home__data">                        
+        <h1 class="home__name">Hello</h1>
+        <span class="home__greeting"><h2>Série #</h2></span>
+        <h3 class="home__education">Cyberpunk EdgeRunners fr & vostfr</h3>
+        <a href="index.html" class="button button--ghost">Retour °
+        <img src="assets/img/Wave-PNG-HD0000.png" alt="" class="work2__img">
+        </a>
+        
+        <a href="#services" class="button">° Vost.fr
+        <img src="assets/img/Wave-PNG-HD000.png" alt="" class="work2__img">
+        </a>
+        <br>
+        <img src="assets/img/18+.png" class="home__img" id="home__handle" title="home" alt="">
+        </div>
+        
+        <div class="home__handle" id="home">
+        
+        <img src="https://picsum.photos/600" class="header__img" alt="">
+        </div>
+        
+        </div> 
+        
+        </section> 
+        
+        <!-- <div id="main"></div>     -->
+        <section class="about section" id="about">
+        
+        <h3>
+        <span class="first-word" id="about">
+        Playlist Fr</span>
+        </h3>
+        
+        <div  id="about" class="about__container container grid" loading="lazy">         
+        
+        <div class="videobox" id="01"> 
+        
+        <IFRAME class="random2__img" SRC="https://vido.lol/embed-9c10jjze06cr.html" 
+        FRAMEBORDER=0 MARGINWIDTH=0 MARGINHEIGHT=0 SCROLLING=NO WIDTH=640 HEIGHT=360 allowfullscreen></IFRAME>
+        <!-- <a href="https://vido.lol/v0kvrr7u7gyv" class="title" class="video200 "></a> -->
+        <span class="views"><h5>Cyberpunk Edgerunners ° FR</h5>S01E01</span>
+        <!-- <span class="cat"><a href="https://vido.lol/category/"></a></span> -->
+        </div>
+        
+        <div class="videobox" id="02"> 
+        <IFRAME class="random2__img" SRC="https://vido.lol/embed-zj1c0k9v6vcx.html" 
+        FRAMEBORDER=0 MARGINWIDTH=0 MARGINHEIGHT=0 SCROLLING=NO WIDTH=640 HEIGHT=360 allowfullscreen></IFRAME>
+        <span class="views"><h5>Cyberpunk Edgerunners ° FR</h5>S01E02</span>
+        <!-- <span class="cat"><a href="https://vido.lol/category/"></a></span> -->
+        </div>
+        
+        <div class="videobox"id="03"> 
+        <IFRAME class="random2__img" SRC="https://vido.lol/embed-d70yh9j6630f.html" FRAMEBORDER=0 MARGINWIDTH=0 MARGINHEIGHT=0 SCROLLING=NO WIDTH=640 HEIGHT=360 allowfullscreen></IFRAME>
+        <span class="views"><h5>Cyberpunk Edgerunners ° FR</h5>S01E03</span>
+        </div>
+        
+        <div class="videobox"id="04"> 
+            <IFRAME class="random2__img" SRC="https://vido.lol/embed-q9b8xix4v7xy.html" FRAMEBORDER=0 MARGINWIDTH=0 MARGINHEIGHT=0 SCROLLING=NO WIDTH=640 HEIGHT=360 allowfullscreen></IFRAME>
+            <span class="views"><h5>Cyberpunk Edgerunners ° FR</h5>S01E04</span>
+        </div>
+        
+        <div class="videobox"id="05"> 
+            <IFRAME class="random2__img" SRC="https://vido.lol/embed-idahgtfvkib2.html" FRAMEBORDER=0 MARGINWIDTH=0 MARGINHEIGHT=0 SCROLLING=NO WIDTH=640 HEIGHT=360 allowfullscreen></IFRAME>
+            <span class="views"><h5>Cyberpunk Edgerunners ° FR</h5>S01E05</span>
+        </div>
+        
+        <div class="videobox"id="06"> 
+            <IFRAME class="random2__img" SRC="https://vido.lol/embed-xn2vajjoutwe.html" FRAMEBORDER=0 MARGINWIDTH=0 MARGINHEIGHT=0 SCROLLING=NO WIDTH=640 HEIGHT=360 allowfullscreen></IFRAME>
+            <span class="views"><h5>Cyberpunk Edgerunners ° FR</h5>S01E06</span>
+        </div>
+        
+        <div class="videobox"id="07"> 
+            <IFRAME class="random2__img" SRC="https://vido.lol/embed-8ygbxsapdorf.html" FRAMEBORDER=0 MARGINWIDTH=0 MARGINHEIGHT=0 SCROLLING=NO WIDTH=640 HEIGHT=360 allowfullscreen></IFRAME>
+            <span class="views"><h5>Cyberpunk Edgerunners ° FR</h5>S01E07</span>
+        </div> 
+        
+        <div class="videobox"id="08"> 
+            <IFRAME class="random2__img" SRC="https://vido.lol/embed-4c3oxsobs1tp.html" FRAMEBORDER=0 MARGINWIDTH=0 MARGINHEIGHT=0 SCROLLING=NO WIDTH=640 HEIGHT=360 allowfullscreen></IFRAME><span class="views"><h5>Cyberpunk Edgerunners ° FR</h5>S01E08</span>
+        </div>
+        
+        <div class="videobox"id="09"> 
+            <IFRAME class="random2__img" SRC="https://vido.lol/embed-yzzrc9ua0qo8.html" FRAMEBORDER=0 MARGINWIDTH=0 MARGINHEIGHT=0 SCROLLING=NO WIDTH=640 HEIGHT=360 allowfullscreen></IFRAME><span class="views"><h5>Cyberpunk Edgerunners ° FR</h5>S01E09</span>
+        </div>
+        
+        <div class="videobox"id="010"> 
+            <IFRAME class="random2__img" SRC="https://vido.lol/embed-q4tu15r8msu6.html" FRAMEBORDER=0 MARGINWIDTH=0 MARGINHEIGHT=0 SCROLLING=NO WIDTH=640 HEIGHT=360 allowfullscreen></IFRAME>
+        <span class="views"><h5>Cyberpunk Edgerunners ° FR</h5>S01E10</span>
+        </div>
+        
+        </div>  
+        </section> 
+        
+        
+        <section class="services section" id="services">    
+        
+        <h3>
+        <span class="first-word" id="services">
+        Playlist Vost-fr </span>
+        </h3>
+        
+        <div id="work" class="work__container container grid" loading="lazy">
+        
+        <div class="videobox" id="01">
+        
+        <IFRAME class="random2__img" SRC="https://vido.lol/e/pgvrt63q6h27?mjbxnkpi6214578.vido.lol/i/01/00051/olwdpw5glv63" style="position:relative;top:0;left:0;width:100%;height:100%;"
+        FRAMEBORDER=0 MARGINWIDTH=0 MARGINHEIGHT=0 SCROLLING=NO WIDTH=auto HEIGHT=auto allowfullscreen 
+        >
+        </IFRAME><br> 
+        <span><h4>Cyberpunk Edgerunners ° VOSTFR S01E01 Vostfr</h4></span>
+        </div>
+        
+        <div class="videobox" id="02"> 
+            <IFRAME class="random2__img" SRC="https://vido.lol/embed-vfg907bzmdls.html" FRAMEBORDER=0 MARGINWIDTH=0 MARGINHEIGHT=0 SCROLLING=NO WIDTH=640 HEIGHT=360 allowfullscreen></IFRAME>
+            <br> 
+        <span><h4>Cyberpunk Edgerunners ° VOSTFR S01E02 Vostfr</h4></span>
+        
+        
+        </div>
+        
+        <div class="videobox"id="03"> 
+            <IFRAME class="random2__img" SRC="https://vido.lol/embed-5hfja5e38qig.html" FRAMEBORDER=0 MARGINWIDTH=0 MARGINHEIGHT=0 SCROLLING=NO WIDTH=640 HEIGHT=360 allowfullscreen></IFRAME><span><h4>Cyberpunk Edgerunners ° VOSTFR S01E03 Vostfr</h4></span>
+        </div>
+        
+        <div class="videobox"id="04"> 
+            <IFRAME class="random2__img" SRC="https://vido.lol/embed-h5gcu9s3065h.html" FRAMEBORDER=0 MARGINWIDTH=0 MARGINHEIGHT=0 SCROLLING=NO WIDTH=640 HEIGHT=360 allowfullscreen></IFRAME><span><h4>Cyberpunk Edgerunners ° VOSTFR S01E04 Vostfr</h4></span>
+        </div>
+        
+        <div class="videobox" id="05"> 
+            <IFRAME class="random2__img" SRC="https://vido.lol/embed-pgx2xfwyg90f.html" FRAMEBORDER=0 MARGINWIDTH=0 MARGINHEIGHT=0 SCROLLING=NO WIDTH=640 HEIGHT=360 allowfullscreen></IFRAME><span><h4>Cyberpunk Edgerunners ° VOSTFR S01E05 Vostfr</h4></span>
+        </div>
+        
+        <div class="videobox"id="06"> 
+            <IFRAME class="random2__img" SRC="https://vido.lol/embed-fhndxqiqjf5p.html" FRAMEBORDER=0 MARGINWIDTH=0 MARGINHEIGHT=0 SCROLLING=NO WIDTH=640 HEIGHT=360 allowfullscreen></IFRAME><span><h4>Cyberpunk Edgerunners ° VOSTFR S01E06 Vostfr</h4></span>
+        </div>
+        
+        <div class="videobox"id="07"> 
+            <IFRAME class="random2__img" SRC="https://vido.lol/embed-inuirhklgq81.html" FRAMEBORDER=0 MARGINWIDTH=0 MARGINHEIGHT=0 SCROLLING=NO WIDTH=640 HEIGHT=360 allowfullscreen></IFRAME><span><h4>Cyberpunk Edgerunners ° VOSTFR S01E07 Vostfr</h4></span>
+        </div>
+        
+        <div class="videobox"id="08"> 
+            <IFRAME class="random2__img" SRC="https://vido.lol/embed-ckjgsm2sph0s.html" FRAMEBORDER=0 MARGINWIDTH=0 MARGINHEIGHT=0 SCROLLING=NO WIDTH=640 HEIGHT=360 allowfullscreen></IFRAME><span><h4>Cyberpunk Edgerunners ° VOSTFR S01E08 Vostfr</h4></span>
+        </div>
+        
+        <div class="videobox"id="09"> 
+            <IFRAME class="random2__img" SRC="https://vido.lol/embed-jlh52uwud5zl.html" FRAMEBORDER=0 MARGINWIDTH=0 MARGINHEIGHT=0 SCROLLING=NO WIDTH=640 HEIGHT=360 allowfullscreen></IFRAME><span><h4>Cyberpunk Edgerunners ° VOSTFR S01E09 Vostfr</h4></span>
+        </div> 
+        
+        <div class="videobox"id="010"> 
+            <IFRAME class="random2__img" SRC="https://vido.lol/embed-rpsm7r64wuwn.html" FRAMEBORDER=0 MARGINWIDTH=0 MARGINHEIGHT=0 SCROLLING=NO WIDTH=640 HEIGHT=360 allowfullscreen></IFRAME><span><h4>Cyberpunk Edgerunners ° VOSTFR S01E10 Vostfr</h4></span>
+        </div>
+        
+        </div>  
+        
+        </section>
+        
+        
+        </main>
+        
 
 
-</main>
 
-<!--=============== FOOTER ===============-->
+
+        <!--=============== FOOTER ===============-->
 <footer class="footer" id="work" title="footer">
 
-<section class="footer" id="footer" title="footer">
-<div  class="footer__container container">
-
-<buttons class="footer__buttons">
-<a href="index222.html" class="button">
-° Vers Portfolio
-</a>
-
-<a href="index.html" class="button">
-vers
-<i class="bx bx-right-arrow-circle work2__icon"></i>
-CV</a>
-</buttons>
+<section  class="footer" id="footer">
+        <div  class="work__container container">
+        
+            <buttons class="footer__buttons">
+                <a href="index222.html" class="button">
+                   ° Vers Portfolio
+                </a>
+                
+                <a href="index.html" class="button">
+                vers
+                <i class="bx bx-right-arrow-circle work2__icon"></i>
+                 CV</a>
+            </buttons>
 </div>  
+    
+    <div class="footer__container container">
+        <h1 class="footer__title">Alex.</h1>
+        <ul class="footer__list">
+            <li>
+                <a href="#about" class="footer__link">A propos</a>
+            </li>
+            <li>
+                <a href="#work" class="footer__link">Projets</a>
+            </li>
+            <li>
+                <a href="#testimonial" class="footer__link">Avis clients</a>
+            </li>
+        </ul>
 
-<div class="footer__container container">
-<h1 class="footer__title">Alex.</h1>
-<ul class="footer__list">
-<li>
-<a href="#about" class="footer__link">A propos</a>
-</li>
-<li>
-<a href="#work" class="footer__link">Projets</a>
-</li>
-<li>
-<a href="#testimonial" class="footer__link">Avis clients</a>
-</li>
-</ul>
+        <ul class="footer__social">
+            <li>
+            <a href="https://www.facebook.com" rel="noopener" title="facebook" target="__blank" class="footer__social-link">
+                <i class="bx bxl-facebook"></i>
+            </a>
+            <a href="https://www.instagram.com" rel="noopener" title="instagram" target="__blank" class="footer__social-link">
+                <i class="bx bxl-instagram"></i>
+            </a>
+            <a href="https://www.twitter.com" rel="noopener" title="twitter" target="_blank" class="footer__social-link">
+                <i class="bx bxl-twitter"></i>
+            </a>
+        </ul>
+    </li>
 
-<ul class="footer__social">
-<li>
-<a href="https://www.facebook.com" rel="noopener" title="facebook" target="__blank" class="footer__social-link">
-<i class="bx bxl-facebook"></i>
-</a>
-<a href="https://www.instagram.com" rel="noopener" title="instagram" target="__blank" class="footer__social-link">
-<i class="bx bxl-instagram"></i>
-</a>
-<a href="https://www.twitter.com" rel="noopener" title="twitter" target="_blank" class="footer__social-link">
-<i class="bx bxl-twitter"></i>
-</a>
-</ul>
-</li>
-
-<span class="footer__copy">
-<h4>&#169; Alex. "All rights reserved"© <br>.<br><img src="assets/img/SmashinpunksHead.png" class="work__img" alt=""></br>
-Inspirations (& Thanks to)
-<br>Bedimcode & Online Tutorials, Fr.french's.YT&Cie-friends.
-</h4>
-</span>
-</div>
+        <span class="footer__copy">
+            <h4>&#169; Alex. "All rights reserved"© <br>.<br><img src="assets/img/SmashinpunksHead.png" class="work__img" alt=""></br>
+            Inspirations (& Thanks to)
+            <br>Bedimcode & Online Tutorials, Fr.french's.YT&Cie-friends.
+        </h4>
+        </span>
+    </div>
 </section>
 
 </footer>
 
-      
-              <!--=============== SCROLLREVEAL ===============-->
-              <script src="assets/js/scrollreveal.min.js"></script>
-      
-              <!--=============== SWIPER JS ===============-->
-              <script src="assets/js/swipper-bundle.min.js"></script>
-      
-              <!--=============== MIXITUP FILTER ===============-->
-      
-              <script src="assets/js/mixitup.min.js"></script>
-      
+        <!--=============== SCROLLREVEAL ===============-->
+        <script src="assets/js/scrollreveal.min.js"defer></script>
 
+        <!--=============== SWIPER JS ===============-->
+        <script src="assets/js/swipper-bundle.min.js"defer></script>
+
+        <!--=============== MIXITUP FILTER ===============-->
+
+        <script src="assets/js/mixitup.min.js"defer></script>
+
+        <!--=============== MAIN JS ===============-->
+        <script src="assets/js/main.js"defer></script>
+
+        
 
 <script type="text/javascript">
-              var slides = document.querySelectorAll('.slide');
-              var btns = document.querySelectorAll('.btn');
-              let currentSlide = 1;
-              
-              // Javascript for image slider manual navigation
-              var manualNav = function(manual){
-                slides.forEach((slide) => {
-                  slide.classList.remove('active');
-                  
-                  btns.forEach((btn) => {
-                    btn.classList.remove('active');
-                  });
-                });
-                
-                slides[manual].classList.add('active');
-                btns[manual].classList.add('active');
-              }
-
-  btns.forEach((btn, i) => {
-    btn.addEventListener("click", () => {
-      manualNav(i);
-      currentSlide = i;
-    });
-  });
-  
-  // Javascript for image slider autoplay navigation
-  var repeat = function(activeClass){
-    let active = document.getElementsByClassName('active');
-    let i = 1;
+    var slides = document.querySelectorAll('.slide');
+    var btns = document.querySelectorAll('.btn');
+    let currentSlide = 1;
     
-    var repeater = () => {
-      setTimeout(function(){
-        [...active].forEach((activeSlide) => {
-          activeSlide.classList.remove('active');
+    // Javascript for image slider manual navigation
+    var manualNav = function(manual){
+      slides.forEach((slide) => {
+        slide.classList.remove('active');
+        
+        btns.forEach((btn) => {
+          btn.classList.remove('active');
         });
-        
-        slides[i].classList.add('active');
-        btns[i].classList.add('active');
-        i++;
-        
-        if(slides.length == i){
-          i = 0;
-        }
-        if(i >= slides.length){
-          return;
-        }
-        repeater();
-      }, 10000);
+      });
+      
+      slides[manual].classList.add('active');
+      btns[manual].classList.add('active');
     }
-    repeater();
-  }
-  repeat();
+
+btns.forEach((btn, i) => {
+btn.addEventListener("click", () => {
+manualNav(i);
+currentSlide = i;
+});
+});
+
+// Javascript for image slider autoplay navigation
+var repeat = function(activeClass){
+let active = document.getElementsByClassName('active');
+let i = 1;
+
+var repeater = () => {
+setTimeout(function(){
+[...active].forEach((activeSlide) => {
+activeSlide.classList.remove('active');
+});
+
+slides[i].classList.add('active');
+btns[i].classList.add('active');
+i++;
+
+if(slides.length == i){
+i = 0;
+}
+if(i >= slides.length){
+return;
+}
+repeater();
+}, 10000);
+}
+repeater();
+}
+repeat();
 </script>
 
 <script type="text/javascript">
-  //jquery for toggle dropdown menus
-  $(document).ready(function(){
-    //toggle sub-menus
-    $(".sub-btn").click(function(){
-      $(this).next(".sub-menu").slideToggle();
-    });
+//jquery for toggle dropdown menus
+$(document).ready(function(){
+//toggle sub-menus
+$(".sub-btn").click(function(){
+$(this).next(".sub-menu").slideToggle();
+});
 
-    //toggle more-menus
-    $(".more-btn").click(function(){
-      $(this).next(".more-menu").slideToggle();
-    });
-  });
-  
-  //javascript for the responsive navigation menu
-  var menu = document.querySelector(".menu");
-  var menuBtn = document.querySelector(".menu-btn");
-  var closeBtn = document.querySelector(".close-btn");
-  
-  menuBtn.addEventListener("click", () => {
-    menu.classList.add("active");
-  });
-  
-  closeBtn.addEventListener("click", () => {
-    menu.classList.remove("active");
-  });
-  
-  //javascript for the navigation bar effects on scroll
-  window.addEventListener("scroll", function(){
-    var header = document.querySelector("header");
-    header.classList.toggle("sticky", window.scrollY > 0);
-  });
-  </script>
+//toggle more-menus
+$(".more-btn").click(function(){
+$(this).next(".more-menu").slideToggle();
+});
+});
 
-<script type="text/javascript">
-  //javascript for navigation bar effect on scroll
-  window.addEventListener("scroll", function(){
-    var header = document.querySelector("header");
-    header.classList.toggle('sticky', window.scrollY > 0);
-  });
-  
-  //javascript for responsive navigation sidebar menu
-  var menu = document.querySelector('.menu');
-  var menuBtn = document.querySelector('.menu-btn');
-  var closeBtn = document.querySelector('.close-btn');
-  
-  menuBtn.addEventListener("click", () => {
-    menu.classList.add('active');
-  });
-  
-  closeBtn.addEventListener("click", () => {
-    menu.classList.remove('active');
-  });
-  </script>
+//javascript for the responsive navigation menu
+var menu = document.querySelector(".menu");
+var menuBtn = document.querySelector(".menu-btn");
+var closeBtn = document.querySelector(".close-btn");
 
-<script type="text/javascript">
-  //Javacript for the scroll indicator bar
-  window.addEventListener("scroll", () => {
-    const indicatorBar = document.querySelector(".scroll-indicator-bar");
-    
-    const pageScroll = document.body.scrollTop || document.documentElement.scrollTop;
-    const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-    const scrollValue = (pageScroll / height) * 100;
-    
-    indicatorBar.style.width = scrollValue + "%";
-  });
-  
-  //Responsive navigation menu toggle
-  const menuBtn = document.querySelector(".nav-menu-btn");
-  const closeBtn = document.querySelector(".nav-close-btn");
-  const navigation = document.querySelector(".navigation");
-  
-  menuBtn.addEventListener("click", () => {
-    navigation.classList.add("active");
-  });
-  
-  closeBtn.addEventListener("click", () => {
-    navigation.classList.remove("active");
-  });
+menuBtn.addEventListener("click", () => {
+menu.classList.add("active");
+});
+
+closeBtn.addEventListener("click", () => {
+menu.classList.remove("active");
+});
+
+//javascript for the navigation bar effects on scroll
+window.addEventListener("scroll", function(){
+var header = document.querySelector("header");
+header.classList.toggle("sticky", window.scrollY > 0);
+});
 </script>
 
-<!-- Script JS -->
-<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-<script src="js/swiper-bundle.min.js"></script>
-<script src="js/swiper-bundle.min.js.map"></script>
-<script src="js/tailwind.config.js"></script>
-<script src="js/scrollreveal.min.js"></script>
-<script src="js/bootstrap.js"></script>
-<script src="js/uikit.js"></script>
-<script src="js/slideshow.js"></script>
-<script src="js/postcss.config.js"></script>
-<script src="js/package.json"></script>   
-<script src="js/package-lock.json"></script> 
-<script src="js/package.json"></script> 
-<script src="js/uikit-icons.min.js"></script>   
+<script type="text/javascript">
+//javascript for navigation bar effect on scroll
+window.addEventListener("scroll", function(){
+var header = document.querySelector("header");
+header.classList.toggle('sticky', window.scrollY > 0);
+});
 
+//javascript for responsive navigation sidebar menu
+var menu = document.querySelector('.menu');
+var menuBtn = document.querySelector('.menu-btn');
+var closeBtn = document.querySelector('.close-btn');
+
+menuBtn.addEventListener("click", () => {
+menu.classList.add('active');
+});
+
+closeBtn.addEventListener("click", () => {
+menu.classList.remove('active');
+});
+</script>
+
+<script type="text/javascript">
+//Javacript for the scroll indicator bar
+window.addEventListener("scroll", () => {
+const indicatorBar = document.querySelector(".scroll-indicator-bar");
+
+const pageScroll = document.body.scrollTop || document.documentElement.scrollTop;
+const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+const scrollValue = (pageScroll / height) * 100;
+
+indicatorBar.style.width = scrollValue + "%";
+});
+
+//Responsive navigation menu toggle
+const menuBtn = document.querySelector(".nav-menu-btn");
+const closeBtn = document.querySelector(".nav-close-btn");
+const navigation = document.querySelector(".navigation");
+
+menuBtn.addEventListener("click", () => {
+navigation.classList.add("active");
+});
+
+closeBtn.addEventListener("click", () => {
+navigation.classList.remove("active");
+});
+</script>
+
+<script src="assets/js/jquery-3.6.0.js" defer></script>
+<script src="assets/js/bootstrap.js" defer></script>
+<script src="assets/js/modernizr.js" defer></script>
+<script src="assets/js/main.js" defer></script> 
+<script src="assets/js/all.min.js" defer></script>
+<script src="assets/js/slideshow.js" defer></script>
+<script src="assets/js/uikit.js" defer></script>
+<script src="assets/js/uikit-icons.js" defer></script>
+</body><!-- Script JS -->
 <script src="js/script.js"></script>
 <script src="./js/script.js"></script>
 <script src="./js/script (2).js"></script>
@@ -532,24 +665,27 @@ Inspirations (& Thanks to)
 <script src="js/main (2).js"></script>
 <script src="js/main (3).js"></script>
 
-<script src="js/app.js"></script>
-<script src="js/aos.js"></script>
-<script src="js/form.js"></script>
+
+
+
+    
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script src="js/swiper-bundle.min.js"></script>
+<script src="js/swiper-bundle.min.js.map"></script>
+<script src="js/tailwind.config.js"></script>
+<script src="js/scrollreveal.min.js"></script>
+<script src="js/bootstrap.js"></script>
 <script src="js/jquery-3.6.0.js"></script>
+<script src="js/postcss.config.js"></script>
+<script src="js/package.json"></script>   
+<script src="js/package-lock.json"></script> 
+<script src="js/package.json"></script> 
+<script src="js/uikit-icons.min.js"></script>   
+<script src="js/app.js"></script>
+<script src="js/uikit.js"></script>
+
+
 <script src="js/typed.min.js"></script>
-
-<!--=============== SCROLLREVEAL ===============-->
-<script src="assets/js/scrollreveal.min.js"defer></script>
-
-<!--=============== SWIPER JS ===============-->
-<script src="assets/js/swipper-bundle.min.js"defer></script>
-
-<!--=============== MIXITUP FILTER ===============-->
-
-<script src="assets/js/mixitup.min.js"defer></script>
-
-<!--=============== MAIN JS ===============-->
-<script src="assets/js/main.js"defer></script>
-</body>
+<script src="aos/aos.js"></script>
+<script src="form/form.js"></script>
 </html>
-
