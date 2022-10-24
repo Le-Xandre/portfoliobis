@@ -87,20 +87,7 @@
   --bg-url: url("https://static.wixstatic.com/media/4cbe8d_f1ed2800a49649848102c68fc5a66e53~mv2.gif");
   --font-family: 'Comic Neue', cursive;
 }
-:root.load7 {
-  --bg-color: rgb(9, 13, 10);
-  --bg-url: url("../img/gif/giphyAIR.gif");
-  --text-color: #e4f37ffa;
-  --font-family: 'Roboto Flex', sans-serif;
-  --font-size : var(--font-family);
-}
-:root.load8 {
-  --bg-color: rgba(2, 20, 16, 0);
-  --bg-url: url("../img/gif/0b3d0c7d4cba82343643a5f4c48e2fba.gif");
-  --text-color: #d6f78d;
-  --font-family: 'Roboto Flex', sans-serif;
-  --font-size : var(--font-family);
-}
+
 /* Responsive typography */
 @media screen and (min-width: 60.5rem) {
   :root {
@@ -492,7 +479,7 @@ text-shadow: 5px 5px 5px var(--first-color-alt);
   overflow: hidden;  
 
 }
-.home__button{
+.home__buttons{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1114,7 +1101,7 @@ color: var(--body-color);
     row-gap: 1.55rem;
     padding-top: 1.25rem;
   }
-  .home__button{
+  .home__buttons{
     flex-direction: column;
     display: flex;
   }
