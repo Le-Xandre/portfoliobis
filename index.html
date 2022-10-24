@@ -10,7 +10,7 @@
   
         <!--=============== FAVICON ===============-->
         <link rel="shortcut icon" href="assets/img/Synthwave-PNG-HD-Background.png" type="image/x-icon">
-
+<link rel="stylesheet" href="css/bootstrap.css">
         <!--=============== ICONS ===============-->
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
         <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
@@ -22,27 +22,27 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
         <link rel="stylesheet" href="assets/css/swiper-bundle.min (2).css">
         <link rel="stylesheet" href="css/swiper-bundle.min (2).css">
+        <link rel="stylesheet" href="css/swiper-bundle.min.css">
+        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
 
+  
         <!--=============== CSS ===============-->
-<link rel="stylesheet" href="css/bootstrap.css">
-
-      
-
-      
-<link rel="stylesheet" href="css/style.css">
-<link rel="stylesheet" href="css/App.css">
-  
-      <link rel="stylesheet" href="css/aos.css">        
-      <link rel="stylesheet" href="css/demo.css">
-      <link rel="stylesheet" href="css/index.css">
-  
-  <link rel="stylesheet" href="css/styles (2).css">
-  <link rel="stylesheet" href="css/styles.css">
-<link rel="stylesheet" href="css/style (2).css">
-         
-
-<link rel="stylesheet" href="css/main.css">
-<!--  -->
+        
+       
+        <link rel="stylesheet" href="css/App.css">
+          
+              <link rel="stylesheet" href="css/aos.css">        
+              <link rel="stylesheet" href="css/demo.css">
+              <link rel="stylesheet" href="css/index.css"> 
+          
+          <link rel="stylesheet" href="css/style.css">
+          <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/style (2).css">
+        <link rel="stylesheet" href="css/styles.css">         
+        <link rel="stylesheet" href="css/styles (2).css">
+        
+   <!--<link rel="stylesheet" href="assets/css/style (4).css">
+        -->
 </head>
 
 <body id="top">
@@ -51,23 +51,15 @@
   <header class="intro shadow">  
 
     <nav class="nav-bar" id="main-nav grid items-center justify-center">  
-      
+     
       <a title="nav__logo" href="#" class="nav__logo">
                 <i class='bx bxs-up-arrow-circle'></i>
-            </a>
+            <span aria-hidden="true" class="text-lg lg:text-xl">
+        <strong> <span class="text-rose-600">LÊttre
+      <br>°</span></strong></span></a>
 
-      <a href="top" class="flex" aria-label="Page d'accueil du Portfolio">
-
-      <span aria-hidden="true" class="text-lg lg:text-xl">
-        Asociation<strong> LÊttre<span class="text-rose-600">.</span></strong></span>
-      </a>
-    
-      <button aria-label="toggle button" aria-expanded="false" class="cursor-pointer w-7 md:hidden" id="menu-btn">
-        <img src="images/menu.svg" alt="">
-      </button>
-      <img src="images/logo.png" class="hidden md:w-7 md:inline md:mr-4" alt=""><br><i class="bx bx-moon change-theme" id="theme-button" title="#home__img"></i>
-      
-    <select class="nav__item-title" id="theme-select">
+      <br>
+      <select class="nav__item-title" id="theme-select">
         <option class="button--ghost" value="light">Light</option>
         <option class="work__img" value="dark">Dark</option>
         <option class="button--ghost" value="blue">Blue</option>
@@ -86,9 +78,18 @@
         <option class="button--ghost" value="load9">Load9</option>
         <option class="button--ghost" value="load10">Load10</option>
     </select>
-    
-      <div class="nav__menu main-nav w-full absolute top-full left-0 -translate-y-full -z-10 text-gray-800 border-b border-gray-200 flex flex-col items-center md:static md:z-5 md:w-min md:transform-none md:border-none md:flex-row">
-      <ul class="nav__list" id="toggled-menu">
+      
+      <i class="bx bx-moon change-theme" id="theme-button" title="#home__img"></i>
+      <img src="images/logo.png" class="hidden md:w-7 md:inline md:mr-4" alt="">
+      
+
+
+        
+
+      <!-- <div class="nav__menu main-nav w-full absolute top-full left-0 -translate-y-full -z-10 text-gray-800 border-b border-gray-200 flex flex-col items-center md:static md:z-5 md:w-min md:transform-none md:border-none md:flex-row">
+    </div>  -->
+
+   <ul class="nav__list" id="toggled-menu">
 
             <li class="nav_item">
                 <a href="#home" class="nav__link active-link" title="home">
@@ -99,7 +100,7 @@
             <li class="nav_item">
                 <a href="#about" class="nav__link" title="about">
                     <i class="bx bx-user"></i>
-                </a><h3 class="nav__item-title">A propos</h3>
+                </a><h3 class="nav__item-title">A-propos</h3>
             </li>
 
             <li class="nav__item">
@@ -131,21 +132,18 @@
             </li>      
 
             <li class="nav_item">
-                <a href="#footer" class="nav__link active-link" title="footer">
+                <a href="#footer" class="nav__link" title="footer">
                     <!-- futur toggle-en-burger-tout -->
                 <i class='bx bx-dialpad-alt'></i>
                 </a><h3 class="nav__item-title">Pad</h3>
             </li>
-
-      </ul>      
-           
-    </div>  
-               
-           
-<h4>Flip-Book & Slider's</h4>   
-         <ul class="nav-links" id="toggled-menu" class="w-full absolute top-full left-0 -translate-y-full -z-10 text-gray-800 border-b border-gray-200 flex flex-col items-center md:static md:z-10 md:w-min md:transform-none md:border-none md:flex-row">
+            </ul><button aria-label="toggle button" aria-expanded="false" class="cursor-pointer w-7 md:hidden" id="menu-btn">
+        <img src="images/menu.svg" alt="">
+      </button>
+ <h4>Flip-Book</h4>
+      <ul class="nav-links" id="toggled-menu" class="w-full absolute top-full left-0 -translate-y-full -z-10 text-gray-800 border-b border-gray-200 flex flex-col items-center md:static md:z-10 md:w-min md:transform-none md:border-none md:flex-row">
   
-<li class="py-6 md:py-1 md:mr-4">
+    <li class="py-4 md:py-0 md:mr-6">
       <a href="#cv" class="text-sm uppercase font-semibold w-full hover:text-rose-600">CV</a>
     </li>
     <li class="py-4 md:py-0 md:mr-6">
@@ -155,7 +153,10 @@
     </li>      <li class="py-4 md:py-0 md:mr-6">
       <a href="#contact" class="text-sm uppercase font-semibold w-full hover:text-rose-600">Contact</a>
     </li>  
-      </ul> 
+    </ul>                   
+           
+   
+    
 
       </nav> 
 
@@ -920,27 +921,15 @@
         Reset 01-Page
         <img src="assets/img/Wave-PNG-HD000.png" alt="" class="work2__img">
         </a><br>Envoi vers Essai
-        <a href="index222.html" class="work__button">
+        <a href="index (2).html" class="work__button">
             <br>
-        <h6 class="button button--ghost">Portfolio C°77</h6>
-        <img src="assets/img/-C77-Capture d’écran (9).png" alt="" class="work__img">
+        <h6 class="button button--ghost">Portfolio Essai</h6>
+        <img src="assets/img/prova d'arte/Capture d’écran (Prova d'Arte).png" alt="" class="work__img">
         </a> 
-                            
-<h3 class="work__title">Test Liste Bis</h3>
-
-<img width="20%" class="about2__img" src="assets/img/flechesvertical.gif" alt=""> 
-   <a href="index.html" class="work__button">
-<img src="assets/img/Wave-PNG-HD0000.png" alt="" class="work2__img">
-
-<i class="bx bx-right-arrow-circle work__icon">°</i>Reset 01-Page
-<img src="assets/img/Wave-PNG-HD000.png" alt="" class="work2__img">
-</a>
-  <br>
-  <a href="liste.html" class="work__button">
-Envoi vers
-   <h6 class="button button--ghost">Liste fr</h6><br>
-    <img src="assets/img/-C77-Capture d’écran (3).png" alt="" class="work__img">
-</a>   
+        <br>Vidéo-Clip +                            
+<button class="button" aria-label="toggle button" aria-expanded="false" class="cursor-pointer w-7 md:hidden" id="menu-btn">
+<a href="https://youtu.be/b90aoZNz9ZI" class="work__button">Playlist Music</a>
+</button>
         </div>
                     
 <div class="work__card mix design">
@@ -955,33 +944,40 @@ Envoi vers
                                                                 <i class="bx bx-right-arrow-circle work__icon">°</i>Reset 01-Page
                                                                 <img src="assets/img/Wave-PNG-HD000.png" alt="" class="work2__img">
                                                             </a>
-<br><br>
-  Overlay sur Vidéo-Clip ci-dessous  +                            
-<button class="button"> <br>
+                                
 <br>
-<a href="https://youtube.com/playlist?list=PLDisKgcnAC4SqX0mi1J5_gd7-hrIS5yJp" class="work__button">Playlist Music</a>
-</button>                                
-<br><br>
-<iframe alt="Ending Theme" class="work__img" src="https://www.youtube.com/embed/BnnbP7pCIvQ" title="Cyberpunk: Edgerunners — Ending Theme | Let You Down by Dawid Podsiadło | Netflix" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen;>
-</iframe>
-<br>
+<iframe width="505" height="284" class="button--ghost" src="https://www.youtube.com/embed/b90aoZNz9ZI" title="Vidéo de présentation de l'exposition ' Prova d'arte ' (2021-2022)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 </div>
 
 
-<div class="work__card card--with-media mix web"></div>
+<div class="work__card card--with-media mix web">
+                    
+<h3 class="work__title">Test Liste (videos fr-vostfr etc))</h3>
+
+<img width="20%" class="about2__img" src="assets/img/flechesvertical.gif" alt=""> 
+   <a href="index.html" class="work__button">
+<img src="assets/img/Wave-PNG-HD0000.png" alt="" class="work2__img">
+
+<i class="bx bx-right-arrow-circle work__icon">°</i>Reset 01-Page
+<img src="assets/img/Wave-PNG-HD000.png" alt="" class="work2__img">
+</a>
+<br>Envoi vers  <a href="liste.html" class="work__button">
+
+   <h6 class="button button--ghost">Liste fr</h6><img src="assets/img/-C77-Capture d’écran (3).png" alt="" class="work__img">
+</a>   
 
 
-
-</div>
-
-</section>
  
 
 
 
 
-   
+</div>   
 
+</div>
+
+</section>
 <!--=============== TESTIMONIALS ===============-->
 <section class="testimonial section" id="testimonial" >
     <span class="section__subtitle">Avis Clients</span>
@@ -1094,7 +1090,7 @@ Envoi vers
             <textarea name="" id="" cols="30" rows="10" placeholder="..." class="contact__form-input"></textarea>
         </div>                    
 
-            <button class="button">Envoyez</button>
+            <button title="button" class="button" id="button"alt="button">Envoyez</button>
     </form>                        
         </div>
     </div>
@@ -1303,14 +1299,23 @@ Envoi vers
 <script src="js/tailwind.config.js"></script>
 <script src="js/scrollreveal.min.js"></script>
 <script src="js/bootstrap.js"></script>
-<script src="js/uikit.js"></script>
-<script src="js/slideshow.js"></script>
+<script src="js/app.js"></script>
+<script src="aos/aos.js"></script>
+<script src="form/form.js"></script><script src="js/uikit.js"></script>
+<script src="js/jquery-3.6.0.js"></script>
 <script src="js/postcss.config.js"></script>
 <script src="js/package.json"></script>   
 <script src="js/package-lock.json"></script> 
 <script src="js/package.json"></script> 
 <script src="js/uikit-icons.min.js"></script>   
-
+<script src="assets/js/jquery-3.6.0.js" defer></script>
+<script src="assets/js/bootstrap.js" defer></script>
+<script src="assets/js/modernizr.js" defer></script>
+<script src="assets/js/main.js" defer></script> 
+<script src="assets/js/all.min.js" defer></script>
+<script src="assets/js/slideshow.js" defer></script><script src="js/slideshow.js"></script>
+<script src="assets/js/uikit.js" defer></script>
+<script src="assets/js/uikit-icons.js" defer></script>
 <script src="js/script.js"></script>
 <script src="./js/script.js"></script>
 <script src="./js/script (2).js"></script>
@@ -1320,11 +1325,10 @@ Envoi vers
 <script src="js/main (2).js"></script>
 <script src="js/main (3).js"></script>
 
-<script src="js/app.js"></script>
-<script src="js/aos.js"></script>
-<script src="js/form.js"></script>
-<script src="js/jquery-3.6.0.js"></script>
+
+
 <script src="js/typed.min.js"></script>
 
 </body>
+
 </html>
