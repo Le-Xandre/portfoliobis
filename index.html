@@ -10,7 +10,7 @@
   
         <!--=============== FAVICON ===============-->
         <link rel="shortcut icon" href="assets/img/Synthwave-PNG-HD-Background.png" type="image/x-icon">
-<link rel="stylesheet" href="css/bootstrap.css">
+
         <!--=============== ICONS ===============-->
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
         <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
@@ -28,19 +28,21 @@
   
         <!--=============== CSS ===============-->
         
-       
+       <link rel="stylesheet" href="css/bootstrap.css">
         <link rel="stylesheet" href="css/App.css">
           
               <link rel="stylesheet" href="css/aos.css">        
               <link rel="stylesheet" href="css/demo.css">
               <link rel="stylesheet" href="css/index.css"> 
           
+                
+          
           <link rel="stylesheet" href="css/style.css">
-          <link rel="stylesheet" href="css/main.css">
-        <link rel="stylesheet" href="css/style (2).css">
-        <link rel="stylesheet" href="css/styles.css">         
-        <link rel="stylesheet" href="css/styles (2).css">
-        
+          <link rel="stylesheet" href="css/style (2).css"><link rel="stylesheet" href="css/styles.css">       
+<link rel="stylesheet" href="css/styles (2).css">
+                  <link rel="stylesheet" href="assets/css/main.css">
+                  <link rel="stylesheet" href="css/main.css">
+                    
    <!--<link rel="stylesheet" href="assets/css/style (4).css">
         -->
 </head>
@@ -49,17 +51,25 @@
 
 
   <header class="intro shadow">  
-
+<div class="nav__menu main-nav w-full absolute top-full left-0 -translate-y-full -z-10 text-gray-800 border-b border-gray-200 flex flex-col items-center md:static md:z-5 md:w-min md:transform-none md:border-none md:flex-row">
+    
+</div>
     <nav class="nav-bar" id="main-nav grid items-center justify-center">  
      
       <a title="nav__logo" href="#" class="nav__logo">
-                <i class='bx bxs-up-arrow-circle'></i>
+                
             <span aria-hidden="true" class="text-lg lg:text-xl">
-        <strong> <span class="text-rose-600">LÊttre
-      <br>°</span></strong></span></a>
+        <strong>L<span class="text-rose-600">Êttre
+      <br></span></strong><i class='bx bxs-up-arrow-circle'></i>°</span></a>
 
-      <br>
-      <select class="nav__item-title" id="theme-select">
+      <i class="bx bx-moon change-theme" id="theme-button" title="#home__img">°<br></i>
+ 
+      <img src="images/logo.png" class="hidden md:w-7 md:inline md:mr-4" alt="">
+      
+
+
+   <select class="nav__item-title" id="theme-select">
+
         <option class="button--ghost" value="light">Light</option>
         <option class="work__img" value="dark">Dark</option>
         <option class="button--ghost" value="blue">Blue</option>
@@ -75,19 +85,12 @@
         <option class="button--ghost" value="load6">Load6</option>
         <option class="work__img" value="load7">Load7</option>
         <option class="button--ghost" value="load8">Load8</option>
-        <option class="button--ghost" value="load9">Load9</option>
+        <option class="work__img" value="load9">Load9</option>
         <option class="button--ghost" value="load10">Load10</option>
-    </select>
-      
-      <i class="bx bx-moon change-theme" id="theme-button" title="#home__img"></i>
-      <img src="images/logo.png" class="hidden md:w-7 md:inline md:mr-4" alt="">
-      
 
+    </select>     
 
-        
-
-      <!-- <div class="nav__menu main-nav w-full absolute top-full left-0 -translate-y-full -z-10 text-gray-800 border-b border-gray-200 flex flex-col items-center md:static md:z-5 md:w-min md:transform-none md:border-none md:flex-row">
-    </div>  -->
+      <!-- -->
 
    <ul class="nav__list" id="toggled-menu">
 
@@ -140,7 +143,7 @@
             </ul><button aria-label="toggle button" aria-expanded="false" class="cursor-pointer w-7 md:hidden" id="menu-btn">
         <img src="images/menu.svg" alt="">
       </button>
- <h4>Flip-Book</h4>
+ <h4>Flip/Book</h4>
       <ul class="nav-links" id="toggled-menu" class="w-full absolute top-full left-0 -translate-y-full -z-10 text-gray-800 border-b border-gray-200 flex flex-col items-center md:static md:z-10 md:w-min md:transform-none md:border-none md:flex-row">
   
     <li class="py-4 md:py-0 md:mr-6">
@@ -246,9 +249,9 @@
         </div>
 
         <div class="home__handle">     
-                     
+              <img src="img/LEttreTransparentPetit.png" class="home__img hidden md:w-1 md:inline md:mr-1" alt="">       
             <div class="box">
-      <img src="img/LEttreTransparentPetit.png" class="home__img hidden md:w-1 md:inline md:mr-1" alt="">          
+                
                 <span>
                     
 
@@ -409,7 +412,7 @@
     
     <div class="about__container container grid">
         
-        <img src="assets/img/perfil4.png" alt="" class="about__img">
+        <img src="assets/img/LEttreTransparentGrand.png" alt="" class="about__img">
 
         <div class="about__data">
             <div class="about__info">
@@ -453,13 +456,13 @@
 
 <!--=============== SKILLS ===============-->
 <section class="skills section" id="skills">
-    <span class="section__subtitle">Mes Compétences</span>
-    <h2 class="section__title">Mes expériences</h2>
+    <span class="section__subtitle">Nos Compétences</span>
+    <h2 class="section__title">Nos expériences</h2>
 
     <div class="skills__container container grid">
 
         <div class="skills__content">
-        <h3 class="skills__title">Développeur Frontend</h3>
+        <h3 class="skills__title">Evenementiel</h3>
 
         <div class="skills__box">
             <div class="skills__group">
@@ -521,7 +524,7 @@
 
         <!--=============== "" ===============-->
         <div class="skills__content">
-            <h3 class="skills__title">Développeur Backend</h3>
+            <h3 class="skills__title">Patrimoine</h3>
 
             <div class="skills__box">
                 <div class="skills__group">
@@ -585,13 +588,13 @@
 
 <!--=============== SERVICES ===============-->
 <section class="services section" id="services">
-    <span class="section__subtitle">Mes services</span>
-    <h2 class="section__title">Ce que je propose</h2>
+    <span class="section__subtitle">Nos services</span>
+    <h2 class="section__title">Ce qu'on' propose</h2>
 
     <div class="services__container container grid">
 
         <div class="services__card">
-            <h3 class="services__title">Production <br> Designer</h3>
+            <h3 class="services__title">Production</h3>
             <span class="services__button">
                 Voir + 
                 <i class='bx bx-right-arrow-circle services__icon'></i>
@@ -601,7 +604,7 @@
                 <div class="services__modal-content">
                     <i class='bx bx-x services__modal-close' ></i>
                     
-                    <h3 class="services__modal-title">Product Designer</h3>
+                    <h3 class="services__modal-title">Design</h3>
                     <p class="services__modal-description">
                         lorem ipsum 
                     </p>
@@ -641,7 +644,7 @@
         </div>
 
         <div class="services__card">
-            <h3 class="services__title">Ui/UX <br> Designer</h3>
+            <h3 class="services__title">Ui/UX</h3>
             <span class="services__button">
                 Voir + 
                 <i class='bx bx-right-arrow-circle services__icon'></i>
@@ -688,7 +691,7 @@
         </div>
 
         <div class="services__card">
-            <h3 class="services__title">Visuel <br> Designer</h3>
+            <h3 class="services__title">Visuel</h3>
             
             <span class="services__button">
                 Voir + 
@@ -872,11 +875,11 @@
         </a>
 
     <p> ☻° About Us •☼
-                        <img src="assets/img/01.jpg" alt="" class="work__img"/>
-                        <a href="index.html" class="work__button">
-                            <img src="assets/img/Wave-PNG-HD0000.png" alt="" class="work2__img">
-                            <i class="bx bx-right-arrow-circle work__icon">°<br></i>
-                            Reset 01-Page
+                        <img src="assets/img/LEttreTransparentGrand.png" alt="" class="work__img"/>
+                        <br><img src="assets/img/Wave-PNG-HD0000.png" alt="" class="work2__img"><a href="index.html" class="work__button">
+                            
+                            <i class="bx bx-right-arrow-circle work__icon">°Reset 01-Page</i>
+                            
                             
                             </a>
                
@@ -900,11 +903,11 @@
                     Retour Haut
                     <img src="assets/img/Wave-PNG-HD000.png" alt="" class="work2__img">
                     </a> ☻ ° About U •☼<p>
-                <img src="assets/img/Carrellee02.png" alt="" class="work__img">
-                <a href="index.html" class="work__button">
-                    <i class="bx bx-right-arrow-circle work__icon">°<br></i>
-                    Reset 01-Page
-                    <img src="assets/img/Wave-PNG-HD000.png" alt="" class="work2__img">
+                <img src="assets/img/LEttreTransparentGrand.png" alt="" class="work__img">
+                <br><img src="assets/img/Wave-PNG-HD000.png" alt="" class="work2__img"><a href="index.html" class="work__button">
+                    <i class="bx bx-right-arrow-circle work__icon">°Reset 01-Page</i>
+                    
+                    
                     </a>
                 
             </p>
@@ -915,21 +918,28 @@
         <div class="work__card mix design">
         <h3 class="work__title">Test Portfolio Bis</h3>
         <img width="20%" class="about2__img" src="assets/img/flechesvertical.gif" alt=""> 
-        <a href="index.html" class="work__button">
-        <img src="assets/img/Wave-PNG-HD0000.png" alt="" class="work2__img">
-        <i class="bx bx-right-arrow-circle work__icon">°<br></i>
-        Reset 01-Page
-        <img src="assets/img/Wave-PNG-HD000.png" alt="" class="work2__img">
-        </a><br>Envoi vers Essai
+        <br><br>Envoi vers Essai<br><br>
         <a href="index (2).html" class="work__button">
-            <br>
+            
         <h6 class="button button--ghost">Portfolio Essai</h6>
         <img src="assets/img/prova d'arte/Capture d’écran (Prova d'Arte).png" alt="" class="work__img">
         </a> 
-        <br>Vidéo-Clip +                            
-<button class="button" aria-label="toggle button" aria-expanded="false" class="cursor-pointer w-7 md:hidden" id="menu-btn">
-<a href="https://youtu.be/b90aoZNz9ZI" class="work__button">Playlist Music</a>
-</button>
+        
+                                                    <br>Envoi vers  <a href="liste.html" class="work__button">
+                                                    
+                                                       <h6 class="button button--ghost">Liste fr</h6><img src="assets/img/-C77-Capture d’écran (3).png" alt="" class="work__img">
+                                                    </a>   
+                                                    
+                                                       <a href="index.html" class="work__button">
+                                                     <img src="assets/img/Wave-PNG-HD0000.png" alt="" class="work2__img">
+                                                    
+                                                    <i class="bx bx-right-arrow-circle work__icon">°Reset 01-Page</i>
+                                                    
+                                                    <img src="assets/img/Wave-PNG-HD000.png" alt="" class="work2__img">
+                                                    </a>
+                                                     
+                                                    
+
         </div>
                     
 <div class="work__card mix design">
@@ -938,42 +948,21 @@
                     <img width="20%" class="about2__img" src="assets/img/flechesvertical.gif" alt=""> 
                       
                         
-<a href="index.html" class="work__button">
-                                                                <img src="assets/img/Wave-PNG-HD0000.png" alt="" class="work2__img">
-                                                                
-                                                                <i class="bx bx-right-arrow-circle work__icon">°</i>Reset 01-Page
-                                                                <img src="assets/img/Wave-PNG-HD000.png" alt="" class="work2__img">
-                                                            </a>
-                                
-<br>
+                <br>               
+<br>Vidéo-Clip +                            
+<button class="button" aria-label="toggle button" aria-expanded="false" class="cursor-pointer w-7 md:hidden" id="menu-btn">
+<a href="https://youtu.be/b90aoZNz9ZI" class="work__button">Playlist Music</a>
+</button><br><br>
 <iframe width="505" height="284" class="button--ghost" src="https://www.youtube.com/embed/b90aoZNz9ZI" title="Vidéo de présentation de l'exposition ' Prova d'arte ' (2021-2022)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
+<br><a href="index.html" class="work__button">
+    <img src="assets/img/Wave-PNG-HD0000.png" alt="" class="work2__img">
+   
+   <i class="bx bx-right-arrow-circle work__icon">°Reset 01-Page</i>
+   
+   <img src="assets/img/Wave-PNG-HD000.png" alt="" class="work2__img">
+   </a>                                                     
 </div>
 
-
-<div class="work__card card--with-media mix web">
-                    
-<h3 class="work__title">Test Liste (videos fr-vostfr etc))</h3>
-
-<img width="20%" class="about2__img" src="assets/img/flechesvertical.gif" alt=""> 
-   <a href="index.html" class="work__button">
-<img src="assets/img/Wave-PNG-HD0000.png" alt="" class="work2__img">
-
-<i class="bx bx-right-arrow-circle work__icon">°</i>Reset 01-Page
-<img src="assets/img/Wave-PNG-HD000.png" alt="" class="work2__img">
-</a>
-<br>Envoi vers  <a href="liste.html" class="work__button">
-
-   <h6 class="button button--ghost">Liste fr</h6><img src="assets/img/-C77-Capture d’écran (3).png" alt="" class="work__img">
-</a>   
-
-
- 
-
-
-
-
-</div>   
 
 </div>
 
