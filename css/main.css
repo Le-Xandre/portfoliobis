@@ -8,7 +8,154 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 /*======= CSS variables =======*/
 
+ /*========== color theme ==========*/
+  
+:root, :root.light {
+  --bg-color: rgba(133, 117, 101, 0.951);
+  --text-color:var(--title-color);
+  }
+  :root.dark {
+    --bg-color: #131212f9;
+    --text-color:var(--first-color-alt);
+  }
+  :root.pink {
+    --bg-color: #790629f7;
+    --text-color: #ffb7d6;
+  }
+  :root.blue {
+    --bg-color:#054259fe;
+    --text-color: #a8e9fe;
+    --font-family: 'Poppins';
+  }
+  :root.space {
+    --bg-color: rgb(28, 31, 39);
+    --text-color: #e9cf7a;
+    --bg-url: url("../images/1.jpg");
+    --background:cover;
+    --font-family: 'Press Start 2P', cursive;
+  }
+  :root.space2.light {
+  --bg-color: rgba(43, 47, 51, 0.977);
+  --text-color: #28c80ffd;
+  --bg-url: url("https://www.spacejam.com/1996/img/bg_stars2.gif");
+  --background:cover;
+  --font-family: 'Josefin Sans', sans-serif;
+}
+  :root.nyan {
+    --bg-color: #0f085895;
+    --text-color: rgb(239, 231, 231);
+    --bg-url: url("https://static.wixstatic.com/media/4cbe8d_f1ed2800a49649848102c68fc5a66e53~mv2.gif");
+    --font-family: 'Comic Neue', cursive;
+  } 
+  :root.test {
+    --bg-color: #780531d2;
+    --text-color: var(--text-color-light);
+    --bg-url: url("../img/brightHope.gif");
+    --font-family: 'poppins', cursive;
+  }
+  :root.load {
+    --bg-color: #e4ec9dfa;
+    --text-color:var(--text-color-light);
+    --bg-url: url("../img/gif/loading\ \(2\).gif");
+    --font-family: 'Bungee Spice';
+    --font-size : var(--smaller-font-size);
+  }
+  :root.load2 {
+    --bg-color: var(--body-gradient);
+    --bg-url: url("../img/gif/0\ C-cPP9D2MIyeexAT.gif");
+    --text-color: #bceee6f8;
+    --font-family: 'Dancing Script', cursive;
+    --font-size : var(--small-font-size);
+  }
+  :root.load3 {
+    --bg-color: rgb(71, 47, 59);
+    --text-color: #e9e4bcf6;
+    --bg-url: url("../img/gif/Icon-Legacy.gif") ;
+    --font-family: 'Dancing Script';
+    --font-size : var(--small-font-size);
+  }
+  :root.load4 {
+    --bg-color: rgba(26, 2, 134, 0.88);
+    --bg-url: url("../img/gif/1\ XmdQULLtkx_Ji4oyn1oG-w.gif");
+    --background-color: var(--shape-gradient);
+    --text-color: hsla(var(--second-hue), 8%, 75%);
+    --font-family: 'Bungee Spice', sans-serif;
+    --font-size : var(--tiny-font-size);
+  }
+  :root.load5 {
+    --bg-color: rgba(6, 101, 14, 0.846);
+    --bg-url: url("../img/gif/ob_183b56_burnout-1.gif");
+    --background-color: var(--shape-gradient);
+    --text-color: hsla(var(--second-hue), 8%, 75%);
+    --font-family: 'Roboto Flex', sans-serif;
+    --font-size : var(--tiny-font-size);
+  }
+  :root.load6 {
+    --bg-color: rgba(43, 47, 51, 0.977);
+    --bg-url: url("../img/gif/ouahou3Dgif.gif");
+    --text-color: #e57f26f1;
+    --font-family: 'Josefin Sans', cursive, sans-serif;
+    --font-size : var(--font-medium);
+  }
+  :root.load7 {
+    --bg-color: rgb(9, 13, 10);
+    --bg-url: url("../img/gif/9pIL.gif");
+    --text-color: #f3d67ffa;
+    --font-family: 'Roboto Flex', sans-serif;
+    --font-size : var(--font-family);
+  }
+  :root.load8 {
+    --bg-color: rgb(2, 20, 16);
+    --bg-url: url("../img/gif/Funny-Gifs-random-28630438-270-270.gif");
+    --text-color: #3ff198;
+    --font-family: 'Roboto Flex', sans-serif;
+    --font-size : var(--font-family);
+  }
+  :root.load9 {
+    --bg-color: rgba(6, 101, 14, 0.846);
+    --bg-url: url("../img/gif/AS0006199_16.gif");
+    --background-color: var(--shape-gradient);
+    --text-color: hsla(var(--second-hue), 8%, 75%);
+    --font-family: 'Roboto Flex', sans-serif;
+    --font-size : var(--tiny-font-size);
+  }
+  :root.load10 {
+    --bg-color: rgba(41, 6, 101, 0.846);
+    --bg-url: url("../img/gif/0b3d0c7d4cba82343643a5f4c48e2fba.gif");
+    --background-color: var(--shape-gradient);
+    --text-color: hsla(var(--second-hue), 8%, 75%);
+    --font-family: 'Roboto Flex', sans-serif;
+    --font-size : var(--tiny-font-size);
+  }
+/*=============== THEME ===============*/
+.change-theme{
+font-size: 1rem;
+cursor: pointer;
+transition: .3s;
+}
+.change-theme:hover{
+color: var(--first-color-alt);
+}
 
+/*=============== THEME 2 ===============*/
+.change-theme2{
+font-size: 1rem;
+cursor: auto;
+transition: .3s;
+}
+.change-theme2:hover{
+color: var(--first-color);
+}
+
+/*========== Variables Dark theme ==========*/
+
+body.light-theme{
+--title-color: hsla(var(--second-hue), 35%, 35%);
+--text-color: hsla(var(--second-hue), 55%, 25%);
+--text-color-alt: hsla(var(--second-hue), 25%, 55%);
+--body-color: hsla(var(--second-hue), 30%, 90%);
+--container-color: rgba(250, 236, 195, 0.033);
+}
 
 /*
 ! tailwindcss v3.1.8 | MIT License | https://tailwindcss.com
@@ -725,151 +872,4 @@ video {
     font-size: 1rem;
     line-height: 1.5rem;
   }
-} /*========== color theme ==========*/
-  
-:root, :root.light {
-  --bg-color: rgba(133, 117, 101, 0.951);
-  --text-color:var(--title-color);
-  }
-  :root.dark {
-    --bg-color: #131212f9;
-    --text-color:var(--first-color-alt);
-  }
-  :root.pink {
-    --bg-color: #790629f7;
-    --text-color: #ffb7d6;
-  }
-  :root.blue {
-    --bg-color:#054259fe;
-    --text-color: #a8e9fe;
-    --font-family: 'Poppins';
-  }
-  :root.space {
-    --bg-color: rgb(28, 31, 39);
-    --text-color: #e9cf7a;
-    --bg-url: url("../images/1.jpg");
-    --background:cover;
-    --font-family: 'Press Start 2P', cursive;
-  }
-  :root.space2.light {
-  --bg-color: rgba(43, 47, 51, 0.977);
-  --text-color: #28c80ffd;
-  --bg-url: url("https://www.spacejam.com/1996/img/bg_stars2.gif");
-  --background:cover;
-  --font-family: 'Josefin Sans', sans-serif;
-}
-  :root.nyan {
-    --bg-color: #0f085895;
-    --text-color: rgb(239, 231, 231);
-    --bg-url: url("https://static.wixstatic.com/media/4cbe8d_f1ed2800a49649848102c68fc5a66e53~mv2.gif");
-    --font-family: 'Comic Neue', cursive;
-  } 
-  :root.test {
-    --bg-color: #780531d2;
-    --text-color: var(--text-color-light);
-    --bg-url: url("../img/brightHope.gif");
-    --font-family: 'poppins', cursive;
-  }
-  :root.load {
-    --bg-color: #e4ec9dfa;
-    --text-color:var(--text-color-light);
-    --bg-url: url("../img/gif/loading\ \(2\).gif");
-    --font-family: 'Bungee Spice';
-    --font-size : var(--smaller-font-size);
-  }
-  :root.load2 {
-    --bg-color: var(--body-gradient);
-    --bg-url: url("../img/gif/0\ C-cPP9D2MIyeexAT.gif");
-    --text-color: #bceee6f8;
-    --font-family: 'Dancing Script', cursive;
-    --font-size : var(--small-font-size);
-  }
-  :root.load3 {
-    --bg-color: rgb(71, 47, 59);
-    --text-color: #e9e4bcf6;
-    --bg-url: url("../img/gif/Icon-Legacy.gif") ;
-    --font-family: 'Dancing Script';
-    --font-size : var(--small-font-size);
-  }
-  :root.load4 {
-    --bg-color: rgba(26, 2, 134, 0.88);
-    --bg-url: url("../img/gif/1\ XmdQULLtkx_Ji4oyn1oG-w.gif");
-    --background-color: var(--shape-gradient);
-    --text-color: hsla(var(--second-hue), 8%, 75%);
-    --font-family: 'Bungee Spice', sans-serif;
-    --font-size : var(--tiny-font-size);
-  }
-  :root.load5 {
-    --bg-color: rgba(6, 101, 14, 0.846);
-    --bg-url: url("../img/gif/ob_183b56_burnout-1.gif");
-    --background-color: var(--shape-gradient);
-    --text-color: hsla(var(--second-hue), 8%, 75%);
-    --font-family: 'Roboto Flex', sans-serif;
-    --font-size : var(--tiny-font-size);
-  }
-  :root.load6 {
-    --bg-color: rgba(43, 47, 51, 0.977);
-    --bg-url: url("../img/gif/ouahou3Dgif.gif");
-    --text-color: #e57f26f1;
-    --font-family: 'Josefin Sans', cursive, sans-serif;
-    --font-size : var(--font-medium);
-  }
-  :root.load7 {
-    --bg-color: rgb(9, 13, 10);
-    --bg-url: url("../img/gif/9pIL.gif");
-    --text-color: #f3d67ffa;
-    --font-family: 'Roboto Flex', sans-serif;
-    --font-size : var(--font-family);
-  }
-  :root.load8 {
-    --bg-color: rgb(2, 20, 16);
-    --bg-url: url("../img/gif/Funny-Gifs-random-28630438-270-270.gif");
-    --text-color: #3ff198;
-    --font-family: 'Roboto Flex', sans-serif;
-    --font-size : var(--font-family);
-  }
-  :root.load9 {
-    --bg-color: rgba(6, 101, 14, 0.846);
-    --bg-url: url("../img/gif/AS0006199_16.gif");
-    --background-color: var(--shape-gradient);
-    --text-color: hsla(var(--second-hue), 8%, 75%);
-    --font-family: 'Roboto Flex', sans-serif;
-    --font-size : var(--tiny-font-size);
-  }
-  :root.load10 {
-    --bg-color: rgba(41, 6, 101, 0.846);
-    --bg-url: url("../img/gif/0b3d0c7d4cba82343643a5f4c48e2fba.gif");
-    --background-color: var(--shape-gradient);
-    --text-color: hsla(var(--second-hue), 8%, 75%);
-    --font-family: 'Roboto Flex', sans-serif;
-    --font-size : var(--tiny-font-size);
-  }
-/*=============== THEME ===============*/
-.change-theme{
-font-size: 1rem;
-cursor: pointer;
-transition: .3s;
-}
-.change-theme:hover{
-color: var(--first-color-alt);
-}
-
-/*=============== THEME 2 ===============*/
-.change-theme2{
-font-size: 1rem;
-cursor: auto;
-transition: .3s;
-}
-.change-theme2:hover{
-color: var(--first-color);
-}
-
-/*========== Variables Dark theme ==========*/
-
-body.light-theme{
---title-color: hsla(var(--second-hue), 35%, 35%);
---text-color: hsla(var(--second-hue), 55%, 25%);
---text-color-alt: hsla(var(--second-hue), 25%, 55%);
---body-color: hsla(var(--second-hue), 30%, 90%);
---container-color: rgba(250, 236, 195, 0.033);
 }
