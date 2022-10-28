@@ -3,7 +3,7 @@
 body {
 background-color: #272727;
 text-align: center;
-text-emphasis: none;
+
 text-overflow: clip;
 }
 
@@ -42,8 +42,7 @@ text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #03a9f4, 0 0 40px #03a9f4, 0
 }
 h3 {
     text-decoration-style: double;
-    text-decoration: line-through;
-    text-emphasis-color: initial;
+
     text-align: center;
     color: #fff;
     font-family: 'Sylfaen';
