@@ -71,7 +71,6 @@
 }
 
 html {
-  -webkit-scroll-behavior: smooth;
   scroll-behavior: smooth;
 }
 
