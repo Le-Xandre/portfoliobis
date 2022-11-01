@@ -10,17 +10,7 @@
   <!--=============== FAVICON ===============-->
   <link rel="shortcut icon" href="assets/img/Synthwave-PNG-HD-Background.png" type="image/x-icon">
 
-        <!--=============== ICONS ===============-->
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"/>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-        <link rel='stylesheet' href='https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css'>
-        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
-        <link rel='stylesheet' href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css'>
-        
-        <!--=============== SWIPER CSS ===============-->
-        <link rel="stylesheet" href="assets/css/swiper-bundle.min (2).css">
-        <link rel="stylesheet" href="css/swiper-bundle.min (2).css">
-        
+
     
         <link rel="stylesheet" href="css/main.css"><link rel="stylesheet" href="css/main (2).css">
         <link rel="stylesheet" href="css/style (6).css"><link rel="stylesheet" href="css/style.css"> 
@@ -41,23 +31,18 @@
 <body id="top">
   <header class="intro shadow"></header>
      
-   
+
 <section class="banner">
 
- 
-    
-
-  
   <img src="assets/images/pumpkin01.png" class="pumpkin01">
   <img src="assets/images/pumpkin02.png" class="pumpkin02">
   <img src="assets/images/spiderWeb.png" class="spiderWeb">
 
-    
-<h1 class="page-title">Des Bonbons ou la mort</h1>  
+ 
   
-    <div class="musicOn"></div>
+    <div class="musicOn"><audio id="audio" style="display:none;" src="assets/Audio/creepy(2).mp3" controls autoplay loop onloadeddata="setHalfVolume()"></audio></div>
         <div class="overlay-text visible">
-          Mix-Or-Match
+          <h2>Mix-Or-Match</h2>
           <img alt="#" title="#" class="work__img" src="assets/Images/cardback.jpeg">
         <h2>Cliquez pour démarrer</h2>
       </div>     
@@ -69,15 +54,15 @@
           <h3>VICTOIRE</h3>
           <h3><span class="overlay-text-small">Cliquez pour relancer 1 partie</span></h3>
         </div>             
-        <div class="game-info-container">
-                
     
-        
-</div>                      
-<div class="game-container">    
-
-          
-                      
+<div class="game-info-container">                     
+<div class="game-info">
+      <img alt="#" title="#" class="work__img" src="assets/Images/cardback.jpeg">
+         <h2>Temps</h2><span id="time-remaining">100</span>
+                <h2>Essais</h2><span id="flips">0</span>
+        </div>
+        <div class="game-container">    
+         
           <div class="card">
             <div class="card-back card-face">
               <img alt="#" title="#" class="cob-web cob-web-top-left" src="assets/Images/Cobweb.png">
@@ -350,228 +335,27 @@
               <img alt="#" class="cob-web cob-web-bottom-right" src="assets/Images/CobwebGrey.png">
               <img alt="#" class="card-value" src="assets/Images/Dracula.png">
             </div>
-          </div>       
-    </div>        <h2><img src="assets/images/spider (2).png" class="spider">
-    <span style="--i:1;">H</span>
-    <span style="--i:2;">a</span>
-    <span style="--i:3;">l</span>
-    <span style="--i:4;">l</span>
-    <span style="--i:5;">o</span>
-    <span style="--i:6;">w</span>
-    <span style="--i:7;">e</span>
-    <span style="--i:8;">e</span>
-    <span style="--i:9;">n</span></h2><div class="game-info">
+          </div>     
+    </div>
+   
+     <h2>
+    <span class="page-title" style="--i:1;">H</span>
+    <span class="page-title" style="--i:2;">a</span>
+    <span class="page-title" style="--i:3;">l</span>
+    <span class="page-title" style="--i:4;">l</span>
+    <span class="page-title" style="--i:5;">o</span>
+    <span class="page-title" style="--i:6;">w</span>
+    <span class="page-title" style="--i:7;">e</span>
+    <span class="page-title" style="--i:8;">e</span>
+    <span class="page-title" style="--i:9;">n</span></h2> 
 
-         Temps<h2><span id="time-remaining">100</span></h2>
-          
-                Essais<h2><span id="flips">0</span></h2>
-        
-      
-<audio id="audio" style="display:none;" src="assets/Audio/creepy(2).mp3" controls autoplay loop onloadeddata="setHalfVolume()">
 </div>
-<br> 
-       
-    
-       
 
- <button class="footer__buttons">
-    <a href="index (2).html" class="button">
-       Vers <i class="bx bx-right-arrow-circle work2__icon">°</i>Portfolio Prova d'Arte</a>
-    <img alt="#" title="#" class="work__img" src="assets/Images/cardback.jpeg">
-    <a href="index.html" class="button">
-    Vers<i class="bx bx-right-arrow-circle work2__icon">°</i>Menu principal</a>
-</button>
-</section></section>
+<img src="assets/images/spider (2).png" class="spider">
 
+</section>
 
-
-
-
-
-<footer class="footer" id="footer">
-
-</footer>
 </body>
 
-<script src="assets/js/all.min.js" defer></script><script src="js/all.min.js"></script>
-<!--=============== SCROLLREVEAL ===============-->
-<script src="assets/js/scrollreveal.min.js"></script>
-
-<!--=============== SWIPER JS ===============-->
-<script src="assets/js/swipper-bundle.min.js"></script>
-
-<!--=============== MIXITUP FILTER ===============-->
-
-<script src="assets/js/mixitup.min.js"></script>
-
-<!-- Script JS -->
-<script src="assets/js/jquery-3.6.0.js" defer></script>
-<script src="js/package.json"></script>   
-<script src="js/package-lock.json"></script> 
-<script src="js/package.json"></script> 
-<script src="js/jquery-3.6.0.js"></script>
-<script src="assets/js/uikit.js" defer></script>
-<script src="assets/js/uikit-icons.js" defer></script>
-<script src="js/uikit-icons.min.js"></script><script src="js/uikit.js"></script>   
-<script src="js/bootstrap.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-<script src="js/swiper-bundle.min.js"></script>
-<script src="js/swiper-bundle.min.js.map"></script>
-<script src="js/tailwind.config.js"></script>
-<script src="js/scrollreveal.min.js"></script>
-<script src="assets/js/bootstrap.js" defer></script>
-<script src="assets/js/modernizr.js" defer></script>
-<script src="assets/js/main.js" defer></script> 
-
-<script src="assets/js/slideshow.js" defer></script>
-<script src="js/app.js"></script>
-<script src="aos/aos.js"></script>
-<script src="form/form.js"></script>
-<script src="js/postcss.config.js"></script>
-<script src="js/main.js"></script>
-<script src="js/main.js"></script>
-<script src="js/main (2).js"></script>
-<script src="js/main (3).js"></script>
-<script src="js/script.js"></script>
-<script src="js/script.js"></script>
-<script src="js/script (2).js"></script>
-<script src="js/typed.min.js"></script>
-
-
-<script type="text/javascript">
-var slides = document.querySelectorAll('.slide');
-var btns = document.querySelectorAll('.btn');
-let currentSlide = 1;
-
-// Javascript for image slider manual navigation
-var manualNav = function(manual){
-  slides.forEach((slide) => {
-    slide.classList.remove('active');
-    
-    btns.forEach((btn) => {
-      btn.classList.remove('active');
-    });
-  });
-  
-  slides[manual].classList.add('active');
-  btns[manual].classList.add('active');
-}
-
-btns.forEach((btn, i) => {
-btn.addEventListener("click", () => {
-manualNav(i);
-currentSlide = i;
-});
-});
-
-// Javascript for image slider autoplay navigation
-var repeat = function(activeClass){
-let active = document.getElementsByClassName('active');
-let i = 1;
-
-var repeater = () => {
-setTimeout(function(){
-[...active].forEach((activeSlide) => {
-activeSlide.classList.remove('active');
-});
-
-slides[i].classList.add('active');
-btns[i].classList.add('active');
-i++;
-
-if(slides.length == i){
-i = 0;
-}
-if(i >= slides.length){
-return;
-}
-repeater();
-}, 10000);
-}
-repeater();
-}
-repeat();
-</script>
-
-<script type="text/javascript">
-//jquery for toggle dropdown menus
-$(document).ready(function(){
-//toggle sub-menus
-$(".sub-btn").click(function(){
-$(this).next(".sub-menu").slideToggle();
-});
-
-//toggle more-menus
-$(".more-btn").click(function(){
-$(this).next(".more-menu").slideToggle();
-});
-});
-
-//javascript for the responsive navigation menu
-var menu = document.querySelector(".menu");
-var menuBtn = document.querySelector(".menu-btn");
-var closeBtn = document.querySelector(".close-btn");
-
-menuBtn.addEventListener("click", () => {
-menu.classList.add("active");
-});
-
-closeBtn.addEventListener("click", () => {
-menu.classList.remove("active");
-});
-
-//javascript for the navigation bar effects on scroll
-window.addEventListener("scroll", function(){
-var header = document.querySelector("header");
-header.classList.toggle("sticky", window.scrollY > 0);
-});
-</script>
-
-<script type="text/javascript">
-//javascript for navigation bar effect on scroll
-window.addEventListener("scroll", function(){
-var header = document.querySelector("header");
-header.classList.toggle('sticky', window.scrollY > 0);
-});
-
-//javascript for responsive navigation sidebar menu
-var menu = document.querySelector('.menu');
-var menuBtn = document.querySelector('.menu-btn');
-var closeBtn = document.querySelector('.close-btn');
-
-menuBtn.addEventListener("click", () => {
-menu.classList.add('active');
-});
-
-closeBtn.addEventListener("click", () => {
-menu.classList.remove('active');
-});
-</script>
-
-<script type="text/javascript">
-//Javacript for the scroll indicator bar
-window.addEventListener("scroll", () => {
-const indicatorBar = document.querySelector(".scroll-indicator-bar");
-
-const pageScroll = document.body.scrollTop || document.documentElement.scrollTop;
-const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-const scrollValue = (pageScroll / height) * 100;
-
-indicatorBar.style.width = scrollValue + "%";
-});
-
-//Responsive navigation menu toggle
-const menuBtn = document.querySelector(".nav-menu-btn");
-const closeBtn = document.querySelector(".nav-close-btn");
-const navigation = document.querySelector(".navigation");
-
-menuBtn.addEventListener("click", () => {
-navigation.classList.add("active");
-});
-
-closeBtn.addEventListener("click", () => {
-navigation.classList.remove("active");
-});
-</script>
 
 </html>
