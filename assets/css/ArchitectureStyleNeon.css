@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100;8..144,200;8..144,400;8..144,600&family=Spectral:ital,wght@0,200;0,400;0,600;1,400&display=swap');
+
+
 *  body    h1  h2 h3 {margin:0;padding: 0;text-decoration: none;text-overflow: clip;}
 
 body {
@@ -39,7 +42,7 @@ text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #03a9f4, 0 0 40px #03a9f4, 0
 }
 h3 {
     text-decoration-style: double;
-    text-decoration: line-through;
+    text-decoration: none;
     text-emphasis-color: initial;
     text-align: center;
     color: #fff;
@@ -383,7 +386,7 @@ button {
     font-family: var(--font-family-06);
     text-align: center;
     -webkit-text-stroke: .25px rgba(0, 0, 0, 0.534);
-    text-decoration: dashed;
+    text-decoration: none;
 }
  
 /* Solid Button */
