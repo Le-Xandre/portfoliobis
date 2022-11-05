@@ -750,7 +750,7 @@ body.light-theme{
 .landing-page{
   font-family: 'Lobster Two', cursive;
   min-height: 100vh;
-  background: url('https://github.com/Akshay-ch-dj/Javascript-experience-projects/blob/master/js_image_slider_tES6/background_is.jpg?raw=true');
+  background: url('assets/images/loading-circle.svg');
   /* Give image fluidity */
   background-position: center;
   background-repeat: no-repeat;
@@ -1751,15 +1751,15 @@ cursor: pointer;
 
 .footer-top .section-title {
   margin-block: 20px 90px;
-  line-height: normal;
+  line-height: normal;align-self: center;
+  align-items: center;
+  justify-content: center;
 }
 
 .footer .btn-icon {
   width: 60px;
   height: 60px;
-  margin-inline: auto;  align-self: center;
-  align-items: center;
-  justify-content: center;
+  margin-inline: auto;  
   --hover-bg-color: var(--radical-red);
 }
 
@@ -1796,23 +1796,15 @@ cursor: pointer;
 .social-list {
   display: flex;
   justify-content: center;
-  gap: 10px;  align-self: center;
-  align-items: center;
-  justify-content: center;
+  gap: 10px;  
 }
 
-.social-link { font-weight: var(--fw-500);  align-self: center;
-  align-items: center;
-  justify-content: center; }
+.social-link { font-weight: var(--fw-500);  }
 
-.social-link:is(:hover, :focus-visible) { text-decoration: underline;   align-self: center;
-  align-items: center;
-  justify-content: center;}
+.social-link:is(:hover, :focus-visible) { text-decoration: underline;   }
 
 .copyright,
-.social-list { padding-block-end: 15px;   align-self: center;
-  align-items: center;
-  justify-content: center;}
+.social-list { padding-block-end: 15px; }
 
 .copyright {  align-self: center;
   align-items: center;
@@ -4489,7 +4481,7 @@ width: 360px;
 height: auto;
   z-index: 0;
   text-align: center;
-  display: inline-flex;
+  display: inline-block;
   justify-content: center;
   align-items: center;
 }
