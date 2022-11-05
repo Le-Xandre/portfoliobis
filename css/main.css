@@ -76,16 +76,17 @@
   }
   :root.load4 {
     --bg-color: rgba(26, 2, 134, 0.88);
-    --bg-url: url("../img/gif/1\ XmdQULLtkx_Ji4oyn1oG-w.gif");
-    --background-color: var(--shape-gradient);
+        --background-color: var(--shape-gradient);
+   --bg-url: url("../img/gif/1\ XmdQULLtkx_Ji4oyn1oG-w.gif");
+
     --text-color: hsla(var(--second-hue), 8%, 75%);
     --font-family: 'Bungee Spice', sans-serif;
     --font-size : var(--tiny-font-size);
   }
   :root.load5 {
-    --bg-color: rgba(6, 101, 14, 0.846);
+    --bg-color: rgba(6, 101, 14, 0.846); --background-color: var(--shape-gradient);
     --bg-url: url("../img/gif/ob_183b56_burnout-1.gif");
-    --background-color: var(--shape-gradient);
+   
     --text-color: hsla(var(--second-hue), 8%, 75%);
     --font-family: 'Roboto Flex', sans-serif;
     --font-size : var(--tiny-font-size);
@@ -112,17 +113,17 @@
     --font-size : var(--font-family);
   }
   :root.load9 {
-    --bg-color: rgba(6, 101, 14, 0.846);
+    --bg-color: rgba(6, 101, 14, 0.846);  --background-color: var(--shape-gradient);
     --bg-url: url("../img/gif/AS0006199_16.gif");
-    --background-color: var(--shape-gradient);
+  
     --text-color: hsla(var(--second-hue), 8%, 75%);
     --font-family: 'Roboto Flex', sans-serif;
     --font-size : var(--tiny-font-size);
   }
   :root.load10 {
-    --bg-color: rgba(41, 6, 101, 0.846);
+    --bg-color: rgba(41, 6, 101, 0.846);  --background-color: var(--shape-gradient);
     --bg-url: url("../img/gif/0b3d0c7d4cba82343643a5f4c48e2fba.gif");
-    --background-color: var(--shape-gradient);
+  
     --text-color: hsla(var(--second-hue), 8%, 75%);
     --font-family: 'Roboto Flex', sans-serif;
     --font-size : var(--tiny-font-size);
