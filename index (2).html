@@ -9,7 +9,19 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <!--=============== FAVICON ===============-->
   <link rel="shortcut icon" href="assets/img/Synthwave-PNG-HD-Background.png" type="image/x-icon">
-
+  <style type="text/css">
+    body{
+        background:rgba(32, 177, 255, 0.999);
+    }
+    #magazine{
+        width:auto;
+        height:auto;
+    }
+    #magazine .turn-page{
+        background-color:rgba(253, 234, 213, 0.985);
+        background-size:100% 100%;
+    }
+    </style>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"/>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
         
@@ -34,7 +46,7 @@
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="css/styles.css"> 
  <link rel="stylesheet" href="css/stylesB.css"> 
-
+ <link rel="stylesheet" href="css/lightbox.css"> 
 
    <!--   
        <link rel="stylesheet" href="css/demo.css"> 
@@ -59,7 +71,7 @@
 
 </head>
 
-<body id="top">
+<body id="top" class="dark_theme">
 
 
   <header class="intro shadow">  
@@ -149,24 +161,23 @@
 
    </ul>  
    <select class="nav__item-title" id="theme-select">
-
-               <option class="button--ghost" value="light">Light</option>
-               <option class="work__img" value="dark">Dark</option>
-               <option class="button--ghost" value="blue">Blue</option>
-               <option class="work__img" value="pink">Pink</option>
-               <option class="button--ghost" value="space">Space</option>
-               <option class="work__img" value="nyan">Nyan</option>
-               <option class="button--ghost" value="test">Bright</option>
-               <option class="work__img" value="load">Loading</option>
-               <option class="button--ghost" value="load2">Load2</option>
-               <option class="work__img" value="load3">Load3</option>
-               <option class="button--ghost" value="load4">Load4</option>
-               <option class="work__img" value="load5">Load5</option>
-               <option class="button--ghost" value="load6">Load6</option>
-               <option class="work__img" value="load7">Load7</option>
-               <option class="button--ghost" value="load8">Load8</option>
-               <option class="work__img" value="load9">Load9</option>
-               <option class="button--ghost" value="load10">Load10</option>
+    <option class="button--ghost" value="light">Light</option>
+    <option class="work__img" value="dark">Dark</option>
+    <option class="button--ghost" value="blue">Blue</option>
+    <option class="work__img" value="pink">Pink</option>
+    <option class="button--ghost" value="space">Space</option>
+    <option class="work__img" value="nyan">Nyan</option>
+    <option class="button--ghost" value="test">Brighthope</option>
+    <option class="work__img" value="load">Loading</option>
+    <option class="button--ghost" value="load2">Peel</option>
+    <option class="work__img" value="load3">Home Sweet home</option>
+    <option class="button--ghost" value="load4">Mario</option>
+    <option class="work__img" value="load5">Cartoon</option>
+    <option class="button--ghost" value="load6">NebulArt</option>
+    <option class="work__img" value="load7">R</option>
+    <option class="button--ghost" value="load8">Feng Shui</option>
+    <option class="work__img" value="load9">Catsecret</option>
+    <option class="button--ghost" value="load10">Winter is coming</option>
        
        </select>
   <button id="#" aria-label="toggle button" aria-expanded="false" class="cursor-pointer w-7 md:hidden" id="menu-btn">
@@ -178,7 +189,9 @@
 
   </header>
   
-  <section class="main-container">
+
+<main class="main-container">  
+    
   <section class="home">
     <div class="media-icons">
       <a href="#" title="facebook"><i class="uil uil-facebook-f"></i></a>
@@ -308,11 +321,61 @@
                 <a href="#about" class="button">A propos de nous</a>
             </div>
         </section>  
-        <section class="about section">
-    <h2>Seasons of</h2>  
-     <div class="card-banner">
-        <span class="gr-shadoow"> The Year</span>
+  <!--=============== ABOUT ===============-->
+<section class="about section" id="about">
+    <span class="section__subtitle">Présentation</span>
+    <h2 class="section__title">A propos de nous</h2>
     
+    <div class="about__container container grid">
+        
+        <img alt="#" src="assets/img/LEttreTransparentGrand.png" alt="" class="about__img">
+
+        <div class="about__data">
+            <div class="about__info">
+
+                <div class="about__box">
+                    <i class='bx bxs-award'></i>
+                    <h3 class="about__title">Expérience</h3>
+                    <span class="about__subtitle">2+ ans</span>
+                </div>
+
+                <div class="about__box">
+                    <i class='bx bx-briefcase-alt'></i>
+                    <h3 class="about__title">Projets</h3>
+                    <span class="about__subtitle">+</span>
+                </div>
+
+                <div class="about__box">
+                    <i class='bx bx-support'></i>
+                    <h3 class="about__title">Support</h3>
+                    <span class="about__subtitle">24 / 7</span>
+                </div>
+
+            </div>
+
+            <p class="about__description">
+                ... 
+                <br>                    <br> Pour une meilleure accessibilité, 
+                <br>des interfaces aux usagers & à la Culture.
+            </p>
+
+            <a href="#contact" class="button">Nous contacter</a>      
+        </div>    
+
+        
+    </div>
+        <section class="about section">
+     
+
+                <div class="main-container2">
+
+
+        <br/><h2>Seasons of</h2> 
+        <span class="gr-shadoow"> The Year</span>
+            
+        
+        
+        
         <div class="about2__img">
     
                 <div class="card">
@@ -464,61 +527,105 @@
     
             </div>
         </div>
-            <div class="book-section">
-
+        
        
-            
-            </div>
-        <div class="img-slider">
-    <div id="carousel-container">
 
-    <div class="slide active">
-      <img alt="#" src="images/1.jpg" alt="">
-      <div class="info">
-        <h2>Slide 01</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      </div>
-    </div>
-    <div class="slide">
-      <img alt="#" src="images/2.jpg" alt="">
-      <div class="info">
-        <h2>Slide 02</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      </div>
-    </div>
-    <div class="slide">
-      <img alt="#" src="images/3.jpg" alt="">
-      <div class="info">
-        <h2>Slide 03</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      </div>
-    </div>
-    <div class="slide">
-      <img alt="#" src="images/4.jpg" alt="">
-      <div class="info">
-        <h2>Slide 04</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      </div>
-    </div>
-    <div class="slide">
-      <img alt="#" src="images/5.jpg" alt="">
-      <div class="info">
-        <h2>Slide 05</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      </div>
-    </div>
-    <div class="navigation">            
-      <div class="btn active"></div>
-      <div class="btn"></div>
-      <div class="btn"></div>
-      <div class="btn"></div>
-      <div class="btn"></div>
-    </div>
-  </div>
+  </section>
+</section><!-- =============== WORK =============== -->
+<section class="work section" id="work">
+<span class="section__subtitle">Blog / Portfolio</span>
+    <h2 class="section__title">Nos récents travaux</h2>
 
-        </div><br/><div class="book2-section">
+    <div class="work__filters">
+        <span class="work__item active-work" data-filter='all'>Hall</span>
+        <span class="work__item" data-filter='.web'>Evenement & agenda Web</span>
+        <span class="work__item" data-filter='.mobile'>Accessibilité Mobile</span>
+        <span class="work__item" data-filter='.design'>Design & Blog</span>
+    </div>
+    
+<div class="work__container container grid">
+
+        <div class="work__card mix all">
+            <h3 class="work__title">Hall Design</h3>
+            <img  class="nav__menu-img" src="assets/img/triangle3D.gif" class="about__img" alt="">
+    
+        
+    <i class='bx bxs-face work__icon'>•</i><i class="bx bx-right-arrow-circle work__icon"></i>❤️-► 
+    </div>
+
+    <div class="work__card mix web">
+    <h2 class="work__title">Test Catalogue 2022 en Portfolio en ligne</h2>
+
+     <div class="container--container2" id="magazine">	
+    <div class="flipbook" id="magazine">
+       
+    <div class="magazine" id="flipbook">  
+        <div class="hard"><h4><br>Cliquez ou Maintenez<br>Hors de l'image<br> Pour Slider sur les pages<br> <br> <img class="nav__menu-img" src="assets/images/1.jpg" data-lightbox="example-set" data-title="Click anywhere outside the image or the X to the right to close." alt=""/><br>Pour tournez<br> <strong>❤️►<i class="fas fa-hand"></i></strong></h4><br><br></div>
+        <div> Page 1 <a title="Prova" class="example-image-link" href="assets/images/Dracula2.png" data-lightbox="example-set" data-title="Click the right half of the image to move forward."><img class="example-image" src="http://lokeshdhakar.com/projects/lightbox2/images/thumb-3.jpg" alt=""/></a><p>Lorsque la main apparaît, </p></div>
+    
+    <div> Page 2 <a title="Prova" class="example-image-link" href="http://lokeshdhakar.com/projects/lightbox2/images/image-4.jpg" data-lightbox="example-set" data-title="Or press the right arrow on your keyboard."><img class="example-image" src="http://lokeshdhakar.com/projects/lightbox2/images/thumb-4.jpg" alt="" /></a><p>cliquez pour agrandir certaines Images. </p></div>
+    
+    <div> Page 3 <a title="Prova" class="example-image-link" href="http://lokeshdhakar.com/projects/lightbox2/images/image-5.jpg" data-lightbox="example-set" data-title="The next image in the set is preloaded as you're viewing."><img class="example-image" src="http://lokeshdhakar.com/projects/lightbox2/images/thumb-5.jpg" alt="" /></a></div>
+    
+    <div> Page 4  <a title="Prova" class="example-image-link" href="http://lokeshdhakar.com/projects/lightbox2/images/image-6.jpg" data-lightbox="example-set" data-title="Click anywhere outside the image or the X to the right to close."><img class="example-image" src="http://lokeshdhakar.com/projects/lightbox2/images/thumb-6.jpg" alt="" /></a><p>Cela ouvrira alors 1 slider
+    </p></div>            <div class="example-image-link" data-lightbox="example-set">    
+        
+        <a title="Prova" href="assets/assets/gif/0 C-cPP9D2MIyeexAT.gif" class="example-image-link" data-lightbox="example-set" data-title="Click the right half of the image to move forward."><img  class="nav__menu-img" src="assets/assets/gif/0 C-cPP9D2MIyeexAT.gif" data-lightbox="example-set" alt=""/>
+        </a>
+        <p>contenant celles disponibles. 
+        </p>
+    </div>
+    
+    <div class="example-image-link" class="hard" data-lightbox="example-set">
+        <a title="Prova" href="assets/assets/gif/9pIL.gif" class="example-image-link" data-lightbox="example-set" data-title="Click the right half of the image to move forward."> <img  class="nav__menu-img" data-lightbox="example-set" src="assets/assets/gif/9pIL.gif" alt=""/> </a><p>Tout est encore à construire donc ... 
+        </p>
+    </div>
+    
+    <div class="hard">
+        
+        <img  class="nav__menu-img" src="assets/assets/gif/5NmY.gif" alt=""/>  
+    </div>    
+    <div class="example-image-link" style="background-image:url(pages/01.jpg);">
+        <img class="example-image" src="assets/assets/gif/cube3D.gif" alt=""/>
+    </div>
+    
+        <div class="example-image-link" style="background-image:url(pages/02.jpg);">
+            <img  class="nav__menu-img" src="assets/assets/gif/cube3D.gif" alt=""/>
+        </div>
+    <div class="example-image-link"  style="background-image:url(pages/03.jpg);">
+        <img  class="nav__menu-img" src="assets/assets/gif/AS0005119_08.gif" alt=""/>
+    </div>
+    <div class="example-image-link"  style="background-image:url(pages/04.jpg);"><a href="assets/img/prova d'arte/Capture d’écran (Prova d'Arte).png" class="example-image-link" data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
+        <img title="Prova" class="example-image" src="assets/img/prova d'arte/Capture d’écran (Prova d'Arte).png" data-lightbox="example-set" data-title="Click anywhere outside the image or the X to the right to close."></a> 
+    </div>
+    <div style="background-image:url(pages/05.jpg);">
+        <p>
+        <div class="example-image-link" src="assets/images/cover_halloween-playing-card-back-design2.png" data-lightbox="example-set" data-title="Or press the right arrow on your keyboard.">Coming Soon.<img src="assets/images/cover_halloween-playing-card-back-design.png" alt="" class="work2__img">
+            <a href="assets/images/cover_halloween-playing-card-back-design2.png" class="example-image-link" data-lightbox="example-set" data-title="Click the right half of the image to move forward."><img title="Prova" class="example-image" src="assets/images/cover_halloween-playing-card-back-design2.png" data-lightbox="example-set" data-title="Click anywhere outside the image or the X to the right to close."></a>
+        </div> 
+        </p>
+    </div>
+    <div style="background-image:url(pages/06.jpg);"><img alt="#" src="assets/img/Fichier Home (4).png" alt="" class="work__img"></div>
+    
+    </div>        
+</div>      
+          
+</div>
+
+    
+    
+</div>
+
+<div class="work__card mix mobile">
+    
+    <div class="book-section">
+       <div class="book2-section">
             
-              <p>With ❤️</p>                
+              <p>With ❤️► for U
+                <br>
+                <button class="button" onclick="turnLeft()"><strong>◄-</strong></button> 
+               <button class="button" onclick="turnRight()"><strong>-►</strong></button>
+            </p>                
                <div class="container2">
                 
                   <div class="right">
@@ -581,62 +688,73 @@
                        </figure>
                    </div>
                </div>
-                <button class="button" onclick="turnLeft()"><strong>◄-</strong></button> 
-               <button class="button" onclick="turnRight()"><strong>-►</strong></button>
-
-            </div></div> 
-
-
-    
-  </section>
-<!--=============== ABOUT ===============-->
-<section class="about section" id="about">
-    <span class="section__subtitle">Présentation</span>
-    <h2 class="section__title">A propos de nous</h2>
-    
-    <div class="about__container container grid">
-        
-        <img alt="#" src="assets/img/LEttreTransparentGrand.png" alt="" class="about__img">
-
-        <div class="about__data">
-            <div class="about__info">
-
-                <div class="about__box">
-                    <i class='bx bxs-award'></i>
-                    <h3 class="about__title">Expérience</h3>
-                    <span class="about__subtitle">2+ ans</span>
-                </div>
-
-                <div class="about__box">
-                    <i class='bx bx-briefcase-alt'></i>
-                    <h3 class="about__title">Projets</h3>
-                    <span class="about__subtitle">+</span>
-                </div>
-
-                <div class="about__box">
-                    <i class='bx bx-support'></i>
-                    <h3 class="about__title">Support</h3>
-                    <span class="about__subtitle">24 / 7</span>
-                </div>
+                
 
             </div>
+            
+            </div>
+        </div>
 
-            <p class="about__description">
-                ... 
-                <br>                    <br> Pour une meilleure accessibilité, 
-                <br>des interfaces aux usagers & à la Culture.
-            </p>
+<div class="work__card mix design">
+            
+        <div class="img-slider">
+    <div id="carousel-container">
 
-            <a href="#contact" class="button">Nous contacter</a>      
-        </div>    
-
-        
+    <div class="slide active">
+      <img alt="#" src="images/1.jpg" alt="">
+      <div class="info">
+        <h2>Slide 01</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      </div>
     </div>
-        
+    <div class="slide">
+      <img alt="#" src="images/2.jpg" alt="">
+      <div class="info">
+        <h2>Slide 02</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      </div>
+    </div>
+    <div class="slide">
+      <img alt="#" src="images/3.jpg" alt="">
+      <div class="info">
+        <h2>Slide 03</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      </div>
+    </div>
+    <div class="slide">
+      <img alt="#" src="images/4.jpg" alt="">
+      <div class="info">
+        <h2>Slide 04</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      </div>
+    </div>
+    <div class="slide">
+      <img alt="#" src="images/5.jpg" alt="">
+      <div class="info">
+        <h2>Slide 05</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      </div>
+    </div>
+    <div class="navigation">            
+      <div class="btn active"></div>
+      <div class="btn"></div>
+      <div class="btn"></div>
+      <div class="btn"></div>
+      <div class="btn"></div>
+    </div>
+  </div>
+
+        </div>
+
+</div>
+
+
+</div>
+ 
 </section>
 
 
-  <main>
+
 
 
 <!--=============== SERVICES ===============
@@ -796,243 +914,8 @@
 
 </section>-->
 
-<!--=============== WORK ===============
-<section class="work section" id="work">
-<span class="section__subtitle">Blog / Portfolio</span>
-    <h2 class="section__title">Nos récents travaux</h2>
 
-    <div class="work__filters">
-        <span class="work__item active-work" data-filter='all'>Hall</span>
-        <span class="work__item" data-filter='.web'>Evenement & agenda Web</span>
-        <span class="work__item" data-filter='.mobile'>Accessibilité Mobile</span>
-        <span class="work__item" data-filter='.design'>Design & Blog</span>
-    </div>
-    
-<div class="work__container container grid">
-
-        <div class="work__card mix all">
-            <h3 class="work__title">Hall Design</h3>
-            <img alt="#" src="assets/img/triangle3D.gif" alt="" class="about__img">
-    
-        
-    <i class='bx bxs-face work__icon'>•</i><i class="bx bx-right-arrow-circle work__icon"></i>.^<img alt="#" src="assets/img/Fichier Home (4).png" alt="" class="work__img">
-    </div>
-              
-                        
-                                    
-              
-                    
-    <div class="work__card card--with-media mix web">
-                
-        <h3 class="work__title">Brand Design</h3>
-
-                        
-            <div class="book-section">
-
-       
-              <div class="book2-section">
-                            
-                <p>With ❤️</p>                
-                 
-              
-                 <div class="container2">
-                  
-                    <div class="right">
-                         <figure class="back" id="back-cover"></figure>
-                         <figure class="front" style="background-image: url('https://source.unsplash.com/450x450/?girl');"></figure>
-                     </div>
-                     <div class="right">
-                         <figure class="back" style="background-image: url('https://source.unsplash.com/450x450/?cat');"></figure>
-                         <figure class="front" style="background-image: url('https://source.unsplash.com/450x450/?rose');"></figure>
-                     </div>
-              
-                     <div class="right">
-                         <figure class="back" style="background-image: url('https://source.unsplash.com/450x450/?building');"></figure>
-                         <figure class="front" style="background-image: url('https://source.unsplash.com/450x450/?tech');"></figure>
-                     </div>
-                     <div class="right">
-                         <figure class="back" style="background-image: url('https://source.unsplash.com/450x450/?coding');"></figure>
-                         <figure class="front" style="background-image: url('https://source.unsplash.com/450x450/?girl');"></figure>
-                     </div>
-                     <div class="right">
-                         <figure class="back" style="background-image: url('https://source.unsplash.com/450x450/?laptop');"></figure>
-                         <figure class="front" style="background-image: url('https://source.unsplash.com/450x450/?mobile');"></figure>
-                     </div>
-                     <div class="right">
-                         <figure class="back" style="background-image: url('https://source.unsplash.com/450x450/?girl');"></figure>
-                         <figure class="front" id="cover">
-                             <h1>Book Title</h1>
-                             <p>CoOdeHim is one of the BEST developer websites that provide web designers and developers with a simple way to preview and download a variety of free code &amp; scripts.</p>
-                         </figure>
-                     </div>
-                 <div class="right">
-                      <figure class="back" style="background-image: url('https://source.unsplash.com/450x450/?cat');"></figure>
-                      <figure class="front" style="background-image: url('https://source.unsplash.com/450x450/?rose');"></figure>
-                  </div>
-                    <div class="right">
-                         <figure class="back" id="back-cover"></figure>
-                         <figure class="front" style="background-image: url('https://source.unsplash.com/450x450/?girl');"></figure>
-                     </div>
-                     <div class="right">
-                         <figure class="back" style="background-image: url('https://source.unsplash.com/450x450/?cat');"></figure>
-                         <figure class="front" style="background-image: url('https://source.unsplash.com/450x450/?rose');"></figure>
-                     </div>
-                     <div class="right">
-                         <figure class="back" style="background-image: url('https://source.unsplash.com/450x450/?building');"></figure>
-                         <figure class="front" style="background-image: url('https://source.unsplash.com/450x450/?tech');"></figure>
-                     </div>
-                     <div class="right">
-                         <figure class="back" style="background-image: url('https://source.unsplash.com/450x450/?coding');"></figure>
-                         <figure class="front" style="background-image: url('https://source.unsplash.com/450x450/?girl');"></figure>
-                     </div>
-                     <div class="right">
-                         <figure class="back" style="background-image: url('https://source.unsplash.com/450x450/?laptop');"></figure>
-                         <figure class="front" style="background-image: url('https://source.unsplash.com/450x450/?mobile');"></figure>
-                     </div>
-                     <div class="right">
-                         <figure class="back" style="background-image: url('https://source.unsplash.com/450x450/?girl');"></figure>
-                         <figure class="front" id="cover">
-                             <h1>Book Title</h1>
-                             <p>CoOdeHim is one of the BEST developer websites that provide web designers and developers with a simple way to preview and download a variety of free code &amp; scripts.</p>
-                         </figure>
-                     </div>
-                 </div>
-                 
-                 <button class="button" onclick="turnLeft()"><strong>◄-</strong></button> 
-                 <button class="button" onclick="turnRight()"><strong>-►</strong></button>
-<br/>
-              </div>
-              </div>    
-
-
-        
-  
-        
-        <div class="work__card mix mobile">
-
-            
-            <br><img alt="#" src="assets/img/vaporwolfwave2.jpg" alt="" class="work__img">
-            
-            <br> 
-            <h3 class="work__title">☼ A Propos ☻<span class="work__item" data-filter='.mobile'>Mix</span></h3>
-
-                   <img alt="#"  width="auto" height="auto" src="assets/img/01.jpg" alt="" class="work__img"> 
-                                              
-<article class="work__img">                        
-    <a href="#" class="work__button">
-        <img alt="#" src="assets/img/Wave-PNG-HD0000.png" alt="" class="work2__img">
-        <i class="bx bx-right-arrow-circle work__icon">°<br></i>
-        Retour Haut
-        </a>
-
-    <p> ☻° About Us •☼
-                        <img alt="#" src="assets/img/01.jpg" alt="" class="work__img"/>
-                        <a href="index.html" class="work__button">
-                            <img alt="#" src="assets/img/Wave-PNG-HD0000.png" alt="" class="work2__img">
-                            <i class="bx bx-right-arrow-circle work__icon">°<br></i>
-                            Reset 01-Page
-                            
-                            </a>
-               
-    </p>
-</article>
-
-</div>
-
-
-            
-        <div class="work__card mix mobile">
-
-            
-            <br><img alt="#" src="assets/img/vaporwolfwave2.jpg" alt="" class="work__img"><br> 
-            <h3 class="work__title"> ☼ About You ☻ <span class="work__item" data-filter='.mobile'>Mix</span></h3>
-                        
-            <article class="work__img">
-                <a href="#" class="work__button">
-                    
-                    <i class="bx bx-right-arrow-circle work__icon">°<br></i>
-                    Retour Haut
-                    <img alt="#" src="assets/img/Wave-PNG-HD000.png" alt="" class="work2__img">
-                    </a> ☻ ° About U •☼<p>
-                <img alt="#" src="assets/img/Carrellee02.png" alt="" class="work__img">
-                <a href="index.html" class="work__button">
-                    <i class="bx bx-right-arrow-circle work__icon">°<br></i>
-                    Reset 01-Page
-                    <img alt="#" src="assets/img/Wave-PNG-HD000.png" alt="" class="work2__img">
-                    </a>
-                
-            </p>
-        </article>
-
-        </div> 
-                   
-        <div class="work__card mix design">
-        <h3 class="work__title">Test Portfolio Bis</h3>
-        <img alt="#" width="20%" class="about2__img" src="assets/img/flechesvertical.gif" alt=""> 
-        <a href="index.html" class="work__button">
-        <img alt="#" src="assets/img/Wave-PNG-HD0000.png" alt="" class="work2__img">
-        <i class="bx bx-right-arrow-circle work__icon">°<br></i>
-        Reset 01-Page
-        <img alt="#" src="assets/img/Wave-PNG-HD000.png" alt="" class="work2__img">
-        </a><br>Envoi vers Essai
-        <a href="index (2).html" class="work__button">
-            <br>
-        <h6 class="button button--ghost">Portfolio Essai</h6>
-        <img alt="#" src="assets/img/prova d'arte/Capture d’écran (Prova d'Arte).png" alt="" class="work__img">
-        </a> 
-        <br>Vidéo-Clip +                            
-<button class="button" aria-label="toggle button" aria-expanded="false" class="cursor-pointer w-7 md:hidden" id="menu-btn">
-<a href="https://youtu.be/b90aoZNz9ZI" class="work__button">Playlist Music</a>
-</button>
-        </div>
-                    
-<div class="work__card mix design">
-                    
-                        <h3 class="work__title">Overlay</h3>
-                    <img alt="#" width="20%" class="about2__img" src="assets/img/flechesvertical.gif" alt=""> 
-                      
-                        
-<a href="index.html" class="work__button">
-                                                                <img alt="#" src="assets/img/Wave-PNG-HD0000.png" alt="" class="work2__img">
-                                                                
-                                                                <i class="bx bx-right-arrow-circle work__icon">°</i>Reset 01-Page
-                                                                <img alt="#" src="assets/img/Wave-PNG-HD000.png" alt="" class="work2__img">
-                                                            </a>
-                                
-<br>
-<iframe width="505" height="284" class="button--ghost" src="https://www.youtube.com/embed/b90aoZNz9ZI" title="Vidéo de présentation de l'exposition ' Prova d'arte ' (2021-2022)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-</div>
-
-
-<div class="work__card card--with-media mix web">
-                    
-<h3 class="work__title">Test Liste (videos fr-vostfr etc))</h3>
-
-<img alt="#" width="20%" class="about2__img" src="assets/img/flechesvertical.gif" alt=""> 
-   <a href="index.html" class="work__button">
-<img alt="#" src="assets/img/Wave-PNG-HD0000.png" alt="" class="work2__img">
-
-<i class="bx bx-right-arrow-circle work__icon">°</i>Reset 01-Page
-<img alt="#" src="assets/img/Wave-PNG-HD000.png" alt="" class="work2__img">
-</a>
-<br>Envoi vers  <a href="liste.html" class="work__button">
-
-   <h6 class="button button--ghost">Liste fr</h6><img alt="#" src="assets/img/-C77-Capture d’écran (3).png" alt="" class="work__img">
-</a>   
-
-
- </div> 
-
-
-
-
-</div>   
-
-</div>
-
-</section>
--->    
+   
 <!--=============== SKILLS ===============-->
     <!-- <section class="skills section" id="skills">
         
@@ -1159,243 +1042,292 @@
 </section>
 
    
-</main>
-</section>
-<!--=============== FOOTER ===============-->
-             <footer class="footer" id="footer">
-                        
-            <div class="footer__container container">  <buttons class="footer__buttons">
-                <a href="liste.html" class="button">
-                   Vers Liste fr - vostfr ° 
-                </a>
-                
-                <a href="Portfolio.html" class="button">
-                vers
-                <i class="bx bx-right-arrow-circle work2__icon"></i>
-                ° Vers Portfolio </a>
-            </buttons>
-            <br>
-                  <h1 class="footer__title">LETTRE</h1>
-                  <ul class="footer__list">
-                      <li>
-                          <a href="#about" class="footer__link">A propos</a>
-                      </li>
-                      <li>
-                          <a href="#work" class="footer__link">Projets</a>
-                      </li>
-                      <li>
-                          <a href="#testimonial" class="footer__link">Avis clients</a>
-                      </li>
-                  </ul>
-      
-                  <ul class="footer__social">
-                      <li>
-                      <a href="https://www.facebook.com" rel="noopener" title="facebook" target="__blank" class="footer__social-link">
-                          <i class="bx bxl-facebook"></i>
-                      </a>
-                      <a href="https://www.instagram.com" rel="noopener" title="instagram" target="__blank" class="footer__social-link">
-                          <i class="bx bxl-instagram"></i>
-                      </a>
-                      <a href="https://www.twitter.com" rel="noopener" title="twitter" target="_blank" class="footer__social-link">
-                          <i class="bx bxl-twitter"></i>
-                      </a>
-                  </ul>
-              </li>
-                          <footer class="credit">Author: Gandalf - Distributed By: <a title="Awesome w...orld, design code & scripts" href="#" alt="" target="_blank">CoOdeHIim 2022 ;)</a></footer>
-             
-                  <span class="footer__copy">
-                      <h4>&#169; Alex. "All rights reserved"© .
-                      Inspirations (& Thanks to)
-                      <br>Bedimcode & Online Tutorials, Fr.french's.YT&Cie-friends.
-                  </h4>
-                  </span>
-              </div>
-      
-              
-      
-              </footer>
 
-            </body>
-            <script src="assets/js/all.min.js" defer></script><script src="js/all.min.js"></script>
-            <!--=============== SCROLLREVEAL ===============-->
-            <script src="assets/js/scrollreveal.min.js"></script>
-            
-            <!--=============== SWIPER JS ===============-->
-            <script src="assets/js/swipper-bundle.min.js"></script>
-            
-            <!--=============== MIXITUP FILTER ===============-->
-            
-            <script src="assets/js/mixitup.min.js"></script>
-            
-            <!-- Script JS -->
-            <script src="assets/js/jquery-3.6.0.js" defer></script>
-            <script src="js/package.json"></script>   
-            <script src="js/package-lock.json"></script> 
-            <script src="js/package.json"></script> 
-            <script src="js/jquery-3.6.0.js"></script>
-            <script src="assets/js/uikit.js" defer></script>
-            <script src="assets/js/uikit-icons.js" defer></script>
-            <script src="js/uikit-icons.min.js"></script><script src="js/uikit.js"></script>   
-            <script src="js/bootstrap.js"></script>
-            <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-            <script src="js/swiper-bundle.min.js"></script>
-            <script src="js/swiper-bundle.min.js.map"></script>
-            <script src="js/tailwind.config.js"></script>
-            <script src="js/scrollreveal.min.js"></script>
-            <script src="assets/js/bootstrap.js" defer></script>
-            <script src="assets/js/modernizr.js" defer></script>
-            <script src="assets/js/main.js" defer></script> 
-            
-            <script src="assets/js/slideshow.js" defer></script>
-            <script src="js/app.js"></script>
-            <script src="aos/aos.js"></script>
-            <script src="form/form.js"></script>
-            <script src="js/postcss.config.js"></script>
-            <script src="js/main.js"></script>
-            <script src="js/main.js"></script>
-            <script src="js/main (2).js"></script>
-            <script src="js/main (3).js"></script>
-            <script src="js/script.js"></script>
-            <script src="js/script.js"></script>
-            <script src="js/script (2).js"></script>
-            <script src="js/typed.min.js"></script>
-            
-            
-            <script type="text/javascript">
-            var slides = document.querySelectorAll('.slide');
-            var btns = document.querySelectorAll('.btn');
-            let currentSlide = 1;
-            
-            // Javascript for image slider manual navigation
-            var manualNav = function(manual){
-              slides.forEach((slide) => {
-                slide.classList.remove('active');
+</main>
+
                 
-                btns.forEach((btn) => {
-                  btn.classList.remove('active');
-                });
-              });
+<!--=============== FOOTER ===============-->
+<footer class="footer" id="footer">
+
+    <buttons class="footer__buttons">
+                        <a href="liste.html" class="button">
+                           Vers Liste ° 
+                        </a>
+                        
+                        <a href="index (2).html" class="button">
+                        vers
+                        <i class="bx bx-right-arrow-circle work2__icon"></i>
+                        ° Vers Portfolio Prova d'Arte</a>
+                    </buttons>
+    <div class="footer__container container">
+    <h1 class="footer__title">LETTRE</h1>
+                      <ul class="footer__list">
+                          <li>
+                              <a href="#about" class="footer__link">A propos</a>
+                          </li>
+                          <li>
+                              <a href="#work" class="footer__link">Projets</a>
+                          </li>
+                          <li>
+                              <a href="#testimonial" class="footer__link">Avis clients</a>
+                          </li>
+                      </ul>
+          
+                      <ul class="footer__social">
+                          <li>
+                          <a href="https://www.facebook.com" rel="noopener" title="facebook" target="__blank" class="footer__social-link">
+                              <i class="bx bxl-facebook"></i>
+                          </a>
+                          <a href="https://www.instagram.com" rel="noopener" title="instagram" target="__blank" class="footer__social-link">
+                              <i class="bx bxl-instagram"></i>
+                          </a>
+                          <a href="https://www.twitter.com" rel="noopener" title="twitter" target="_blank" class="footer__social-link">
+                              <i class="bx bxl-twitter"></i>
+                          </a>
+                      </ul>
+                  </li>
+                              <footer class="credit">Author: Gandalf<a title="Awesome w...orld, design code & scripts" href="#" alt="" target="_blank"> - Distributed By : Co°Ode°HI°im</a></footer>
+                 
+                      <span class="footer__copy">
+                          <h4>&#169; Alex. ☺ 2♥22 "All rights reserved"©
+                          <br>Inspirations, forms & tricks(& Thanks to) : 
+                          Bedimcode & Online Tutorials, Fr.french's.YT&Cie-friends.
+                      </h4>
+                      </span><br>
+                  </div>
+</footer>
+    
+    </body>
+    
+
+<script src="assets/js/lightbox-plus-jquery.min.js"></script>
+<!--=============== SCROLLREVEAL ===============-->
+<script src="assets/js/scrollreveal.min.js"></script>
+
+<!--=============== SWIPER JS ===============-->
+<script src="assets/js/swipper-bundle.min.js"></script>
+
+<!--=============== MIXITUP FILTER ===============-->
+
+<script src="assets/js/mixitup.min.js"></script>
+
+<!-- Script JS -->
+
+<script src="js/main.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+<script src="js/lightbox.js"></script>  
+<script src="js/lightbox.min.js" defer></script>
+<script src="js/lightbox-plus-jquery.js" defer></script>
+<script src="assets/js/modernizr.js" defer></script><script src="js/all.min.js"></script>
+<script src="assets/js/all.min.js" defer></script>
+<script src="assets/js/bootstrap.js" defer></script>
+<script src="js/bootstrap.js"></script>
+<script src="assets/js/uikit-icons.js" defer></script>
+<script src="js/uikit-icons.min.js"></script>
+<script src="assets/js/uikit.js" defer></script>
+<script src="js/uikit.js"></script>   
+<script src="js/package.json"></script>   
+<script src="js/package-lock.json"></script> 
+<script src="js/package.json"></script> 
+
+<script src="assets/js/jquery-3.6.0.js" defer></script>
+<script src="js/jquery-3.6.0.js"></script>
+<script src="assets/js/slideshow.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script src="js/swiper-bundle.min.js"></script>
+<script src="js/swiper-bundle.min.js.map"></script>
+<script src="js/tailwind.config.js"></script>
+<script src="js/scrollreveal.min.js"></script>
+
+<script src="js/postcss.config.js"></script>
+<script src="js/script (2).js"></script>
+<script src="js/script.js"></script>
+<script src="js/main (2).js"></script>
+<script src="js/main (3).js"></script>
+<script src="assets/js/main.js" defer></script> 
+<script src="js/app.js"></script>
+<script src="aos/aos.js"></script>
+<script src="form/form.js"></script>
+
+<script src="js/typed.min.js"></script>
+
+     <script src="js/lightbox-plus-jquery.min.js"></script> 
+
+<script src="js/turn.js"></script>
+
+
+<script type="text/javascript">
+
+	$(window).ready(function() {
+		$('#magazine').turn({
+							display: 'double',
+							acceleration: true,
+							gradients: !$.isTouch,
+							elevation:50,
+							when: {
+								turned: function(e, page) {
+									/*console.log('Current view: ', $(this).turn('view'));*/
+								}
+							}
+						});
+	});
+	
+	
+	$(window).bind('keydown', function(e){
+		
+		if (e.keyCode==37)
+			$('#magazine').turn('previous');
+		else if (e.keyCode==39)
+			$('#magazine').turn('next');
+			
+	});
+
+</script>
+
+<script type="text/javascript">
+	$("#flipbook").turn({
+		width: 400,
+		height: 300,
+		autoCenter: true
+	});
+</script>
+
+
+<script type="text/javascript">
+              var slides = document.querySelectorAll('.slide');
+              var btns = document.querySelectorAll('.btn');
+              let currentSlide = 1;
               
-              slides[manual].classList.add('active');
-              btns[manual].classList.add('active');
-            }
-            
-            btns.forEach((btn, i) => {
-            btn.addEventListener("click", () => {
-            manualNav(i);
-            currentSlide = i;
-            });
-            });
-            
-            // Javascript for image slider autoplay navigation
-            var repeat = function(activeClass){
-            let active = document.getElementsByClassName('active');
-            let i = 1;
-            
-            var repeater = () => {
-            setTimeout(function(){
-            [...active].forEach((activeSlide) => {
-            activeSlide.classList.remove('active');
-            });
-            
-            slides[i].classList.add('active');
-            btns[i].classList.add('active');
-            i++;
-            
-            if(slides.length == i){
-            i = 0;
-            }
-            if(i >= slides.length){
-            return;
-            }
-            repeater();
-            }, 10000);
-            }
-            repeater();
-            }
-            repeat();
-            </script>
-            
-            <script type="text/javascript">
-            //jquery for toggle dropdown menus
-            $(document).ready(function(){
-            //toggle sub-menus
-            $(".sub-btn").click(function(){
-            $(this).next(".sub-menu").slideToggle();
-            });
-            
-            //toggle more-menus
-            $(".more-btn").click(function(){
-            $(this).next(".more-menu").slideToggle();
-            });
-            });
-            
-            //javascript for the responsive navigation menu
-            var menu = document.querySelector(".menu");
-            var menuBtn = document.querySelector(".menu-btn");
-            var closeBtn = document.querySelector(".close-btn");
-            
-            menuBtn.addEventListener("click", () => {
-            menu.classList.add("active");
-            });
-            
-            closeBtn.addEventListener("click", () => {
-            menu.classList.remove("active");
-            });
-            
-            //javascript for the navigation bar effects on scroll
-            window.addEventListener("scroll", function(){
-            var header = document.querySelector("header");
-            header.classList.toggle("sticky", window.scrollY > 0);
-            });
-            </script>
-            
-            <script type="text/javascript">
-            //javascript for navigation bar effect on scroll
-            window.addEventListener("scroll", function(){
-            var header = document.querySelector("header");
-            header.classList.toggle('sticky', window.scrollY > 0);
-            });
-            
-            //javascript for responsive navigation sidebar menu
-            var menu = document.querySelector('.menu');
-            var menuBtn = document.querySelector('.menu-btn');
-            var closeBtn = document.querySelector('.close-btn');
-            
-            menuBtn.addEventListener("click", () => {
-            menu.classList.add('active');
-            });
-            
-            closeBtn.addEventListener("click", () => {
-            menu.classList.remove('active');
-            });
-            </script>
-            
-            <script type="text/javascript">
-            //Javacript for the scroll indicator bar
-            window.addEventListener("scroll", () => {
-            const indicatorBar = document.querySelector(".scroll-indicator-bar");
-            
-            const pageScroll = document.body.scrollTop || document.documentElement.scrollTop;
-            const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-            const scrollValue = (pageScroll / height) * 100;
-            
-            indicatorBar.style.width = scrollValue + "%";
-            });
-            
-            //Responsive navigation menu toggle
-            const menuBtn = document.querySelector(".nav-menu-btn");
-            const closeBtn = document.querySelector(".nav-close-btn");
-            const navigation = document.querySelector(".navigation");
-            
-            menuBtn.addEventListener("click", () => {
-            navigation.classList.add("active");
-            });
-            
-            closeBtn.addEventListener("click", () => {
-            navigation.classList.remove("active");
-            });
-            </script>
-            <script src="assets/js/scriptG.js" async></script>
-            </html>
-            
+              // Javascript for image slider manual navigation
+              var manualNav = function(manual){
+                slides.forEach((slide) => {
+                  slide.classList.remove('active');
+                  
+                  btns.forEach((btn) => {
+                    btn.classList.remove('active');
+                  });
+                });
+                
+                slides[manual].classList.add('active');
+                btns[manual].classList.add('active');
+              }
+
+  btns.forEach((btn, i) => {
+    btn.addEventListener("click", () => {
+      manualNav(i);
+      currentSlide = i;
+    });
+  });
+  
+  // Javascript for image slider autoplay navigation
+  var repeat = function(activeClass){
+    let active = document.getElementsByClassName('active');
+    let i = 1;
+    
+    var repeater = () => {
+      setTimeout(function(){
+        [...active].forEach((activeSlide) => {
+          activeSlide.classList.remove('active');
+        });
+        
+        slides[i].classList.add('active');
+        btns[i].classList.add('active');
+        i++;
+        
+        if(slides.length == i){
+          i = 0;
+        }
+        if(i >= slides.length){
+          return;
+        }
+        repeater();
+      }, 10000);
+    }
+    repeater();
+  }
+  repeat();
+</script>
+
+<script type="text/javascript">
+  //jquery for toggle dropdown menus
+  $(document).ready(function(){
+    //toggle sub-menus
+    $(".sub-btn").click(function(){
+      $(this).next(".sub-menu").slideToggle();
+    });
+
+    //toggle more-menus
+    $(".more-btn").click(function(){
+      $(this).next(".more-menu").slideToggle();
+    });
+  });
+  
+  //javascript for the responsive navigation menu
+  var menu = document.querySelector(".menu");
+  var menuBtn = document.querySelector(".menu-btn");
+  var closeBtn = document.querySelector(".close-btn");
+  
+  menuBtn.addEventListener("click", () => {
+    menu.classList.add("active");
+  });
+  
+  closeBtn.addEventListener("click", () => {
+    menu.classList.remove("active");
+  });
+  
+  //javascript for the navigation bar effects on scroll
+  window.addEventListener("scroll", function(){
+    var header = document.querySelector("header");
+    header.classList.toggle("sticky", window.scrollY > 0);
+  });
+  </script>
+
+<script type="text/javascript">
+  //javascript for navigation bar effect on scroll
+  window.addEventListener("scroll", function(){
+    var header = document.querySelector("header");
+    header.classList.toggle('sticky', window.scrollY > 0);
+  });
+  
+  //javascript for responsive navigation sidebar menu
+  var menu = document.querySelector('.menu');
+  var menuBtn = document.querySelector('.menu-btn');
+  var closeBtn = document.querySelector('.close-btn');
+  
+  menuBtn.addEventListener("click", () => {
+    menu.classList.add('active');
+  });
+  
+  closeBtn.addEventListener("click", () => {
+    menu.classList.remove('active');
+  });
+  </script>
+
+<script type="text/javascript">
+  //Javacript for the scroll indicator bar
+  window.addEventListener("scroll", () => {
+    const indicatorBar = document.querySelector(".scroll-indicator-bar");
+    
+    const pageScroll = document.body.scrollTop || document.documentElement.scrollTop;
+    const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    const scrollValue = (pageScroll / height) * 100;
+    
+    indicatorBar.style.width = scrollValue + "%";
+  });
+  
+  //Responsive navigation menu toggle
+  const menuBtn = document.querySelector(".nav-menu-btn");
+  const closeBtn = document.querySelector(".nav-close-btn");
+  const navigation = document.querySelector(".navigation");
+  
+  menuBtn.addEventListener("click", () => {
+    navigation.classList.add("active");
+  });
+  
+  closeBtn.addEventListener("click", () => {
+    navigation.classList.remove("active");
+  });
+</script>
+
+
+</html>
