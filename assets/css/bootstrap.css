@@ -44,9 +44,9 @@
 html {
   font-family: sans-serif;
   line-height: 1.15;
-  -webkit-text-size-adjust: 100%;
-  text-size-adjust: 100%;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-text-size-adjust: 100%;text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);justify-content: center;
+  justify-items: center;
 }
 
 article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
@@ -76,7 +76,8 @@ hr {
 
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.5rem;justify-content: center;
+  justify-items: center;
 }
 
 p {
@@ -330,16 +331,16 @@ progress {
 
 [type="search"] {
   outline-offset: -2px;
-  -webkit-appearance: none;
+  -webkit-appearance: none;appearance: none;
 }
 
 [type="search"]::-webkit-search-decoration {
-  -webkit-appearance: none;
+  -webkit-appearance: none;appearance: none;
 }
 
 ::-webkit-file-upload-button {
   font: inherit;
-  -webkit-appearance: button;
+  -webkit-appearance: button;appearance: button;
 }
 
 output {
@@ -364,6 +365,8 @@ h1, h2, h3, h4, h5, h6,
   margin-bottom: 0.5rem;
   font-weight: 500;
   line-height: 1.2;
+  justify-content: center;
+  justify-items: center;
 }
 
 
@@ -1804,7 +1807,7 @@ pre code {
     display: block;
     width: 100%;
     overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
+    -webkit-overflow-scrolling-: touch;
   }
   .table-responsive-md > .table-bordered {
     border: 0;
@@ -1816,7 +1819,7 @@ pre code {
     display: block;
     width: 100%;
     overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
+    -webkit-overflow-scrolling-: touch;
   }
   .table-responsive-lg > .table-bordered {
     border: 0;
@@ -1828,7 +1831,7 @@ pre code {
     display: block;
     width: 100%;
     overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
+
   }
   .table-responsive-xl > .table-bordered {
     border: 0;
@@ -1839,7 +1842,7 @@ pre code {
   display: block;
   width: 100%;
   overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
+  -webkit-overflow-scrolling-: touch;
 }
 
 .table-responsive > .table-bordered {
@@ -4754,8 +4757,6 @@ input[type="button"].btn-block {
     -webkit-column-gap: 1.25rem;
     -moz-column-gap: 1.25rem;
     column-gap: 1.25rem;
-    orphans: 1;
-    widows: 1;
   }
   .card-columns .card {
     display: inline-block;
@@ -9987,7 +9988,7 @@ a.text-dark:hover, a.text-dark:focus {
   h3 {
     page-break-after: avoid;
   }
-  @page {
+  @pages {
     size: a3;
   }
   body {

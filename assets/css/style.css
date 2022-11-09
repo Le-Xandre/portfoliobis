@@ -122,44 +122,88 @@
     --bg-url: url("https://static.wixstatic.com/media/4cbe8d_f1ed2800a49649848102c68fc5a66e53~mv2.gif");
     --font-family: 'Comic Neue', cursive;
   } 
+
   :root.test {
-    --bg-color: #5c0526d2;
+    --bg-color: #780531d2;
     --text-color: var(--text-color-light);
     --bg-url: url("../img/brightHope.gif");
     --font-family: 'poppins', cursive;
   }
   :root.load {
-    --bg-color: #e0e8acd5;
+    --bg-color: #e4ec9dfa;
     --text-color:var(--text-color-light);
     --bg-url: url("../img/gif/loading\ \(2\).gif");
-    --font-family: 'Bungee Spice', cursive;
-    
+    --font-family: 'Bungee Spice';
+    --font-size : var(--smaller-font-size);
   }
   :root.load2 {
-    --bg-color: rgba(11, 20, 4, 0.977);
-    --text-color: #dae0dfd6;
+    --bg-color: var(--body-gradient);
     --bg-url: url("../img/gif/0\ C-cPP9D2MIyeexAT.gif");
+    --text-color: #bceee6f8;
     --font-family: 'Dancing Script', cursive;
-    font-size : var(--normal-font-size);
+    --font-size : var(--small-font-size);
   }
   :root.load3 {
-    --bg-color: rgba(71, 47, 59, 0.711);
-    --text-color: #fffbdfc9;
-    --bg-url: url("../img/gif/ouahou3Dgif.gif");
+    --bg-color: rgb(71, 47, 59);
+    --text-color: #e9e4bcf6;
+    --bg-url: url("../img/gif/Icon-Legacy.gif") ;
     --font-family: 'Dancing Script';
-    font-size : var(--small-font-size);
+    --font-size : var(--small-font-size);
   }
   :root.load4 {
-    --bg-color: rgba(26, 2, 134, 0.669);
-    --background-color: linear-gradient(180deg,
-    hsla(var(--first-hue), var(--sat),var(--lig), 1),
-    hsla(var(--second-hue), var(--sat),var(--lig), .2));
+    --bg-color: rgba(26, 2, 134, 0.88);
+    --bg-url: url("../img/gif/1\ XmdQULLtkx_Ji4oyn1oG-w.gif");
+    --background-color: var(--shape-gradient);
     --text-color: hsla(var(--second-hue), 8%, 75%);
-
-    --bg-url: url("../img/gif/ouahou3Dgif.gif");
-    --font-family: 'Bungee Spice';
-    font-size : var(--tiny-font-size);
+    --font-family: 'Bungee Spice', sans-serif;
+    --font-size : var(--tiny-font-size);
   }
+  :root.load5 {
+    --bg-color: rgba(6, 101, 14, 0.846);
+    --bg-url: url("../img/gif/ob_183b56_burnout-1.gif");
+    --background-color: var(--shape-gradient);
+    --text-color: hsla(var(--second-hue), 8%, 75%);
+    --font-family: 'Roboto Flex', sans-serif;
+    --font-size : var(--tiny-font-size);
+  }
+  :root.load6 {
+    --bg-color: rgba(43, 47, 51, 0.977);
+    --bg-url: url("../img/gif/ouahou3Dgif.gif");
+    --text-color: #e57f26f1;
+    --font-family: 'Josefin Sans', cursive, sans-serif;
+    --font-size : var(--font-medium);
+  }
+  :root.load7 {
+    --bg-color: rgb(9, 13, 10);
+    --bg-url: url("../img/gif/9pIL.gif");
+    --text-color: #f3d67ffa;
+    --font-family: 'Roboto Flex', sans-serif;
+    --font-size : var(--font-family);
+  }
+  :root.load8 {
+    --bg-color: rgb(2, 20, 16);
+    --bg-url: url("../img/gif/Funny-Gifs-random-28630438-270-270.gif");
+    --text-color: #3ff198;
+    --font-family: 'Roboto Flex', sans-serif;
+    --font-size : var(--font-family);
+  }
+  :root.load9 {
+    --bg-color: rgba(6, 101, 14, 0.846);
+    --bg-url: url("../img/gif/AS0006199_16.gif");
+    --background-color: var(--shape-gradient);
+    --text-color: hsla(var(--second-hue), 8%, 75%);
+    --font-family: 'Roboto Flex', sans-serif;
+    --font-size : var(--tiny-font-size);
+  }
+  :root.load10 {
+    --bg-color: rgba(41, 6, 101, 0.846);
+    --bg-url: url("../img/gif/5NmY.gif");
+    --background-color: var(--shape-gradient);
+    --text-color: hsla(var(--second-hue), 8%, 75%);
+    --font-family: 'Roboto', sans-serif;
+    --font-size : var(--tiny-font-size);
+  }
+
 /*=============== BASE ===============*/
 *, ::before, ::after {
   box-sizing: border-box;
@@ -340,7 +384,10 @@ body.light-theme{
 
 .section {
   padding: 3.5rem 0 1rem;
-  align-items: center;
+  align-items: center;align-items: center;
+  display: inline list-item;
+  height: auto;
+  padding: 1rem;
 }
 
 .section__title, 
