@@ -12,33 +12,56 @@
 
 
     
-        <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="css/main (2).css">
-        <link rel="stylesheet" href="css/style (6).css">
-  <link rel="stylesheet" href="css/style.css"> 
+        <link rel="stylesheet" href="css/main.css"><link rel="stylesheet" href="css/main (2).css">
+        <link rel="stylesheet" href="css/style (6).css"><link rel="stylesheet" href="css/style.css"> 
         <link rel="stylesheet" href="css/styles.css">
          
                  
-       
+        <link rel="stylesheet" href="assets/css/styleport.css"> 
 
              <link href="assets/css/stylesG.css" rel="stylesheet">
                      
              <script src="assets/js/scriptG.js" async></script>
              
               <link href="css/main.css" rel="stylesheet">   
-     <link rel="stylesheet" href="assets/css/styleport.css">          
+             
    
 </head>
          
-<body id="top">
-  <header class="intro shadow"></header>
+<body id="top" class="dark_theme">
+  <header class="intro shadow">
+
+  </header>
      
 
 <section class="banner">
+ 
+  <picture>  
+    <img title="img" src="assets/images/spider (2).png" class="spider">
+    <h2>
+    <span class="page-title" style="--i:1;">H</span>
+    <span class="page-title" style="--i:2;">a</span>
+    <span class="page-title" style="--i:3;">l</span>
+    <span class="page-title" style="--i:4;">l</span>
+    <span class="page-title" style="--i:5;">o</span>
+    <span class="page-title" style="--i:6;">w</span>
+    <span class="page-title" style="--i:7;">e</span>
+    <span class="page-title" style="--i:8;">e</span>
+    <span class="page-title" style="--i:9;">n <img title="img" src="assets/images/clouds.png" class="pumpkin02"> </span>
+  </h2>
 
-  <img src="assets/images/pumpkin01.png" class="pumpkin01">
-  <img src="assets/images/pumpkin02.png" class="pumpkin02">
-  <img src="assets/images/spiderWeb.png" class="spiderWeb">
+    <source srcset="assets/images/pumpkin01.png" media="(min-width: 600px)">
+    
+  <img title="img" src="assets/images/pumpkin01.png" class="pumpkin01">
+
+</picture>
+
+<picture>
+  <source srcset="assets/images/pumpkin02.png" media="(min-width: 600px)">
+  <img title="img" src="assets/images/pumpkin02.png" class="pumpkin02">
+</picture>
+
+  <img title="img" src="assets/images/spiderWeb.png" class="spiderWeb">
 
  
   
@@ -46,8 +69,12 @@
       <audio id="audio" style="display:none;" src="assets/Audio/creepy(2).mp3" controls autoplay loop onloadeddata="setHalfVolume(10)"></audio></div>
         
       <div class="overlay-text visible">
+
           <h2>Mix-Or-Match</h2>
-          <img alt="#" title="#" class="work__img" src="assets/Images/cardback.jpeg">
+          <picture>
+            <source srcset="assets/Images/cardback.jpeg" media="(min-width: 600px)">
+            <img alt="#" title="#" class="work__img" src="assets/Images/cardback.jpeg">
+          </picture>
         <h2>Cliquez pour démarrer</h2>
       </div>     
         <div id="game-over-text" class="overlay-text">
@@ -62,6 +89,7 @@
 <div class="game-info-container">                     
 <div class="game-info">
   <h1>Essais</h1><span id="flips">0</span>
+  
   <img alt="#" title="#" class="about__img" src="assets/Images/cardback.jpeg">
   <span id="time-remaining">100</span><h1>Temps</h1>          
   
@@ -345,20 +373,21 @@
    
 
 </div>
-
+<br>
+  <buttons class="footer__buttons">
+    <a href="index.html" class="button">
+    Vers index 
+    </a>
+    °°
+    <a href="index (2).html" class="button">
+    Vers Portfolio Prova d'Arte
+  </a>
+</buttons>
+<br>
 </section>     
-  <h2>
-    <span class="page-title" style="--i:1;">H</span>
-    <span class="page-title" style="--i:2;">a</span>
-    <span class="page-title" style="--i:3;">l</span>
-    <span class="page-title" style="--i:4;">l</span>
-    <span class="page-title" style="--i:5;">o</span>
-    <span class="page-title" style="--i:6;">w</span>
-    <span class="page-title" style="--i:7;">e</span>
-    <span class="page-title" style="--i:8;">e</span>
-    <span class="page-title" style="--i:9;">n</span>
-  </h2> 
-<img src="assets/images/spider (2).png" class="spider">
+
+
 </body>
 
+<script src="assets/js/three.js"></script>
 </html>
