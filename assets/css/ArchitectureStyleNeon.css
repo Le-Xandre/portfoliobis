@@ -11,21 +11,21 @@
       --height_header03:300px;
       --height_header04:480px;
 
-      --blanc: #fbfbfb;
-      --noir: #02071d;
+      --blanc: #f3ebebfd;
+      --noir: #000002;
       --gris-transparent: #cdd6d6de;
-      --body-color: #4e342cf8;
+      --body-color: #08070ef8;
 
       --premiere-color:rgb(0, 0, 0);
-      --seconde-color:rgba(225, 253, 242, 0.952);
-      --third-color:rgba(255, 207, 118, 0.972);
+      --seconde-color:rgba(243, 250, 247, 0.991);
+      --third-color:rgba(248, 199, 109, 0.991);
 
-      --text-color-light-01: rgb(255, 209, 157);
-      --text-color-light-02: rgb(253, 235, 207);
-      --text-color-light-03: rgb(0, 255, 85);
-      --text-color-light-04: rgb(0, 76, 255);
+      --text-color-light-01: rgb(249, 199, 142);
+      --text-color-light-02: rgb(207, 253, 241);
+      --text-color-light-03: rgb(255, 153, 0);
+      --text-color-light-04: rgba(3, 24, 74, 0.956);
       --text-color-light-05: rgb(255, 0, 43);
-      --text-color-light-06: rgb(0, 0, 0);
+      --text-color-light-06: rgb(218, 225, 234);
 
 
       --smaller-font-size: .50rem;
