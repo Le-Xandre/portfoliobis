@@ -9,7 +9,7 @@
   <!-- 
     - primary meta tags
   -->
-  <title>Alexandre Coté</title>
+  <title>Portfolio Alexandre Coté</title>
   <meta name="title" content="Alexandre Coté">
   <meta name="description" content="This is a photographer portfolio html template, made by codewith.">
 <link rel='stylesheet' href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css'>
@@ -18,21 +18,34 @@
   -->
   <link rel="shortcut icon" href="assets/images/favicon.svg" type="image/svg+xml">
 
-  <!--  
-    - custom css link 
-  -->
+  <!--  <link rel="stylesheet" href="css/style.css">
+    - custom css link       <link rel="stylesheet" href="public/App.svelte">
+    <link rel="stylesheet" href="public/cards.svelte">    <link rel="stylesheet" href="public/lib/components/card-shine.svelte"><link rel="stylesheet" href="public/app.css">
+    <link rel="stylesheet" href="public/vite-env.d.ts">
+    <link rel="stylesheet" href="css/fontawesome.css">  <link rel="stylesheet" href="public/css/global.css"><link rel="stylesheet" href="public/css/cards.css"> 
+    -->  
+ <link rel="stylesheet" href="assets/css/root.css"> 
+
+ 
+ <link rel="stylesheet" href="css/lightbox.css"> 
+<link rel="stylesheet" href="assets/font/font.css">
+    
+  <link rel="stylesheet" href="assets/css/styleport.css">
+
+     
+ 
+ <link rel="stylesheet" href="assets/css/ArchitectureStyleNeon.css">     
+  <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
   
-<link rel="stylesheet" href="assets/css/styleport.css">
-<link rel="stylesheet" href="css/fontawesome.css">
-  <link rel="stylesheet" href="assets/font/font.css">
+
 
 
   <!-- 
     - preload images
   -->
-  <link rel="preload" as="image" href="assets/images/loading.svg">
+  <link rel="preload" as="image" href="assets/images/loading.png">
   <link rel="preload" as="image" href="assets/images/loading-circle.svg">
- 
+
   
 </head>
 
@@ -43,7 +56,7 @@
   -->
 
   <div class="loading" data-loading>
-    <img alt="#" src="assets/images/loading.svg" width="55" height="55" alt="loading" class="img">
+    <img alt="#" src="assets/images/loading.png" width="55" height="55" alt="loading" class="img">
     <img alt="#" src="assets/images/loading-circle.svg" width="70" height="70" alt="" class="circle">
   </div>
 
@@ -61,7 +74,7 @@
       <a href="#" class="logo">
         <img alt="#" src="assets/images/about-shape-1.png" width="40" height="40" alt="Alx home">
       </a>
-
+<i class="bx bx-moon change-theme" id="theme-button" title="#home__img"></i>
       <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
         <img alt="#" src="assets/images/menu.svg" width="17" height="17" alt="menu icon">
       </button>
@@ -79,12 +92,10 @@
             <span class="span two"></span>
           </button>
         </div>
-<i class="bx bx-moon change-theme" id="theme-button" title="#home__img"></i>
+
         <ul class="navbar-list"> 
-          <a href="index.html" class="navbar-link">Vers Home</a>
-    <a href="index (2).html" class="navbar-link">
-      
-     Vers Portfolio 02</a>
+          <li><a href="index.html" class="navbar-link">Vers Home</a></li>
+          <li><a href="index (2).html" class="navbar-link">Vers Portfolio 02</a></li>
 
           <li class="navbar-item">
             <a href="#home" class="navbar-link" data-nav-link>Menu</a>
@@ -173,6 +184,58 @@
 <img alt="#" src="assets/images/hero-shape.svg" width="211" height="189" alt="" class="shape">
         
 
+      </section>
+     <!-- 
+        - #ABOUT
+      -->
+
+      <section class="section about" id="about" aria-label="about me">
+        <div class="container">
+
+          <div class="about-content">
+<br>
+            <h2 class="h2 section-title" data-reveal="right">
+              Hello❤️, <br>je m'appelle Alex.</h2>
+
+            <div class="wrapper has-before" data-reveal="right">
+
+              <p class="section-text">
+                Je suis 1 <em class="em">artiste</em> passionné
+                depuis l'âge de mes <em class="em">13 ans</em> environs. 
+                <br>☻ (I’m ready to give you my best)<br>  
+                <br>Je suis prêt à faire de mon mieux <br>             
+                 afin de répondre à vos attentes 
+              <br>   et vous offrir mon expertise. 
+            </p>
+
+              
+
+              <img alt="#" src="assets/images/signature.png" width="151" height="92" load="lazy" alt="signature"
+                class="img">
+<br>
+            </div>
+
+          </div>
+
+          <figure class="about-banner" data-reveal="left">
+
+            <div class="img-holder has-before" style="--width: 512; --height: 684;">
+              <img alt="#" src="assets/images/about-banner.jpg" width="512" height="684" load="lazy" alt="Alex"
+                class="img-cover">
+            </div>
+
+            <img alt="#" src="assets/images/about-shape-1.png" width="178" height="178" load="lazy" alt=""
+              class="shape shape-1">
+
+            <img alt="#" src="assets/images/about-shape-2.svg" width="659" height="653" load="lazy" alt=""
+              class="shape shape-2">
+
+          </figure>
+
+          <img alt="#" src="assets/images/about-shape-3.svg" width="239" height="232" load="lazy" alt=""
+            class="shape shape-3">
+
+        </div>
       </section>
 
       <!-- 
@@ -570,59 +633,7 @@
         </div>
       </section>
 
-      <!-- 
-        - #ABOUT
-      -->
-
-      <section class="section about" id="about" aria-label="about me">
-        <div class="container">
-
-          <div class="about-content">
-<br>
-            <h2 class="h2 section-title" data-reveal="right">
-              Hello❤️, <br>je m'appelle Alex.</h2>
-
-            <div class="wrapper has-before" data-reveal="right">
-
-              <p class="section-text">
-                Je suis 1 <em class="em">artiste</em> passionné
-                depuis l'âge de mes <em class="em">13 ans</em> environs. 
-                <br>☻ (I’m ready to give you my best)<br>  
-                <br>Je suis prêt à faire de mon mieux <br>             
-                 afin de répondre à vos attentes 
-              <br>   et vous offrir mon expertise. 
-            </p>
-
-              
-
-              <img alt="#" src="assets/images/signature.png" width="151" height="92" load="lazy" alt="signature"
-                class="img">
-<br>
-            </div>
-
-          </div>
-
-          <figure class="about-banner" data-reveal="left">
-
-            <div class="img-holder has-before" style="--width: 512; --height: 684;">
-              <img alt="#" src="assets/images/about-banner.jpg" width="512" height="684" load="lazy" alt="Riachard Ryan"
-                class="img-cover">
-            </div>
-
-            <img alt="#" src="assets/images/about-shape-1.png" width="178" height="178" load="lazy" alt=""
-              class="shape shape-1">
-
-            <img alt="#" src="assets/images/about-shape-2.svg" width="659" height="653" load="lazy" alt=""
-              class="shape shape-2">
-
-          </figure>
-
-          <img alt="#" src="assets/images/about-shape-3.svg" width="239" height="232" load="lazy" alt=""
-            class="shape shape-3">
-
-        </div>
-      </section>
-
+ 
       <!-- 
         - #SERVICE
       -->
@@ -953,16 +964,21 @@
   <div class="cursor" data-cursor></div>
 
 
+</body>
 
+<script src="js/typed.min.js"></script>
+<script src="public/data.json"></script>
+<script src="public/main.js"></script>
+<script src="public/lib/stores/activeCard.js"></script>
 
+<script src="/js/all.min.js"></script>
 
+  <script src="js/lightbox.js"></script>
+  <script src="/js/lightbox-plus-jquery.min.js"></script>
+  <script src="assets/js/swiper-bundle.min.js"></script>
+  
   <!-- 
     - custom js link
   -->
-
-</body>
-<script src="/js/all.min.js"></script>
-  <script src="/js/lightbox-plus-jquery.min.js"></script>
-  <script src="assets/js/scriptport.js"></script>
-  
+<script src="assets/js/scriptport.js"></script>
 </html>
