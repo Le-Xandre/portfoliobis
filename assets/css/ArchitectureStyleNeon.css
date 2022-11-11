@@ -13,12 +13,12 @@
 
       --blanc: #f3ebebfd;
       --noir: #000002;
-      --gris-transparent: #cdd6d6de;
+      --gris-transparent: #cdd6d6f6;
       --body-color: #08070ef8;
 
-      --premiere-color:rgb(0, 0, 0);
-      --seconde-color:rgba(243, 250, 247, 0.991);
-      --third-color:rgba(248, 199, 109, 0.991);
+      --premiere-color:rgb(4, 4, 4);
+      --seconde-color:rgba(250, 220, 203, 0.991);
+      --third-color:rgba(70, 126, 248, 0.991);
 
       --text-color-light-01: rgb(249, 199, 142);
       --text-color-light-02: rgb(207, 253, 241);
@@ -32,11 +32,11 @@
       --normal-font-size: 1rem;
       --biggest-font-size: 2rem;
   
-      --h1-font-size:1.50rem;
-      --h2-font-size: 1.25rem;
-      --h3-font-size: 1rem;
-      --h4-font-size: .75rem;
-      --h5-font-size: .50rem;
+      --h1-font-size:1.25rem;
+      --h2-font-size: .75rem;
+      --h3-font-size: .50rem;
+      --h4-font-size: .45rem;
+      --h5-font-size: .30rem;
       --h6-font-size: .25rem;
 
       --font-family-01: 'Lato', sans-serif;
@@ -57,110 +57,460 @@
 
 
 
-*  body    h1  h2 h3 {margin:0;padding: 0;text-decoration: none;text-overflow: clip;    text-align: center;justify-content: center;}
+*  body h1 h2 h3 {
+    margin:.25rem;
+    padding: 0.25rem;
+    text-decoration: none;
+    text-overflow: clip;    
+    text-align: center;
+    justify-content: center;}
 
 body {
 background-color: #030303;
 align-items: center;
 justify-content: center;
 justify-items: center;
-}
+    margin: 0;
+    font-family: "Helvetica", "Verdana", "Roboto", sans-serif;
+  }
+
+  
+  form {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+  }
+  
+  .board {
+    position: relative;
+    width: 450px;
+    height: 450px;
+  }
+  
+  .field {
+    position: absolute;
+    top: 0;
+    left: 15px;
+    padding: 75px 0 0 0;
+    box-sizing: border-box;
+    width: 420px;
+    height: 435px;
+    overflow: hidden;
+    cursor: not-allowed;
+  }
+  
+  .grid {
+    display: inline-flex;
+    flex-flow: column wrap;
+    position: relative;
+    min-width: 420px;
+    height: 360px;
+    counter-reset: player 1;
+  }
+  
+  .column {
+    display: inline-flex;
+    flex-flow: column wrap;
+    height: 360px;
+  }
+  
+  .front {
+    position: absolute;
+    top: 60px;
+    border: 15px solid #007fff;
+    border-radius: 4px;
+    box-sizing: border-box;
+    width: 450px;
+    height: 390px;
+    pointer-events: none;
+    background: radial-gradient(circle, transparent, transparent 18px, #007fff 20px, #007fff 23px, #1f90ff 23px, #1f90ff 36px, #007fff) center top/60px 60px;
+  }
+  
+  /* Invisible inputs */
+  /* input {
+    display: none;
+    position: absolute;
+    top: -90px;
+    margin: 0;
+    width: 60px;
+    height: 450px;
+    cursor: pointer;
+    opacity: 0;
+  } */
+  input:indeterminate {
+    display: initial;
+  }
+  /* Inputs for red */
+  .column > input:nth-of-type(2n) {
+    right: 360px;
+  }
+  .column > .column > input:nth-of-type(2n) {
+    right: 300px;
+  }
+  .column > .column > .column > input:nth-of-type(2n) {
+    right: 240px;
+  }
+  .column > .column > .column > .column > input:nth-of-type(2n) {
+    right: 180px;
+  }
+  .column > .column > .column > .column > .column > input:nth-of-type(2n) {
+    right: 120px;
+  }
+  .column > .column > .column > .column > .column > .column > input:nth-of-type(2n) {
+    right: 60px;
+  }
+  .column > .column > .column > .column > .column > .column > .column > input:nth-of-type(2n) {
+    right: 0;
+  }
+  /* Inputs for yellow */
+  .column > input:nth-of-type(2n+1) {
+    left: 0;
+  }
+  .column > .column > input:nth-of-type(2n+1) {
+    left: 60px;
+  }
+  .column > .column > .column > input:nth-of-type(2n+1) {
+    left: 120px;
+  }
+  .column > .column > .column > .column > input:nth-of-type(2n+1) {
+    left: 180px;
+  }
+  .column > .column > .column > .column > .column > input:nth-of-type(2n+1) {
+    left: 240px;
+  }
+  .column > .column > .column > .column > .column > .column > input:nth-of-type(2n+1) {
+    left: 300px;
+  }
+  .column > .column > .column > .column > .column > .column > .column > input:nth-of-type(2n+1) {
+    left: 360px;
+  }
+  
+  /* Disc */
+  .disc {
+    position: relative;
+    top: 0;
+    width: 60px;
+    height: 60px;
+    color: #fff;
+    background: radial-gradient(circle, currentcolor 12px, #666 13px, currentcolor 14px, currentcolor 21px, #666 22px, transparent 23px, transparent) center/60px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s, top 0s 0.2s, color 0s 0.2s;
+  }
+  
+  /* Red's turn */
+  input:hover + .disc {
+    color: #ff010b;
+    opacity: 1;
+    transition: opacity 0.2s, top 0s;
+  }
+  input:checked + .disc {
+    color: #ff010b;
+    opacity: 1;
+  }
+  /* Yellow's turn */
+  input:hover + input + .disc {
+    color: #ffd918;
+    opacity: 1;
+    transition: opacity 0.2s, top 0s;
+  }
+  input:checked + input + .disc {
+    color: #ffd918;
+    opacity: 1;
+  }
+  
+  /* Height and time of disc fall per row */
+  input:hover + .disc:nth-of-type(1),
+  input:hover + input + .disc:nth-of-type(1){
+    top: -75px;
+  }
+  input:checked + .disc:nth-of-type(1),
+  input:checked + input + .disc:nth-of-type(1){
+    transition: top 0.14s cubic-bezier(0.56, 0, 1, 1);
+  }
+  input:hover + .disc:nth-of-type(2),
+  input:hover + input + .disc:nth-of-type(6n+2) {
+    top: -135px;
+  }
+  input:checked + .disc:nth-of-type(2),
+  input:checked + input + .disc:nth-of-type(2){
+    transition: top 0.19s cubic-bezier(0.56, 0, 1, 1);
+  }
+  input:hover + .disc:nth-of-type(3),
+  input:hover + input + .disc:nth-of-type(3) {
+    top: -195px;
+  }
+  input:checked + .disc:nth-of-type(3),
+  input:checked + input + .disc:nth-of-type(3) {
+    transition: top 0.23s cubic-bezier(0.56, 0, 1, 1);
+  }
+  input:hover + .disc:nth-of-type(4),
+  input:hover + input + .disc:nth-of-type(4) {
+    top: -255px;
+  }
+  input:checked + .disc:nth-of-type(4),
+  input:checked + input + .disc:nth-of-type(4) {
+    transition: top 0.26s cubic-bezier(0.56, 0, 1, 1);
+  }
+  input:hover + .disc:nth-of-type(5),
+  input:hover + input + .disc:nth-of-type(5){
+    top: -315px;
+  }
+  input:checked + .disc:nth-of-type(5),
+  input:checked + input + .disc:nth-of-type(5){
+    transition: top 0.29s cubic-bezier(0.56, 0, 1, 1);
+  }
+  input:hover + .disc:nth-of-type(6n),
+  input:hover + input + .disc:nth-of-type(6n) {
+    top: -375px;
+  }
+  input:checked + .disc:nth-of-type(6n),
+  input:checked + input + .disc:nth-of-type(6n) {
+    transition: top 0.32s cubic-bezier(0.56, 0, 1, 1);
+  }
+  
+  /* Fix stuck disc */
+  input:checked + .disc,
+  input:checked + input + .disc {
+    top: 0 !important;
+  }
+  
+  /* Tracking turns */
+  input:checked + .disc {
+    counter-increment: player 2;
+  }
+  input:checked + input + .disc {
+    counter-increment: player -2;
+  }
+  
+  .grid::after {
+    content: counter(player, lower-roman);
+    display: inline-block;
+    max-width: 840px;
+    min-width: 420px;
+    letter-spacing: 375px;
+    font-family: monospace;
+    font-size: 1px;
+    overflow: hidden;
+  }
+  
+  /* Draw outcome */
+  form:valid .column > .column > .column > .column > .column > .column > .column > .column::after {
+    content: "It's a draw!";
+    z-index: 1;
+    position: absolute;
+    left: 0;
+    top: -75px;
+    width: 420px;
+    height: 435px;
+    visibility: visible;
+    color: #1f90ff;
+    font-size: 30px;
+    text-align: center;
+    line-height: 60px;
+    cursor: initial;
+    pointer-events: auto;
+    animation: outcome 1.5s;
+  }
+  
+  /* Red column win */
+  input:checked + .disc + input + input:checked + .disc + input + input:checked + .disc + input + input:checked ~ .column::after,
+  /* Red row win */
+  input:nth-of-type(2):checked ~ .column > input:nth-of-type(2):checked ~ .column > input:nth-of-type(2):checked ~ .column > input:nth-of-type(2):checked ~ .column::after,
+  input:nth-of-type(4):checked ~ .column > input:nth-of-type(4):checked ~ .column > input:nth-of-type(4):checked ~ .column > input:nth-of-type(4):checked ~ .column::after,
+  input:nth-of-type(6):checked ~ .column > input:nth-of-type(6):checked ~ .column > input:nth-of-type(6):checked ~ .column > input:nth-of-type(6):checked ~ .column::after,
+  input:nth-of-type(8):checked ~ .column > input:nth-of-type(8):checked ~ .column > input:nth-of-type(8):checked ~ .column > input:nth-of-type(8):checked ~ .column::after,
+  input:nth-of-type(10):checked ~ .column > input:nth-of-type(10):checked ~ .column > input:nth-of-type(10):checked ~ .column > input:nth-of-type(10):checked ~ .column::after,
+  input:nth-of-type(12):checked ~ .column > input:nth-of-type(12):checked ~ .column > input:nth-of-type(12):checked ~ .column > input:nth-of-type(12):checked ~ .column::after,
+  /* Red diagonal win */
+  input:nth-of-type(2):checked ~ .column > input:nth-of-type(4):checked ~ .column > input:nth-of-type(6):checked ~ .column > input:nth-of-type(8):checked ~ .column::after,
+  input:nth-of-type(4):checked ~ .column > input:nth-of-type(6):checked ~ .column > input:nth-of-type(8):checked ~ .column > input:nth-of-type(10):checked ~ .column::after,
+  input:nth-of-type(6):checked ~ .column > input:nth-of-type(8):checked ~ .column > input:nth-of-type(10):checked ~ .column > input:nth-of-type(12):checked ~ .column::after,
+  input:nth-of-type(8):checked ~ .column > input:nth-of-type(6):checked ~ .column > input:nth-of-type(4):checked ~ .column > input:nth-of-type(2):checked ~ .column::after,
+  input:nth-of-type(10):checked ~ .column > input:nth-of-type(8):checked ~ .column > input:nth-of-type(6):checked ~ .column > input:nth-of-type(4):checked ~ .column::after,
+  input:nth-of-type(12):checked ~ .column > input:nth-of-type(10):checked ~ .column > input:nth-of-type(8):checked ~ .column > input:nth-of-type(6):checked ~ .column::after {
+    content: "Red wins! :)";
+    z-index: 2;
+    position: absolute;
+    left: 0;
+    top: -75px;
+    width: 420px;
+    height: 435px;
+    visibility: visible;
+    color: #ff010b;
+    font-size: 30px;
+    text-align: center;
+    line-height: 60px;
+    cursor: initial;
+    pointer-events: auto;
+    animation: outcome 1s;
+  }
+  
+  /* Yellow column win */
+  input:checked + input + .disc + input:checked + input + .disc + input:checked + input + .disc + input:checked ~ .column::after,
+  /* Yellow row win */
+  input:nth-of-type(1):checked ~ .column > input:nth-of-type(1):checked ~ .column > input:nth-of-type(1):checked ~ .column > input:nth-of-type(1):checked ~ .column::after,
+  input:nth-of-type(3):checked ~ .column > input:nth-of-type(3):checked ~ .column > input:nth-of-type(3):checked ~ .column > input:nth-of-type(3):checked ~ .column::after,
+  input:nth-of-type(5):checked ~ .column > input:nth-of-type(5):checked ~ .column > input:nth-of-type(5):checked ~ .column > input:nth-of-type(5):checked ~ .column::after,
+  input:nth-of-type(7):checked ~ .column > input:nth-of-type(7):checked ~ .column > input:nth-of-type(7):checked ~ .column > input:nth-of-type(7):checked ~ .column::after,
+  input:nth-of-type(9):checked ~ .column > input:nth-of-type(9):checked ~ .column > input:nth-of-type(9):checked ~ .column > input:nth-of-type(9):checked ~ .column::after,
+  input:nth-of-type(11):checked ~ .column > input:nth-of-type(11):checked ~ .column > input:nth-of-type(11):checked ~ .column > input:nth-of-type(11):checked ~ .column::after,
+  /* Yellow diagonal win */
+  input:nth-of-type(1):checked ~ .column > input:nth-of-type(3):checked ~ .column > input:nth-of-type(5):checked ~ .column > input:nth-of-type(7):checked ~ .column::after,
+  input:nth-of-type(3):checked ~ .column > input:nth-of-type(5):checked ~ .column > input:nth-of-type(7):checked ~ .column > input:nth-of-type(9):checked ~ .column::after,
+  input:nth-of-type(5):checked ~ .column > input:nth-of-type(7):checked ~ .column > input:nth-of-type(9):checked ~ .column > input:nth-of-type(11):checked ~ .column::after,
+  input:nth-of-type(7):checked ~ .column > input:nth-of-type(5):checked ~ .column > input:nth-of-type(3):checked ~ .column > input:nth-of-type(1):checked ~ .column::after,
+  input:nth-of-type(9):checked ~ .column > input:nth-of-type(7):checked ~ .column > input:nth-of-type(5):checked ~ .column > input:nth-of-type(3):checked ~ .column::after,
+  input:nth-of-type(11):checked ~ .column > input:nth-of-type(9):checked ~ .column > input:nth-of-type(7):checked ~ .column > input:nth-of-type(5):checked ~ .column::after {
+    content: "Yellow wins! :)";
+    z-index: 2;
+    position: absolute;
+    left: 0;
+    top: -75px;
+    width: 420px;
+    height: 435px;
+    visibility: visible;
+    color: #ffd918;
+    font-size: 30px;
+    text-align: center;
+    line-height: 60px;
+    background: linear-gradient(#fff 60px, transparent 60px, transparent);
+    cursor: initial;
+    pointer-events: auto;
+    animation: outcome 1s;
+  }
+  
+  /* Button style */
+  .button2 {
+    margin: 20px auto;
+    border: none;
+    border-radius: 2px;
+    padding: 12px 18px;
+    font-size: 16px;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: #fff;
+    background: #2196f3 center;
+    box-shadow: 0 0 4px #999;
+    outline: none;
+    transition: background 0.5s;
+  }
+  button:hover {
+    background: #184e7aba radial-gradient(circle, transparent 1%, #47a7f5 1%) center/15000%;
+  }
+  button:active {
+    background-color: #6eb9f7;
+    background-size: 100%;
+    transition: background 0s;
+  }
+  
+  @keyframes outcome {
+    0% {
+      opacity: 0;
+    }
+    35% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
 
 h1 {
-color: #3cffed;
-color: rgb(233, 226, 226);
-    color: #020305;
-    color: var(--text-color-light-04);
-font-family: 'dickinson';
-margin-top: 10px;
+
     margin-left: auto;
     margin-right: auto;
-width: -webkit-fit-content;
-width: -moz-fit-content;
-width: fit-content; 
-margin-left: auto;
-margin-right: auto;    
-margin: 1px;
-    padding: 1px;
-font-size: 15px;
-font-weight: 100%;
-letter-spacing: 12px;
-text-align: center;justify-content: center;
-    font-family: var(--font-family-06);
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content; 
 
-    font-size: var(--h3-font-size);
-    letter-spacing: 2px;
-    border-bottom: 1px ridge #2cbebe;
  justify-content: center;
  justify-items: center;
+    font-family: var(--font-family-06);
+font-family: 'dickinson';
+    font-size: var(--h1-font-size);
+    font-weight: normal;
+    text-align: center;
+text-align: center;
+    color: var(--text-color-light-04);
 
-    text-shadow: 0 0 5px rgba(255, 255, 255, 0.925), 0 0 10px rgba(255, 255, 255, 0.945), 0 0 20px #f4b403de, 0 0 30px #f47703b6, 0 0 40px #f4a003d5, 0 0 50px #f48c039f, 0 0 60px #f43303c2;
-text-shadow: 0 0 5px rgb(222, 222, 222), 0 0 15px rgb(227, 223, 223), 0 0 30px #03a9f4,
- 0 0 35px #61c6f5, 0 0 40px #8bc7e3, 0 0 45px #1db7ff, 0 0 50px #049ce2;   
 
+
+
+    border-bottom: 1px ridge #5a2cbe;
+
+
+
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.925), 0 0 10px rgba(255, 255, 255, 0.945),
+     0 0 20px #f4b403de, 0 0 30px #f47703b6, 0 0 40px #f4a003d5, 0 0 50px #f48c039f,
+      0 0 60px #f43303c2,0 0 5px rgb(222, 222, 222),
+       0 0 15px rgb(227, 223, 223), 0 0 30px #0377f4, 0 0 35px #619cf5,
+        0 0 40px #8b9ae3, 0 0 45px #9d1dff, 0 0 50px #8d04e2;
+  
 }
 
+
 h2 {
-text-align: center;
-color: rgb(253, 250, 250);
-font-family: 'helvetica';
-margin-top: 5px;
-font-size: 10px;
-font-weight: 200%;
-letter-spacing: 8px;
-width: -webkit-fit-content;
-width: -moz-fit-content;    text-align: center;justify-content: center;
-width: fit-content;
-margin-left: auto;
-margin-right: auto;
-color: #3cffed;
-text-shadow: 0 0 5px #fff, 0 0 10px #fff, 
-0 0 20px #03a9f4, 0 0 30px #03a9f4, 0 0 40px #03a9f4, 0 0 50px #03a9f4, 0 0 60px #03a9f4;    text-align: center;
-    color: var(--text-color-light-04);
-    font-family: var(--font-family-07);
     margin: 1px;
     padding: 1px;
-    font-size: var(--h4-font-size);
-    letter-spacing: 2px;
+ margin-left: auto;
+margin-right: auto;
+width: -webkit-fit-content;
+width: -moz-fit-content;    
+text-align: center;
+justify-content: center;
+width: fit-content;
+
+    font-family: var(--font-family-07);
+    font-size: var(--h2-font-size);
+font-family: 'helvetica';
+text-align: center;
+color: var(--text-color-light-04);
+
+
+
+
     border-bottom: 1px ridge #ffbb3e;
-    margin-left: auto;
-    margin-right: auto;
-    color: #020305;
-    text-shadow: 0 0 5px rgb(255 255 255 / 93%), 0 0 10px rgb(80 48 48 / 95%), 0 0 20px #000000de, 0 0 30px #03a8f4b6, 0 0 40px #03a8f4d5, 0 0 50px #03a8f49f, 0 0 60px #050c10c2;
+
+
+
+
+text-shadow: 0 0 5px rgb(255 255 255 / 93%), 0 0 10px rgb(80 48 48 / 95%), 0 0 20px #000000de, 0 0 30px #4703f4b6, 0 0 40px #03a8f4d5, 0 0 50px #03a8f49f, 0 0 60px #050c10c2,0 0 5px #fff, 0 0 10px #fff, 
+0 0 20px #ecf403, 0 0 30px #1ff403, 0 0 40px #03a9f4, 0 0 50px #1f03f4, 0 0 60px #6b03f4;    
+  
+
+
 
 }
 
 h3 {
-    text-decoration-style: double;
-    text-decoration: none;
-    /* text-emphasis-color: initial; */
+    margin: 1px;
+    padding: 1px;
+    width: -webkit-fit-content;    
     text-align: center;
-    color: #fff;
-    font-family: 'Sylfaen';
-    margin-top: 5px;
-    font-size: 10px;
-    font-weight: 100%;
-    letter-spacing: 8px;
-    width: -webkit-fit-content;    text-align: center;justify-content: center;
+    justify-content: center;
     width: -moz-fit-content;
     width: fit-content;
     margin-left: auto;
     margin-right: auto;
-    color: #3cffed;
+    font-family: var(--font-family-08);    
+    font-size: var(--h3-font-size);
+    font-family: 'Sylfaen';
+    text-decoration-style: double;
+    text-decoration: none;
+    text-align: center;
+     color: var(--text-color-light-04);
     text-shadow: 0 0 5px #fff, 0 0 20px #fff, 
-    0 0 25px #03a9f4, 0 0 30px #03a9f4, 0 0 35px #03a9f4, 0 0 40px #03a9f4, 
-    0 0 50px #03a9f4;    color: var(--text-color-light-04);
-    font-family: var(--font-family-08);
-    margin: 1px;
-    padding: 1px;
-    font-size: var(--h5-font-size);
-    letter-spacing: 2px;
-    }
+    0 0 25px #f44b03, 0 0 30px #4ff403, 0 0 35px #03a9f4, 0 0 40px #03a9f4, 
+    0 0 50px #031a24;    
+}
 
 .main-container {
     padding: 8px;
     margin: 8px;
-    text-align: center;    text-align: center;justify-content: center;
+    text-align: center;    
+    text-align: center;
+    justify-content: center;
 }
  
 .btn-row {
@@ -186,13 +536,12 @@ h3 {
  
 /* Common CSS for all Buttons - commandes css pour tous les boutons */
 button {
-    font-size: var(--h3-font-size);
-    width: 140px;
-    height: 50px;
-    border-radius: 22px;
-    cursor:crosshair;
+
     font-family: var(--font-family-06);
     text-align: center;
+    border-radius: 22px;
+    cursor:crosshair;
+
     -webkit-text-stroke: .25px rgba(0, 0, 0, 0.534);
     text-decoration: none;
 }
