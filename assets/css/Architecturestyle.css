@@ -6,9 +6,9 @@
 *,body, html, ::before, ::after {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  -moz-box-sizing: border-box;
+    -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
+box-sizing: border-box;
 
 }
 
@@ -85,7 +85,7 @@ pre {
     background-color: none;
     text-shadow: 0 0 15px #070606, 0 0 10px  #df8142,
     0 0 10px #f0ede5, 0 0 15px  #dad9cb, 0 0 15px #5778be, 0 0 10px #e0bc89e1, 0 0 10px #e6d74bb0, 0 0 20px #3692cfbe;
-    animation-name: valeur;
+    animation-name:valeur;
     animation-timing-function: linear;
     animation-duration: 10s;
     animation-iteration-count: infinite;
@@ -102,7 +102,7 @@ pre {
 /*structure & barre de navigation*/
 
 html { 
-  background: url("..//img/Gifs/Neon01.gif") no-repeat center center fixed; 
+  background: url("..//img/Gifs/Neon01.gif") no-repeat center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
