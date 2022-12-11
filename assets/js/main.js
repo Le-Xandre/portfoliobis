@@ -1,153 +1,76 @@
 
+jQuery(document).ready(function($){
+	var secondaryNav = $('.cd-secondary-nav'),
+		secondaryNavTopPosition = secondaryNav.offset().top,
+		taglineOffesetTop = $('#cd-intro-tagline').offset().top + $('#cd-intro-tagline').height() + parseInt($('#cd-intro-tagline').css('paddingTop').replace('px', '')),
+		contentSections = $('.cd-section');
+	
+	$(window).on('scroll', function(){
+		//on desktop - assign a position fixed to logo and action button and move them outside the viewport
+		( $(window).scrollTop() > taglineOffesetTop ) ? $('#cd-logo, .cd-btn').addClass('is-hidden') : $('#cd-logo, .cd-btn').removeClass('is-hidden');
+		
+		//on desktop - fix secondary navigation on scrolling
+		if($(window).scrollTop() > secondaryNavTopPosition ) {
+			//fix secondary navigation
+			secondaryNav.addClass('is-fixed');
+			//push the .cd-main-content giving it a top-margin
+			$('.cd-main-content').addClass('has-top-margin');	
+			//on Firefox CSS transition/animation fails when parent element changes position attribute
+			//so we to change secondary navigation childrens attributes after having changed its position value
+			setTimeout(function() {
+	            secondaryNav.addClass('animate-children');
+	            $('#cd-logo').addClass('slide-in');
+				$('.cd-btn').addClass('slide-in');
+	        }, 50);
+		} else {
+			secondaryNav.removeClass('is-fixed');
+			$('.cd-main-content').removeClass('has-top-margin');
+			setTimeout(function() {
+	            secondaryNav.removeClass('animate-children');
+	            $('#cd-logo').removeClass('slide-in');
+				$('.cd-btn').removeClass('slide-in');
+	        }, 50);
+		}
 
+		//on desktop - update the active link in the secondary fixed navigation
+		updateSecondaryNavigation();
+	});
 
+	function updateSecondaryNavigation() {
+		contentSections.each(function(){
+			var actual = $(this),
+				actualHeight = actual.height() + parseInt(actual.css('paddingTop').replace('px', '')) + parseInt(actual.css('paddingBottom').replace('px', '')),
+				actualAnchor = secondaryNav.find('a[href="#'+actual.attr('id')+'"]');
+			if ( ( actual.offset().top - secondaryNav.height() <= $(window).scrollTop() ) && ( actual.offset().top +  actualHeight - secondaryNav.height() > $(window).scrollTop() ) ) {
+				actualAnchor.addClass('active');
+			}else {
+				actualAnchor.removeClass('active');
+			}
+		});
+	}
 
+	//on mobile - open/close secondary navigation clicking/tapping the .cd-secondary-nav-trigger
+	$('.cd-secondary-nav-trigger').on('click', function(event){
+		event.preventDefault();
+		$(this).toggleClass('menu-is-open');
+		secondaryNav.find('ul').toggleClass('is-visible');
+	});
 
-
-//Swiper slider
-var swiper = new Swiper(".bg-slider-thumbs", {
-    loop: true,
-    spaceBetween: 0,
-    slidesPerView: 0,
-});
-var swiper2 = new Swiper(".bg-slider", {
-    loop: true,
-    spaceBetween: 0,
-    thumbs: {
-        swiper: swiper,
-    },
-});
-
-
-//Navigation bar effects on scroll
-window.addEventListener("scroll", function(){
-    var header = document.querySelector("header");
-    header.classList.toggle("sticky", window.scrollY > 0);
-  });
-
-
-//Responsive navigation menu toggle
-
-var menu = document.querySelector(".menu");
-var menuBtn = document.querySelector(".menu-btn");
-var closeBtn = document.querySelector(".close-btn");
-
-menuBtn.addEventListener("click", () => {
-  menu.classList.add("active");
-});
-
-closeBtn.addEventListener("click", () => {
-  menu.classList.remove("active");
-});
-
-
-
-
-  //jquery for toggle dropdown menus
-  $(document).ready(function(){
-    //toggle sub-menus
-    $(".sub-btn").click(function(){
-      $(this).next(".sub-menu").slideToggle();
+	//smooth scrolling when clicking on the secondary navigation items
+	secondaryNav.find('ul a').on('click', function(event){
+        event.preventDefault();
+        var target= $(this.hash);
+        $('body,html').animate({
+        	'scrollTop': target.offset().top - secondaryNav.height() + 1
+        	}, 400
+        ); 
+        //on mobile - close secondary navigation
+        $('.cd-secondary-nav-trigger').removeClass('menu-is-open');
+        secondaryNav.find('ul').removeClass('is-visible');
     });
 
-    //toggle more-menus
-    $(".more-btn").click(function(){
-      $(this).next(".more-menu").slideToggle();
-    });
-  });
-
-
-
-      //jquery for toggle dropdown menus
-      $(document).ready(function(){
-        //toggle sub-menus
-        $(".sub-btn").click(function(){
-          $(this).next(".sub-menu").slideToggle();
-        });
-  
-        //toggle more-menus
-        $(".more-btn").click(function(){
-          $(this).next(".more-menu").slideToggle();
-        });
-      });
-  
-      //javascript for the responsive navigation menu
-      var menu = document.querySelector(".menu");
-      var menuBtn = document.querySelector(".menu-btn");
-      var closeBtn = document.querySelector(".close-btn");
-  
-      menuBtn.addEventListener("click", () => {
-        menu.classList.add("active");
-      });
-  
-      closeBtn.addEventListener("click", () => {
-        menu.classList.remove("active");
-      });
-  
-      //javascript for the navigation bar effects on scroll
-      window.addEventListener("scroll", function(){
-        var header = document.querySelector("header");
-        header.classList.toggle("sticky", window.scrollY > 0);
-      });
-
-      
-
-
-      // The hamburger button animation
-const hamburger = document.querySelector('.hamburger');
-const navLinks = document.querySelector('.nav-links');
-const links = document.querySelectorAll(".nav-links li");
-
-hamburger.addEventListener('click', () => {
-    navLinks.classList.toggle('open');
-    links.forEach(link => {
-        link.classList.toggle('fade');
-    })
+    //on mobile - open/close primary navigation clicking/tapping the menu icon
+	$('.cd-primary-nav').on('click', function(event){
+		if($(event.target).is('.cd-primary-nav')) $(this).children('ul').toggleClass('is-visible');
+	});
 });
-
-
-const items = document.querySelectorAll('img');
-const itemCount = items.length;
-const nextItem = document.querySelector('.next');
-const previousItem = document.querySelector('.previous');
-let count = 0;
-
-function showNextItem() {
-  items[count].classList.remove('active');
-
-  if(count < itemCount - 1) {
-    count++;
-  } else {
-    count = 0;
-  }
-
-  items[count].classList.add('active');
-  console.log(count);
-}
-
-function showPreviousItem() {
-  items[count].classList.remove('active');
-
-  if(count > 0) {
-    count--;
-  } else {
-    count = itemCount - 1;
-  }
-
-  items[count].classList.add('active');
-  console.log(count);
-}
-
-function keyPress(e) {
-  e = e || window.event;
-  
-  if (e.keyCode == '37') {
-    showPreviousItem();
-  } else if (e.keyCode == '39') {
-    showNextItem();
-  }
-}
-
-nextItem.addEventListener('click', showNextItem);
-previousItem.addEventListener('click', showPreviousItem);
-document.addEventListener('keydown', keyPress);
