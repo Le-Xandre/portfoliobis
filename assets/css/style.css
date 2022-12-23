@@ -233,13 +233,14 @@ section {
       height: auto;
       padding: 10px;
       margin: 10px;
-      background: linear-gradient(-45deg, #e0d8afc7 0%, #0d57ac63 100%), linear-gradient(
-      -45deg, #f0cb74ec 0%, #060436df 100%);
+      /* background: linear-gradient(-45deg, #d7afe023 0%, #0d57ac1a 100%), linear-gradient(
+      -45deg, #f0cb7428 0%, #0201193f 100%); */
       animation: gradient 5s ease infinite;
       flex-direction: column;
       flex-wrap: nowrap;
       justify-content: space-around;
-      align-content: space-between;  font-size: 14px;
+      align-content: space-between;  
+      font-size: 14px;
 }
 
 @keyframes gradient {
@@ -493,8 +494,14 @@ h6 {
 
 footer {
     position: relative; 
-  display:flex;
-  align-items: center;
+
+
+    background-color: var(--first-color);
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+    display: block;
+
   font-family: var(--font-family-01);
   margin:10px;
   padding:10px;

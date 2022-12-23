@@ -101,8 +101,8 @@ align-items: center;
 z-index: -1;
 }
 .gr-moove .neon-img{
-background-image: -webkit-gradient(linear, left top, right top, from(#6227b0) , color-stop(#e91e73), to(#8BC34A));
-background-image: linear-gradient(90deg, #3027b0 , #e9b61e, #760000);
+background-image: -webkit-gradient(linear, left top, right top, from(#6227b00b) , color-stop(#e91e7339), to(#8bc34a2c));
+background-image: linear-gradient(90deg, #3027b017 , #e9b61e17, #76000020);
 background-size: 150%;
 border: none;
 color: #fff;
@@ -141,8 +141,8 @@ opacity: 0.5;
 }
 
 .gr-moove .neon-img {
-background-image: -webkit-gradient(linear, left top, right top, from(#6227b0) , color-stop(#e91e73), to(#8BC34A));
-background-image: linear-gradient(90deg, #6e27b0 , #E91E63, #8BC34A);
+background-image: -webkit-gradient(linear, left top, right top, from(#6227b028) , color-stop(#e91e7320), to(#8bc34a2f));
+background-image: linear-gradient(90deg, #6e27b030 , #e91e6224, #8bc34a34);
 background-size: 300%;
 border: none;
 color: #fff;
@@ -154,14 +154,14 @@ animation:moveInnerBg 4s infinite;
 }
 
 .neon-img:hover img {
-background-image: -webkit-gradient(linear, left top, right top, from(#9d92ff) , color-stop(#ff7b7b), to(#d0ff99));
-background-image: linear-gradient(90deg, #ca92ff , #ff7b86, #e0ff99);
-opacity: 0.5;    border: double 5px #005BBB;
+background-image: -webkit-gradient(linear, left top, right top, from(#9d92ff34) , color-stop(#ff7b7b9e), to(#cfff9992));
+background-image: linear-gradient(90deg, #ca92ffa4 , #ff7b8692, #a9ce54ac);
+opacity: 0.5;    border: double 5px #005abb94;
 }
 
 .gr-moove .neon-img {
-background-image: -webkit-gradient(linear, left top, right top, from(#6227b0) , color-stop(#e91e73), to(#8BC34A));
-background-image: linear-gradient(90deg, #6e27b0 , #E91E63, #8BC34A);
+background-image: -webkit-gradient(linear, left top, right top, from(#5527b076) , color-stop(#e91e737a), to(#8bc34a96));
+background-image: linear-gradient(90deg, #6e27b073 , #e91e6283, #8bc34a70);
 background-size: 300%;
 border: none;
 color: #fff;

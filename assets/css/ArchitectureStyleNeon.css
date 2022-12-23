@@ -123,7 +123,7 @@ justify-items: center;
     width: 450px;
     height: 390px;
     pointer-events: none;
-    background: radial-gradient(circle, transparent, transparent 18px, #007fff 20px, #007fff 23px, #1f90ff 23px, #1f90ff 36px, #007fff) center top/60px 60px;
+    background: radial-gradient(circle, transparent, transparent 18px, #007fff 20px, #01407f 23px, #3a9afa 23px, #4aa4ff 36px, #4ba5ff) center top/60px 60px;
   }
   
   /* Invisible inputs */
@@ -192,7 +192,7 @@ justify-items: center;
     width: 60px;
     height: 60px;
     color: #fff;
-    background: radial-gradient(circle, currentcolor 12px, #666 13px, currentcolor 14px, currentcolor 21px, #666 22px, transparent 23px, transparent) center/60px;
+    background: radial-gradient(circle, currentcolor 12px, rgba(226, 192, 23, 0.64) 13px, currentcolor 14px, currentcolor 21px, rgba(37, 205, 239, 0.59) 22px, transparent 23px, transparent) center/60px;
     opacity: 0;
     pointer-events: none;
     transition: opacity 0.2s, top 0s 0.2s, color 0s 0.2s;
@@ -374,7 +374,7 @@ justify-items: center;
     font-size: 30px;
     text-align: center;
     line-height: 60px;
-    background: linear-gradient(#fff 60px, transparent 60px, transparent);
+    background: linear-gradient(rgba(255, 255, 255, 0.74) 60px, transparent 60px, transparent);
     cursor: initial;
     pointer-events: auto;
     animation: outcome 1s;
@@ -1016,8 +1016,8 @@ align-items: center;
 z-index: -1;
 }
 .gr-moove .neon-img{
-background-image: linear-gradient(linear, left top, right top, from(#6227b0) , color-stop(#e91e73), to(#8BC34A));
-background-image: linear-gradient(90deg, #3027b0 , #e9b61e, #760000);
+background-image: linear-gradient(linear, left top, right top, from(#6227b00d) , color-stop(#e91e7317), to(#8bc34a17));
+background-image: linear-gradient(90deg, #3027b01d , #e9b61e2c, #7600002f);
 background-size: 150%;
 border: none;
 color: #fff;
@@ -1056,8 +1056,8 @@ opacity: 0.5;
 }
 
 .gr-moove .neon-img {
-background-image: linear-gradient(linear, left top, right top, from(#6227b0) , color-stop(#e91e73), to(#8BC34A));
-background-image: linear-gradient(90deg, #6e27b0 , #E91E63, #8BC34A);
+background-image: linear-gradient(linear, left top, right top, from(#6227b033) , color-stop(#e91e736d), to(#47790e73));
+background-image: linear-gradient(90deg, #6e27b030 , #e91e623e, #8bc34a68);
 background-size: 300%;
 border: none;
 color: #fff;
@@ -1069,9 +1069,9 @@ animation:moveInnerBg 4s infinite;
 }
 
 .neon-img:hover img {
-background-image: linear-gradient(linear, left top, right top, from(#9d92ff) , color-stop(#ff7b7b), to(#d0ff99));
-background-image: linear-gradient(90deg, #ca92ff , #ff7b86, #e0ff99);
-opacity: 0.5;    border: double 5px #005BBB;
+background-image: linear-gradient(linear, left top, right top, from(#9d92ff54) , color-stop(#ff7b7b56), to(#cfff9963));
+background-image: linear-gradient(90deg, #ca92ff48 , #ff7b863c, #e0ff9952);
+opacity: 0.5;    border: double 5px #005abb43;
 }
 
 
@@ -1110,8 +1110,8 @@ iframe {
 }
 
 .gr-moove .neon-img {
-    background-image: linear-gradient(linear, left top, right top, from(#6227b0) , color-stop(#e91e73), to(#4ac380));
-    background-image: linear-gradient(90deg, #6e27b0 , #541ee9, #8BC34A);
+    background-image: linear-gradient(linear, left top, right top, from(#6227b08f) , color-stop(#e91e736a), to(#4ac380a8));
+    background-image: linear-gradient(90deg, #6e27b090 , #541ee97c, #8bc34a70);
     background-size: 300%;
     border: none;
     color: #fff;

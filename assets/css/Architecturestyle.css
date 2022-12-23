@@ -227,8 +227,8 @@ section {
       height: auto;
       padding: 10px;
       margin: 10px;
-      background: linear-gradient(-45deg, #fbc370c7 0%, #0d94ac63 100%), linear-gradient(
-      -45deg, #f0cb74aa 0%, #060436df 100%);
+      /* background: linear-gradient(-45deg, #fbaa7028 0%, #0d94ac2a 100%), linear-gradient(
+      -45deg, #f0cb741f 0%, #06043631 100%); */
       animation: gradient 5s ease infinite;
       flex-direction: column;
       flex-wrap: nowrap;
