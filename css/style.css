@@ -1976,7 +1976,7 @@ cursor: pointer;
 
   .footer-bottom .container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     align-items: center;
   }
 
@@ -4067,10 +4067,12 @@ transition: .4s;
   resize: none;
 }
 /*=============== FOOTER ===============*/
-.footer{
-  background-color: var(--first-color);  align-self: center;
+footer{
+  background-color: var(--first-color);  
+  align-self: center;
   align-items: center;
   justify-content: center;
+  display: block;
 }
 .footer__container{
   padding: 2rem 0 6rem;

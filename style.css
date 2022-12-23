@@ -92,6 +92,8 @@ body,button,input,textarea {
 div, img, footer {
 position: relative;
   box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
 }
 
 header:before,
@@ -3127,8 +3129,11 @@ animation: pulse 5s infinite;
    * REUSED STYLE
    */
 
-  .section { position: relative;   justify-content: center;
-    align-items: center;}
+  .section { 
+    position: relative;   
+    justify-content: center;
+    align-items: center;
+  }
 
   .container { max-width: 960px; }
 
