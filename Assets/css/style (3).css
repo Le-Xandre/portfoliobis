@@ -2061,7 +2061,7 @@ opacity: 0.25;
 
 .slider {
 
-  display: block;
+  display: block;-webkit-scroll-snap-points-x: repeat(300px);
   scroll-snap-points-x: repeat(300px);
   scroll-snap-type: mandatory;
 

@@ -234,8 +234,8 @@ section {
       padding: 10px;
       margin: 10px;
       /* background: linear-gradient(-45deg, #d7afe023 0%, #0d57ac1a 100%), linear-gradient(
-      -45deg, #f0cb7428 0%, #0201193f 100%); */
-      animation: gradient 5s ease infinite;
+      -45deg, #f0cb7428 0%, #0201193f 100%); animation: gradient 5s ease infinite;*/
+      
       flex-direction: column;
       flex-wrap: nowrap;
       justify-content: space-around;
