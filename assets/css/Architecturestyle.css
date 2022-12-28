@@ -129,7 +129,7 @@ header {
     border-style: 2px dotted dashed #01060c;
     background: linear-gradient(-45deg, #4963867a 0%, hsla(222, 27%, 35%, 0.898) 50%, rgba(28, 82, 121, 0.885) 0%, rgb(11, 41, 41) 100%);
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
-    animation: gradient 5s ease infinite;
+    /* animation: gradient 5s ease infinite; */
 }
 
 @keyframes gradient {
@@ -181,7 +181,7 @@ body {
   background-color: #05021f8c !important;
   background: linear-gradient(-45deg, #3a444e8c, #521c4c76, #033142ca, #2e1a03e5);
   background-size: cover;
-  animation: gradient 15s ease infinite;
+  /* animation: gradient 15s ease infinite; */
   border-style: 1px dotted #000000;
   box-shadow: rgba(70, 70, 170, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
 
@@ -229,7 +229,7 @@ section {
       margin: 10px;
       /* background: linear-gradient(-45deg, #fbaa7028 0%, #0d94ac2a 100%), linear-gradient(
       -45deg, #f0cb741f 0%, #06043631 100%); */
-      animation: gradient 5s ease infinite;
+      /* animation: gradient 5s ease infinite; */
       flex-direction: column;
       flex-wrap: nowrap;
       justify-content: space-around;
